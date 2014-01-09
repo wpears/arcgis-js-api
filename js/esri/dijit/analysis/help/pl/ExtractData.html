@@ -22,12 +22,11 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Wydziel dane</h2><p/>
         <h2></h2>
         <hr/>
-    <p>Narzędzie to umożliwia selekcję i pobranie danych dla określonego obszaru zainteresowania. Wybrane warstwy zostaną dodane do pliku zip lub pakietu warstwy.
-
+    <p>Narzędzie to umożliwia selekcję i pobranie danych dla określonego obszaru zainteresowania. Wybrane warstwy zostaną dodane do pliku zip lub csv.
     </p>
     </div>
     <!--Parameter divs for each param-->
@@ -35,10 +34,9 @@
         <div><h2>Warstwy do wydzielenia</h2></div>
         <hr/>
         <div>
-            <p>Warstwy w tabeli zawartości, z kt&oacute;rych można wydzielać obiekty.  Zaznaczone warstwy zostają wydzielone i uwzględnione w wynikowym pliku zip lub pakiecie warstwy.
-
+            <p>Są to warstwy w tabeli zawartości, z kt&oacute;rych można wydzielać obiekty.  Zaznaczone warstwy są wydzielane i&nbsp;dołączane do wynikowego pliku zip lub csv.
             </p>
-            <p>Aby warstwa była widoczna na liście warstw do wydzielenia, musisz być właścicielem danych lub eksportowanie danych musi zostać włączone przez właściciela danych.    Aby włączyć eksportowanie danych, kt&oacute;rych jesteś właścicielem:
+            <p>Aby dana warstwa pojawiła się na liście warstw przeznaczonych do pobrania, dane muszą należeć do użytkownika lub ich właściciel musi włączyć opcję eksportowania tych danych.    Aby włączyć eksportowanie danych, kt&oacute;rych jesteś właścicielem:
                 <ul>
                     <li>Otw&oacute;rz opis elementu dla odpowiednich danych.
                     </li>
@@ -60,7 +58,7 @@
         <div><h2>Analizowany obszar</h2></div>
         <hr/>
         <div>
-            <p>Obszar definiujący, kt&oacute;re obiekty zostaną uwzględnione w wynikowym pliku zip lub pakiecie warstwy. Możesz wybrać spośr&oacute;d następujących opcji:
+            <p>Obszar definiujący, kt&oacute;re obiekty zostaną uwzględnione w wynikowym pliku zip lub csv. Można wybrać spośr&oacute;d następujących opcji:
                 <ul>
                     <li>Bieżący widoczny zasięg mapy (
                         <b>Tak jak w widoku</b>).
@@ -70,7 +68,7 @@
                     <li>Narysuj obszar, aby zdefiniować analizowany obszar.
                     </li>
                 </ul>
-                 Wydzielone zostaną wszystkie obiekty, kt&oacute;re w pełni znajdują się w  zasięgu mapy.  W&nbsp;przypadku obiekt&oacute;w, kt&oacute;re przecinają granicę zasięgu i nie znajdują się całkowicie w&nbsp;zasięgu mapy, dostępne są dwie opcje:
+                 Wydzielone zostaną wszystkie obiekty, kt&oacute;re w pełni znajdują się w zasięgu mapy.  W&nbsp;przypadku obiekt&oacute;w, kt&oacute;re przecinają granicę zasięgu i nie znajdują się całkowicie w&nbsp;zasięgu mapy, dostępne są dwie opcje:
                 <ul>
                     <li>
                         <b>Wybierz obiekty</b> &mdash; wydzielone zostają całe obiekty przecinające granicę analizowanego obszaru.
@@ -87,7 +85,7 @@
         <div><h2>Format danych wynikowych</h2></div>
         <hr/>
         <div>
-            <p>Zostaną wydzielone i pobrane dane w określonym formacie.  Pakiety warstw zawsze zawierają geobazy plikowe.
+            <p>Zostaną wydzielone dane w określonym formacie. Podczas eksportowania obiekt&oacute;w liniowych lub poligonowych do pliku csv, eksportowane są wyłącznie atrybuty nieprzestrzenne.  Podczas eksportowania obiekt&oacute;w punktowych, eksportowane są zar&oacute;wno atrybuty przestrzenne, jak i nieprzestrzenne.  
             </p>
         </div>
     </div>
@@ -104,7 +102,6 @@
                 <b>Zapisz wynik w</b>, można wybrać folder w zakładce
                 <b>Moje zasoby</b>, gdzie zostanie zapisany wynik.
             </p>
-            
         </div>
     </div>
 </div>

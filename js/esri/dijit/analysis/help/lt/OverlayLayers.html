@@ -22,11 +22,11 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Perdengti sluoksnius</h2><p/>
         <h2></h2>
         <hr/>
-    <p>Perdengimas apjungia dviejų ar daugiau sluoksnių informaciją į vieną sluoksnį.  Sluoksnių perdengimą galite įsivaizduoti kaip vienas ant kito sudėtų sluoksnių pervėrimo metu gautą informaciją.   Prie&scaron; atsirandant GIS, kartografai kopijuodavo žemėlapius ant per&scaron;viečiamų acetato plėvelių ir perdengdavo panaudodami &scaron;viesos &scaron;altinį. Nauji žemėlapiai būdavo kuriami kopijuojant perdengus matomus duomenis. Perdengimas tai ne tik ribų apjungimas, perkeliami ir atributiniai duomenys. Perdengimas gali atsakyti į vieną pagrindinių klausimų &quot;Kas į ką patenka&quot;? Pavyzdžiui:
+    <p>Perdengimas sujungia du arba daugiau sluoksnių į vieną sluoksnį.  Sluoksnių perdengimą galite įsivaizduoti kaip vienas ant kito sudėtų sluoksnių pervėrimo metu gautą informaciją. Perdengimas tai ne tik ribų apjungimas, perkeliami ir atributiniai duomenys. Perdengimas gali atsakyti į vieną pagrindinių klausimų &quot;Kas į ką patenka&quot;? Pavyzdžiui:
         <ul>
             <li>Kurie sklypai patenka į per paskutinius 100 metų potvynio užliejamą teritoriją? (Patenka arba kerta)
                   
@@ -41,9 +41,8 @@
         </ul>
         
     </p>
-    <p>
-         Jei
-        <b>Naudoti esamą žemėlapio aprėptį</b> pažymėtas, perdengiami bus tik aprėptyje matomi elementai.  Jei nepažymėtas, analizuojami bus visi sluoksnio elementai.
+    <p>Jei
+        <b>Naudoti esamą žemėlapio aprėptį</b> pažymėtas, bus perdengiami tik analizės ir perdengimo sluoksnio elementai, matomi esamoje žemėlapio aprėptyje.  Jei nužymėtas, bus perdengiami visi analizės ir perdengimo sluoksnių elementai, net jei jie yra už esamos žemėlapio aprėpties ribų.
     </p>
     </div>
     <!--Parameter divs for each param-->
@@ -51,7 +50,7 @@
         <div><h2>Pasirinkite perdangos sluoksnį</h2></div>
         <hr/>
         <div>
-            <p>Pasirinkite perdengimo sluoksnį.  
+            <p>Sluoksnis perdengimui su analizės sluoksniu.  
             </p>
             
         </div>
@@ -60,22 +59,22 @@
         <div><h2>Pasirinkite perdangos būdą</h2></div>
         <hr/>
         <div>
-            <p>Perdengimo būdas apibrėžia, kaip analizuojamas sluoksnis bei perdengimo sluoksnis bus apjungiami.  
+            <p>Perdengimo metodas nusako, kaip analizės ir perdengimo sluoksniai yra apjungiami.  
                 <ul>
                     <li>
-                        <b>Sankirta</b>&mdash;rezultate bus tik tie elementai ar tos elementų dalys, kurios yra bendros visiems sluoksniams.  Jei analizuojamas sluoksnis yra sudarytas i&scaron; plotinių elementų, perdengimo sluoksnis gali būti i&scaron; plotų, ta&scaron;kų ar linijų elementų.  Jei analizuojamas sluoksnis yra sudarytas i&scaron; linijų, perdengimo sluoksnis gali būti i&scaron; ta&scaron;kų ar linijų elementų.  Jei analizuojamas sluoksnis yra sudarytas i&scaron; ta&scaron;kų, perdengimo sluoksnis taip pat turi būti i&scaron; ta&scaron;kų.
+                        <b>Sankirta</b>&mdash;rezultate bus tik tie elementai ar tos elementų dalys, kurios yra bendros visiems sluoksniams.  Jei analizuojamas sluoksnis yra sudarytas i&scaron; plotinių elementų, perdengimo sluoksnis gali būti i&scaron; plotų, ta&scaron;kų ar linijų elementų.  Jei analizuojamas sluoksnis yra sudarytas i&scaron; linijų, perdengimo sluoksnis gali būti i&scaron; ta&scaron;kų ar linijų elementų.  Jei analizės sluoksnis ta&scaron;kinis, perdengimo sluoksnis taip pat turi būti ta&scaron;kinis.
                     </li>
                     <li>
-                        <b>Sąjunga</b>&mdash;rezultate bus elementai i&scaron; analizuojamo ir perdengimo sluoksnių. Sąjunga galima tik tuomet, kai tiek analizės, tiek perdengimo sluoksnis sudarytas i&scaron; plotinių elementų
+                        <b>Apjungti</b>&mdash;Rezultatas turės elementus tiek i&scaron; analizės sluoksnio, tiek i&scaron; perdengimo sluoksnio. Apjungti pasirinikimas galimas tik jei analizės ir perdengimo sluoksniai yra plotiniai.
                     </li>
                     <li>
-                        <b>Trynimas</b>&mdash;rezultate bus elementai ar elementų dalys i&scaron; perdengimo sluoksnio, kurių nėra analizės sluoksnyje.  Perdengimo sluoksnis gali būti i&scaron; ta&scaron;kų, linijų ar plotinių elementų.
+                        <b>I&scaron;trinti</b>&mdash;Rezultatas turės elementus arba jų dalis perdengimo sluoksnyje, kurios nepersidengia su plotais analizės sluoksnyje.  Perdengimo sluoksnis gali būti plotinis, linijinis, ta&scaron;kinis.
                     </li>
                 </ul>
                 
             </p>
-            <p>Jei 
-                <b>Naudoti esamą žemėlapio aprėptį</b> pažymėtas, perdengiami bus tik aprėptyje matomi elementai.  Jei nepažymėtas, analizuojami bus visi sluoksnio elementai.
+            <p>Jei
+                <b>Naudoti esamą žemėlapio aprėptį</b> pažymėtas, bus perdengiami tik analizės ir perdengimo sluoksnio elementai, matomi esamoje žemėlapio aprėptyje.  Jei nužymėtas, bus perdengiami visi analizės ir perdengimo sluoksnių elementai, net jei jie yra už esamos žemėlapio aprėpties ribų.
             </p>
             
         </div>
@@ -86,7 +85,7 @@
         <div>
             <p>
                 Tai sluoksnio, kuris bus sukurtas ir patalpintas
-                <b>Mano Turinyje</b> ir pridėtas į žemėlapį, pavadinimas.  Sluoksnio tipas (ta&scaron;kai, linijos, poligonai) bus toks pats kaip perdengimo sluoksnio.  Pagal nutylėjimą  pavadinimas sudaromas pagal perdengimo tipą ir analizuojamo sluoksnio pavadinimą. Jei sluoksnis jau egzistuoja, galėsite pasirinkti jį perra&scaron;yti.
+                <b>Mano Turinyje</b> bei pridėtas į žemėlapį, pavadinimas.  Sluoksnio tipas (ta&scaron;kai, linijos, poligonai) bus toks pats kaip perdengimo sluoksnio.  Pagal nutylėjimą pavadinimas atspindi analizės tipą ir analizės sluoksnio pavadinimą. Jei sluoksnis jau egzistuoja, galėsite pasirinkti jį perra&scaron;yti.
             </p>
             <p>Naudodami 
                 <b>Rezultatą įra&scaron;yti į</b> sąra&scaron;ą, galite nurodyti

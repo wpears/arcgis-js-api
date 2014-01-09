@@ -22,11 +22,11 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
-        <h2>Yhteenveto alueesta</h2><p/>
+    <div id="toolDescription" class="largesize">
+        <h2>Yhteenveto alueella</h2><p/>
         <h2></h2>
         <hr/>
-    <p>T&auml;m&auml;n ty&ouml;kalun avulla voit etsi&auml; kohteita (tai kohteiden osia), jotka sijaitsevat analyysikarttatason alueiden rajojen sis&auml;ll&auml;.  Esimerkki:
+    <p>T&auml;m&auml;n ty&ouml;kalun avulla voit etsi&auml; kohteita (tai kohteiden osia), jotka sijaitsevat analyysikarttatason alueiden rajojen sis&auml;ll&auml;.  Esimerkiksi:
         <ul>
             <li>Jos k&auml;yt&ouml;ss&auml; ovat vesijakoalueiden rajojen karttataso ja maank&auml;ytt&ouml;tyypin mukaisten kaavoitusrajojen karttataso, ty&ouml;kalu laskee tietyn maank&auml;ytt&ouml;aluetyypin kokonaispinta-alan eekkerein&auml; kullekin vesijakoalueelle. 
             </li>
@@ -41,10 +41,10 @@
     </div>
     <!--Parameter divs for each param-->
     <div id="Summarize">
-        <div><h2>Valitse yhteenvetokarttataso</h2></div>
+        <div><h2>Valitse taso yhteenvetoa varten</h2></div>
         <hr/>
         <div>
-            <p>Yhteenvetoon sis&auml;llytet&auml;&auml;n t&auml;ss&auml; karttatasossa olevat kohteet, jotka sijaitsevat sy&ouml;tekarttatason kohteiden rajojen sis&auml;ll&auml;. 
+            <p>Yhteenvetoon sis&auml;llytet&auml;&auml;n t&auml;ss&auml; karttatasossa olevat kohteet, jotka sijaitsevat analyysitason kohteiden rajojen sis&auml;ll&auml;. 
             </p>
         </div>
     </div>
@@ -142,22 +142,21 @@
             <p>T&auml;m&auml; on 
                 <b>Yhteenveto</b>-kohteiden attribuutti, jonka avulla voit laskea tilastotiedot erikseen kullekin yksil&ouml;lliselle attribuutin arvolle. Jos esim. oletetaan, ett&auml; analyysikarttataso sis&auml;lt&auml;&auml; kaupunkien rajat ja
                 <b>Yhteenveto</b>-kohteet ovat kiinteist&ouml;j&auml;:  Yksi kiinteist&ouml;jen attribuuteista on
-                <i>Status</i>, jolla on kaksi arvoa: VAPAA ja VARATTU. Jos haluat laskea vapaiden ja varattujen kiinteist&ouml;jen kokonaispinta-alan (tai mink&auml; tahansa muun attribuutin, kuten
-                <i>Value</i>), valitse ryhmittelyattribuutiksi
+                <i>Status</i>, jolla on kaksi arvoa: VAPAA ja VARATTU. Jos haluat laskea vapaiden ja varattujen kiinteist&ouml;jen kokonaispinta-alan, valitse ryhmittelyattribuutiksi
                 <i>Status</i>.
             </p>
         </div>
     </div>
     <div id="ResultLayerName">
-        <div><h2>Tuloskarttatason nimi</h2></div>
+        <div><h2>Tulostason nimi</h2></div>
         <hr/>
         <div>
-            <p>T&auml;m&auml; on sen karttatason nimi, joka luodaan 
-                <b>Oma sis&auml;lt&ouml;</b> -kohdassa ja lis&auml;t&auml;&auml;n karttaan.  Oletusarvoiset nimet perustuvat analyysikarttatason nimeen. Jos karttataso on jo olemassa, ohjelmisto pyyt&auml;&auml; vahvistusta sen korvaamiselle.
+            <p>Sen tason nimi, joka luodaan kohtaan 
+                <b>Oma sis&auml;lt&ouml;</b> ja joka lis&auml;t&auml;&auml;n karttaan.  Oletusnimi perustuu analyysitason nimeen. Jos taso on jo olemassa, n&auml;ytt&ouml;&ouml;n tulee kehotus vahvistaa tason korvaus.
             </p>
             <p>Avattavan 
-                <b>Tallenna tulokset kansioon</b> -luetteloruudun avulla voit m&auml;&auml;ritt&auml;&auml;
-                <b>Oma sis&auml;lt&ouml;</b> -kohdassa sen kansion nimen, johon tulokset tallennetaan.
+                <b>Tallenna tulos sijaintiin</b> -luetteloruudun avulla voit m&auml;&auml;ritt&auml;&auml;
+                <b>Oma sis&auml;lt&ouml;</b> -kohdassa sen kansion nimen, johon tulos tallennetaan.
             </p>
         </div>
     </div>

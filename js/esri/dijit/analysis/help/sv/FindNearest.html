@@ -22,11 +22,11 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Hitta närmaste</h2><p/>
         <h2></h2>
         <hr/>
-    <p>Det h&auml;r verktyget anv&auml;nds f&ouml;r att hitta de n&auml;rmaste geoobjekten. Alternativt kan det ocks&aring; rapportera och rangordna avst&aring;nden till de n&auml;rmaste geoobjekten. F&ouml;r att hitta vilka som &auml;r n&auml;rmast kan verktyget m&auml;ta avst&aring;ndet som en rak linje, avst&aring;nd l&auml;ngs v&auml;g eller k&ouml;rtid. Det finns alternativ f&ouml;r att begr&auml;nsa antalet n&auml;rmaste geoobjekt som ska hittas eller inom vilket s&ouml;kavst&aring;nd s&ouml;kningen ska g&ouml;ras. Resultaten fr&aring;n det h&auml;r verktyget kan hj&auml;lpa dig besvara f&ouml;ljande typer av fr&aring;gor:
+    <p>Det h&auml;r verktyget anv&auml;nds f&ouml;r att hitta de n&auml;rmaste geoobjekten och f&ouml;r att rapportera och rangordna avst&aring;nden till de n&auml;rmaste geoobjekten. F&ouml;r att hitta vilka som &auml;r n&auml;rmast kan verktyget m&auml;ta avst&aring;ndet som en rak linje, som ett avst&aring;nd l&auml;ngs en v&auml;g eller som k&ouml;rtid. Det finns alternativ f&ouml;r att begr&auml;nsa antalet n&auml;rmaste geoobjekt som ska hittas eller inom vilket s&ouml;kavst&aring;nd s&ouml;kningen ska g&ouml;ras. Resultaten fr&aring;n det h&auml;r verktyget kan hj&auml;lpa dig besvara f&ouml;ljande typer av fr&aring;gor:
         <ul>
             <li>Vilken park ligger n&auml;rmast den h&auml;r platsen?
             </li>
@@ -39,7 +39,7 @@
         </ul>
         
     </p>
-    <p>Hitta n&auml;rmaste returnerar ett lager som inneh&aring;ller de n&auml;rmaste geoobjekten och eventuellt ett valfritt linjelager som l&auml;nkar startplatsen till de n&auml;rmaste platserna. Det valfria linjelagret inneh&aring;ller information om startplatsen, de n&auml;rmaste platserna och avst&aring;nden mellan dem.
+    <p>Hitta n&auml;rmaste returnerar ett lager som inneh&aring;ller de n&auml;rmaste geoobjekten och ett valfritt linjelager som l&auml;nkar startplatsen till de n&auml;rmaste platserna. Linjelagret inneh&aring;ller information om startplatsen, de n&auml;rmaste platserna och avst&aring;nden mellan dem.
     </p>
     <p>Om 
         <b>Anv&auml;nd aktuell kartutbredning</b> &auml;r markerat anses endast de geoobjekt som &auml;r synliga i den aktuella kartutbredningen kunna vara startplatser och m&ouml;jliga n&auml;rmaste geoobjekt.  Om alternativet inte markeras anv&auml;nds alla geoobjekt i indatalagret, &auml;ven om de ligger utanf&ouml;r den aktuella kartutbredningen.
@@ -52,7 +52,7 @@
         <div><h2>Hitta närmaste platser i</h2></div>
         <hr/>
         <div>
-            <p>Hitta n&auml;rmaste m&auml;ter fr&aring;n varje plats i indatalagret till platserna i det h&auml;r lagret. Verktyget har st&ouml;d f&ouml;r upp till 1&nbsp;000 platser i varje lager.
+            <p>Hitta n&auml;rmaste m&auml;ter fr&aring;n varje plats i analyslagret till platserna i det h&auml;r lagret. Verktyget har st&ouml;d f&ouml;r upp till 1&nbsp;000 platser i varje lager.
             </p>
         </div>
     </div>
@@ -62,51 +62,11 @@
         <div>
             <p>V&auml;lj om du vill hitta n&auml;rmaste platser baserat p&aring; avst&aring;ndet som en rak linje, k&ouml;ravst&aring;nd eller k&ouml;rtid. I b&aring;da k&ouml;rfallen g&ouml;rs m&auml;tningarna l&auml;ngs v&auml;gar och tar h&auml;nsyn till enkelriktade v&auml;gar, olagliga sv&auml;ngar och s&aring; vidare. 
             </p>
-            <p>Om du anv&auml;nder Hitta n&auml;rmaste med avst&aring;nd som en rak linje kan du anv&auml;nda punkter, linjer eller omr&aring;den som indata. Om du vill m&auml;ta k&ouml;rtid eller k&ouml;ravst&aring;nd m&aring;ste b&aring;da indatalagren (indata och platser i n&auml;rheten) inneh&aring;lla punkter. 
+            <p>Om du anv&auml;nder Hitta n&auml;rmaste med avst&aring;nd som en rak linje kan du anv&auml;nda punkter, linjer eller omr&aring;den som indata. Om du vill m&auml;ta k&ouml;rtid eller k&ouml;ravst&aring;nd m&aring;ste b&aring;da lagren (analyslagret och platser i n&auml;rheten) inneh&aring;lla punkter. 
             </p>
             <p>N&auml;r du m&auml;ter avst&aring;nd mellan linjer eller omr&aring;den &auml;r det avst&aring;ndet fr&aring;n eller till den n&auml;rmaste punkten l&auml;ngs linjen eller gr&auml;nsen till omr&aring;det som tas fram. 
             </p>
-        </div>
-    </div>
-    <div id="Cutoffs">
-        <div><h2>För varje plats i</h2></div>
-        <hr/>
-        <div>
             
-            <p>Du har tv&aring; alternativ f&ouml;r att begr&auml;nsa s&ouml;kningen efter n&auml;rmaste platser. Ett alternativ &auml;r att begr&auml;nsa det maximala antalet n&auml;rmaste platser som ska hittas per startplats. Du kan hitta den n&auml;rmaste parken, de tv&aring; n&auml;rmaste och s&aring; vidare. Det andra alternativet &auml;r att st&auml;lla in ett maximalt s&ouml;kavst&aring;nd eller k&ouml;rtid.
-            </p>
-            <p>Om du avmarkerar alternativen &auml;r det maximala antalet n&auml;rmaste platser som kan hittas 100 (verktygets gr&auml;ns) och det maximala s&ouml;kavst&aring;ndet obegr&auml;nsat.
-            </p>
-            <p>Bearbetningstiden varierar beroende p&aring; antalet startplatser, antalet platser i n&auml;rheten och det maximala s&ouml;kavst&aring;ndet.   Det tar l&auml;ngre tid att bearbeta n&auml;r det finns m&aring;nga platser eller stora s&ouml;kavst&aring;nd.
-                
-            </p>
-            <p>Observera att verktyget kanske inte kan hitta n&aring;gon n&auml;rmaste plats inom angivet avst&aring;nd om s&ouml;kavst&aring;ndet har begr&auml;nsats. Det &auml;r ocks&aring; m&ouml;jligt att verktyget hittar f&auml;rre &auml;n det maximala antalet n&auml;rmaste platser du har angett.
-            </p>
-            
-        </div>
-    </div>
-    <div id="UseTypicalTraffic">
-        <div><h2>Använd typiska trafikförhållanden för</h2></div>
-        <hr/>
-        <div>
-            <p>
-                N&auml;r du m&auml;ter k&ouml;rtid kan trafik och tid p&aring; dagen styra vad som finns n&auml;rmast. T&auml;nk dig att du vill hitta n&auml;rmaste akutmottagning i rusningstrafik. Under morgonens rusningstrafik brukar trafiken g&aring; l&aring;ngsammare p&aring; v&auml;g in mot centrum &auml;n p&aring; v&auml;g ut fr&aring;n centrum. N&auml;rmaste akutmottagning vid den tiden p&aring; dagen kan d&auml;rf&ouml;r ligga i riktning bort fr&aring;n centrum. P&aring; kv&auml;llen g&aring;r trafiken in mot staden snabbare, och d&aring; kan en annan akutmottagning p&aring; v&auml;g mot centrum vara n&auml;rmast.
-            </p>
-            <p>Om du markerar 
-                <b>Anv&auml;nd typiska trafikf&ouml;rh&aring;llanden f&ouml;r</b> och anger dag och tid, hittar verktyget de n&auml;rmaste geoobjekten baserat p&aring; historiska snitthastigheter f&ouml;r varje femminutersintervall under en vanlig vecka. Vilket som ligger n&auml;rmast kan &auml;ndras, eftersom trafik och restider varierar under veckan.
-            </p>
-            <p>Observera att tiden g&aring;r och trafikf&ouml;rh&aring;llandena &auml;ndras medan bilen k&ouml;r ut&aring;t fr&aring;n startpunkten. Verktyget tar med dessa variationer i ber&auml;kningarna om du anv&auml;nder trafik, men trafikfunktionen st&ouml;ds inte i alla regioner. Klicka p&aring; l&auml;nken 
-                <b>Se tillg&auml;nglighet</b> i verktyget om du vill ta reda p&aring; om funktionen st&ouml;ds i ditt unders&ouml;kningsomr&aring;de.
-            </p>
-            <p>Avmarkera 
-                <b>Anv&auml;nd typiska trafikf&ouml;rh&aring;llanden f&ouml;r</b> om du vill hitta n&auml;rmaste geoobjekt baserat p&aring;  statiska reshastigheter, till exempel hastighetsgr&auml;nser. Det h&auml;r alternativet passar b&auml;st om du vill veta vad som rent allm&auml;nt ligger n&auml;rmast, men inte n&ouml;dv&auml;ndigtvis beh&ouml;ver ta h&auml;nsyn till de n&auml;rmaste givna trafikf&ouml;rh&aring;llandena f&ouml;r en viss tid och dag.
-            </p>
-        </div>
-    </div>
-    <div id="UseTraffic">
-        <div><h2>Använd trafik</h2></div>
-        <hr/>
-        <div>
             <p>Om du v&auml;ljer 
                 <b>K&ouml;rtid</b> kan du v&auml;lja olika s&auml;tt att m&auml;ta k&ouml;rtiden.
                 <ul>
@@ -126,10 +86,9 @@
                     <li>
                         <p>Om du markerar 
                             <b>Anv&auml;nd trafik</b> och v&auml;ljer
-                            <b>Trafik baserad p&aring; typiska f&ouml;rh&aring;llanden</b> f&ouml;r en dag och tid, hittar verktyget de n&auml;rmaste geoobjekten baserat p&aring; historiska snitthastigheter f&ouml;r varje femminutersintervall under en vanlig vecka. Resultaten omfattar trafik, men tar inte med aktuella trafikf&ouml;rh&aring;llanden och h&auml;ndelser. De aktuella f&ouml;rh&aring;llandena kan i h&ouml;g grad skilja sig fr&aring;n normen.
+                            <b>Trafikbaserad p&aring; typiska f&ouml;rh&aring;llanden f&ouml;r</b> en dag och tid, hittar verktyget de n&auml;rmaste geoobjekten baserat p&aring; historiska snitthastigheter f&ouml;r varje femminutersintervall under en vanlig vecka. Resultaten omfattar trafik, men tar inte med aktuella trafikf&ouml;rh&aring;llanden och h&auml;ndelser. De aktuella f&ouml;rh&aring;llandena kan i h&ouml;g grad skilja sig fr&aring;n normen.
                         </p>
-                        <p>
-                            Du kan anv&auml;nda dessa historiska trafikinst&auml;llningar f&ouml;r att till exempel ta reda p&aring; &quot;Vilka geoobjekt kan jag komma till snabbast om jag &aring;ker fr&aring;n startgeoobjektet klockan 11:30 p&aring; en onsdag?&quot;
+                        <p>Du kan anv&auml;nda dessa historiska trafikinst&auml;llningar f&ouml;r att till exempel ta reda p&aring; &quot;Vilka geoobjekt kan jag komma till snabbast om jag &aring;ker fr&aring;n startgeoobjektet klockan 11:30 p&aring; en onsdag?&quot; 
                         </p>
                         <p>Den tid du anger refererar till den tidszon d&auml;r dina startgeoobjekt finns. Om du st&auml;ller in tiden 08:00 och har tv&aring; startgeoobjekt, ett i New York City och ett annat i Los Angeles, hittas de n&auml;rmaste platserna baserat p&aring; avresetiden 08:00 Eastern Time respektive 08:00 Pacific Time.
                         </p>
@@ -139,6 +98,20 @@
                 <b>Anv&auml;nd trafik</b>, men trafikfunktionen st&ouml;ds inte i alla regioner. Klicka p&aring; l&auml;nken
                 <b>Se tillg&auml;nglighet</b> i verktyget om du vill ta reda p&aring; om funktionen st&ouml;ds i ditt unders&ouml;kningsomr&aring;de.
                 
+            </p>
+        </div>
+    </div>
+    <div id="Cutoffs">
+        <div><h2>För varje plats i</h2></div>
+        <hr/>
+        <div>
+            <p>Du har tv&aring; alternativ f&ouml;r att begr&auml;nsa s&ouml;kningen efter n&auml;rmaste platser. Ett alternativ &auml;r att begr&auml;nsa det maximala antalet n&auml;rmaste platser som ska hittas per startplats. Du kan hitta den n&auml;rmaste parken, de tv&aring; n&auml;rmaste och s&aring; vidare. Det andra alternativet &auml;r att st&auml;lla in ett maximalt s&ouml;kavst&aring;nd eller k&ouml;rtid.
+            </p>
+            <p>Om du avmarkerar alternativen &auml;r det maximala antalet n&auml;rmaste platser som kan hittas 100 (verktygets gr&auml;ns) och det maximala s&ouml;kavst&aring;ndet obegr&auml;nsat.
+            </p>
+            <p>Bearbetningstiden varierar beroende p&aring; antalet startplatser, antalet platser i n&auml;rheten och det maximala s&ouml;kavst&aring;ndet.   Det tar l&auml;ngre tid att bearbeta n&auml;r det finns m&aring;nga platser eller stora s&ouml;kavst&aring;nd.
+            </p>
+            <p>Observera att verktyget kanske inte kan hitta n&aring;gon n&auml;rmaste plats inom angivet avst&aring;nd om s&ouml;kavst&aring;ndet har begr&auml;nsats. Det &auml;r ocks&aring; m&ouml;jligt att verktyget hittar f&auml;rre &auml;n det maximala antalet n&auml;rmaste platser du har angett.
             </p>
         </div>
     </div>

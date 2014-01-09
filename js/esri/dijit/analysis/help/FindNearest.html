@@ -22,11 +22,11 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Find Nearest</h2><p/>
         <h2></h2>
         <hr/>
-    <p>This tool finds the nearest features and, optionally, reports and ranks the distance to the nearby features. To find what's nearest, the tool can  either measure straight-line distance, road distance, or driving time. There are options to limit the number of nearest features to find or the search range in which to find them. The results from this tool can help you answer the following kinds of questions:
+    <p>This tool finds the nearest features and reports and ranks the distance to the nearby features. To find what's nearest, the tool can  either measure straight-line distance, road distance, or driving time. There are options to limit the number of nearest features to find or the search range in which to find them. The results from this tool can help you answer the following kinds of questions:
         <ul>
             <li>What is the nearest park from here?
             </li>
@@ -39,7 +39,7 @@
         </ul>
         
     </p>
-    <p>Find Nearest returns a layer containing the nearest features  and, optionally, a line layer that links the start locations to their nearest locations. The optional line layer contains information about the start and nearest locations and the distances between.
+    <p>Find Nearest returns a layer containing the nearest features  and a line layer that links the start locations to their nearest locations. The line layer contains information about the start and nearest locations and the distances between.
     </p>
     <p>If 
         <b>Use current map extent</b> is checked, only the features that are visible within the current map extent will be considered as start and potentially nearest features.  If unchecked, all features in the input layer will be considered, even if they are outside the current map extent.
@@ -52,7 +52,7 @@
         <div><h2>Find the nearest locations in</h2></div>
         <hr/>
         <div>
-            <p>Find Nearest measures from each of the locations in the input layer to the locations in this layer. The tool supports up to 1,000 locations in each layer.
+            <p>Find Nearest measures from each of the locations in the analysis layer to the locations in this layer. The tool supports up to 1,000 locations in each layer.
             </p>
         </div>
     </div>
@@ -62,51 +62,11 @@
         <div>
             <p>Choose whether to find the nearest locations based on straight-line distance, drive distance, or drive time. In both driving cases, the measurements are made along roads, and they honor    one-ways, illegal turns, and so on. 
             </p>
-            <p>Finding nearest using straight-line distance allows points, lines, or areas as inputs. To measure  driving time or driving distance, both input layers (input and nearby locations) need to contain points. 
+            <p>Finding nearest using straight-line distance allows points, lines, or areas as inputs. To measure  driving time or driving distance, both layers (analysis layer and  nearby locations) must contain points. 
             </p>
             <p>When measuring between lines or areas, the distance from or to the nearest point along the line or the boundary of the area is found. 
             </p>
-        </div>
-    </div>
-    <div id="Cutoffs">
-        <div><h2>For each location in</h2></div>
-        <hr/>
-        <div>
             
-            <p>You have two options for limiting the search for nearest locations. One option is limiting the maximum number of nearest locations to find per start location. You can find the one nearest park, the two nearest, and so on. The other option is setting a maximum search distance or drive time.
-            </p>
-            <p>By unchecking  the options, the maximum number of nearest locations to find is 100 (the tool's limit), and the maximum search range is unlimited.
-            </p>
-            <p>Processing time depends on the number of start locations, the number of nearby locations, and the maximum search range.   It takes more time to process when there are more locations or larger search ranges.
-                
-            </p>
-            <p>Note that when a limit is set on the search range, it's possible that the tool won't find any nearest locations within that range. It's also possible to find fewer than the maximum number of nearest locations  you specify.
-            </p>
-            
-        </div>
-    </div>
-    <div id="UseTypicalTraffic">
-        <div><h2>Use typical raffic conditions for</h2></div>
-        <hr/>
-        <div>
-            <p>
-                When measuring driving time, what is nearest may depend on traffic and time of day. Imagine finding the nearest urgent-care facility in rush-hour traffic. In the morning rush hour, the inbound vehicles traveling toward the city center tend to move slower than the outbound vehicles. The nearest facility at that time of day may be in the outbound direction. In the evening, the inbound traffic is faster, so a different facility in the inbound direction  may be nearest.
-            </p>
-            <p>By checking 
-                <b>Use typical traffic conditions for</b> and specifying a day and time, the tool finds the nearest features based on historical speed averages for every five-minute  interval across a routine week. What is nearest may vary as traffic, and travel times, fluctuate throughout the week.
-            </p>
-            <p>Note that as a vehicle drives outward from a point, time elapses and traffic conditions change. This tool accounts for these variations when you use traffic; however, not all regions support traffic. Click the 
-                <b>See availability</b> link on the tool to find out whether it is offered in  your study area.
-            </p>
-            <p>Uncheck 
-                <b>Use typical traffic conditions for</b>  to find the nearest features based on static travel speeds, such as speed limits. This is the option to choose if you want to know what is generally nearest, but not necessarily the nearest given traffic conditions for a specific time and day.
-            </p>
-        </div>
-    </div>
-    <div id="UseTraffic">
-        <div><h2>Use traffic</h2></div>
-        <hr/>
-        <div>
             <p>When you choose 
                 <b>Driving time</b>, you have options on how to measure the drive time.
                 <ul>
@@ -128,8 +88,7 @@
                             <b>Use Traffic</b> and choosing
                             <b>Traffic based on typical conditions for</b> a day and time, the tool finds the nearest features based on historical speed averages for every five-minute  interval across a routine week. The results include traffic but remove the influence of current traffic conditions and events, which may vary significantly from the norm.
                         </p>
-                        <p>
-                            You can use these historical traffic settings to ask, for instance, &quot;What features can be reached the quickest when departing the start features at 11:30 a.m. on a Wednesday?&quot;
+                        <p>You can use these historical traffic settings to ask, for instance, &quot;What features can be reached the quickest when departing the start features at 11:30 a.m. on a Wednesday?&quot; 
                         </p>
                         <p>The time you set refers to the time zone in which your start features are located. So if you set the time to 8:00 a.m. and have two start features, one in New York City and another in Los Angeles, the nearest locations will be found by assuming a departure time of 8:00 a.m. Eastern Time and 8:00 a.m. Pacific Time, respectively.
                         </p>
@@ -139,6 +98,20 @@
                 <b>Use traffic</b>; however, not all regions support traffic. Click the
                 <b>See availability</b> link on the tool to find out whether it is offered in  your study area.
                 
+            </p>
+        </div>
+    </div>
+    <div id="Cutoffs">
+        <div><h2>For each location in</h2></div>
+        <hr/>
+        <div>
+            <p>You have two options for limiting the search for nearest locations. One option is limiting the maximum number of nearest locations to find per start location. You can find the one nearest park, the two nearest, and so on. The other option is setting a maximum search distance or drive time.
+            </p>
+            <p>By unchecking  the options, the maximum number of nearest locations to find is 100 (the tool's limit), and the maximum search range is unlimited.
+            </p>
+            <p>Processing time depends on the number of start locations, the number of nearby locations, and the maximum search range.   It takes more time to process when there are more locations or larger search ranges.
+            </p>
+            <p>Note that when a limit is set on the search range, it's possible that the tool won't find any nearest locations within that range, or that fewer locations are found than the maximum number of nearest locations  you specify.
             </p>
         </div>
     </div>

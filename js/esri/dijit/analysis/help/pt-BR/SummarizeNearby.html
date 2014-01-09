@@ -22,7 +22,7 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Resumir Mais Próximo</h2><p/>
         <h2></h2>
         <hr/>
@@ -53,7 +53,9 @@
         <div><h2>Localizar feições mais próximas utilizando um</h2></div>
         <hr/>
         <div>
-            <p>Voc&ecirc; pode definir qual tipo da medida de dist&acirc;ncia voc&ecirc; deseja utilizar: dist&acirc;ncia de linha reta, dist&acirc;ncia do percurso ou tempo do percurso.  Ambos a dist&acirc;ncia e o tempo do percurso utilizam a malha rodovi&aacute;ria e honram tais restri&ccedil;&otilde;es como ruas de m&atilde;o &uacute;nica.  O tempo do percurso honra os limites de velocidade postados atuais.   Voc&ecirc; pode inserir m&uacute;ltiplas dist&acirc;ncias.  As fei&ccedil;&otilde;es que est&atilde;o dentro (ou iguais) das dist&acirc;ncias que voc&ecirc; inseriu ser&atilde;o resumidas.  
+            <p>Voc&ecirc; pode definir qual tipo da medida de dist&acirc;ncia voc&ecirc; deseja utilizar: dist&acirc;ncia de linha reta, dist&acirc;ncia do percurso ou tempo do percurso.  Ambos a dist&acirc;ncia e o tempo do percurso utilizam a malha rodovi&aacute;ria e honram tais restri&ccedil;&otilde;es como ruas de m&atilde;o &uacute;nica.  O tempo de percurso honra sua escolha de velocidades do trajeto: aquelas baseado no tr&aacute;fego real ou t&iacute;pico. As velocidades reais s&atilde;o coletadas por leituras do sensor atual, e velocidades t&iacute;picas s&atilde;o calculadas de hist&oacute;ricos da m&eacute;dia.   
+            </p>
+            <p>Voc&ecirc; pode inserir m&uacute;ltiplas dist&acirc;ncias.  As fei&ccedil;&otilde;es que est&atilde;o dentro (ou iguais) das dist&acirc;ncias que voc&ecirc; inseriu ser&atilde;o resumidas.  
             </p>
         </div>
     </div>
@@ -148,7 +150,7 @@
         <div><h2>Escolher campo para agrupar por</h2></div>
         <hr/>
         <div>
-            <p>Este &eacute; um atributo das fei&ccedil;&otilde;es mais pr&oacute;ximas que voc&ecirc; pode utilizar para calcular estat&iacute;sticas separadamente para cada valor de atributo &uacute;nico. Por exemplo, suponha que sua camada de an&aacute;lise cont&eacute;m lotes de terra desocupados &agrave; venda e suas fei&ccedil;&otilde;es mais pr&oacute;ximas est&atilde;o construindo &aacute;reas de cobertura.  Um dos atributos das coberturas de &aacute;rea dos edif&iacute;cios &eacute;
+            <p>Este &eacute; um atributo das fei&ccedil;&otilde;es mais pr&oacute;ximas que voc&ecirc; pode utilizar para calcular estat&iacute;sticas separadamente para cada valor de atributo &uacute;nico. Por exemplo, suponha que sua camada de an&aacute;lise cont&eacute;m lotes de terra desocupados &agrave; venda e suas fei&ccedil;&otilde;es mais pr&oacute;ximas est&atilde;o construindo &aacute;reas de cobertura.  Um dos atributos das &aacute;reas de cobertura do edif&iacute;cio &eacute; 
                 <i>UseType</i> que cont&eacute;m valores como RETAIL, RESIDENTIAL, MANUFACTURING, PUBLIC, e assim por diante.  Para caracterizar a mistura de usos do edif&iacute;cio mais pr&oacute;ximo de cada lote desocupado, voc&ecirc; poder&aacute; calcular a &aacute;rea total de cada tipo &uacute;nico de uso do edf&iacute;cio dentro de dois quil&ocirc;metros dos lotes desocupados, utilizando
                 <i>UseType</i> como o grupo por atributo.
             </p>

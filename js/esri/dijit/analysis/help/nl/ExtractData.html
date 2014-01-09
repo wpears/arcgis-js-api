@@ -22,23 +22,21 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
-        <h2>Gegevens extraheren</h2><p/>
+    <div id="toolDescription" class="largesize">
+        <h2>Gegevens exporteren</h2><p/>
         <h2></h2>
         <hr/>
-    <p>Met deze tool kunt u gegevens selecteren en downloaden voor een opgegeven interessegebied. Kaartlagen die u selecteert, worden toegevoegd aan een ZIP-bestand of aan een layerpackage.
-
+    <p>Met deze tool kunt u gegevens selecteren en downloaden voor een opgegeven interessegebied. Kaartlagen die u selecteert, worden toegevoegd aan een ZIP-bestand of een CSV-bestand.
     </p>
     </div>
     <!--Parameter divs for each param-->
     <div id="InputLayers">
-        <div><h2>Lagen die moeten worden geëxtraheerd</h2></div>
+        <div><h2>Lagen die moeten worden geëxporteerd</h2></div>
         <hr/>
         <div>
-            <p>De kaartlagen in uw inhoudsopgave waar u objecten uit kunt halen.  Kaartlagen die zijn geselecteerd, worden opgehaald en opgenomen in een resulterend ZIP-bestand of layerpackage.
-
+            <p>Dit zijn de kaartlagen in uw inhoudsopgave waar u objecten uit kunt halen.  Kaartlagen die zijn geselecteerd, worden ge&euml;xporteerd en opgenomen in een resulterend ZIP-bestand of CSV-bestand.
             </p>
-            <p>Als de kaartlaag moet worden weergegeven in de lijst met te extraheren lagen, moet u ofwel eigenaar zijn van de gegevens of moet de eigenaar van de gegevens het exporteren ervan mogelijk maken.    Zo kunt u gegevens waarvan u de eigenaar bent beschikbaar maken voor exporteren:
+            <p>Als de kaartlaag moet worden weergegeven in de lijst met te exporteren lagen, moet u ofwel eigenaar zijn van de gegevens of moet de eigenaar van de gegevens het exporteren ervan mogelijk maken.    Zo kunt u gegevens waarvan u de eigenaar bent beschikbaar maken voor exporteren:
                 <ul>
                     <li>Open de itembeschrijving van de gegevens.
                     </li>
@@ -60,7 +58,7 @@
         <div><h2>Onderzoeksgebied</h2></div>
         <hr/>
         <div>
-            <p>Het gebied dat definieert welke objecten worden opgenomen in het ZIP-uitvoerbestand of layerpackage. U kunt kiezen uit de volgende opties:
+            <p>Het gebied dat definieert welke objecten worden opgenomen in het uitvoerbestand of CSV-bestand. U kunt kiezen uit de volgende opties:
                 <ul>
                     <li>Het huidige zichtbare extent van uw kaart (
                         <b>Zelfde als weergave</b>).
@@ -70,7 +68,7 @@
                     <li>Teken een gebied om het onderzoeksgebied te defini&euml;ren.
                     </li>
                 </ul>
-                 Alle objecten die zich geheel binnen het kaartextent bevinden, worden opgehaald.  Voor objecten die de grens van het kaartextent kruisen maar zich niet volledig binnen het extent bevinden, hebt u twee opties:
+                 Alle objecten die zich geheel binnen het kaartextent bevinden, worden ge&euml;xporteerd.  Voor objecten die de grens van het kaartextent kruisen maar zich niet volledig binnen het extent bevinden, hebt u twee opties:
                 <ul>
                     <li>
                         <b>Objecten selecteren</b>&mdash;Volledige objecten die de grens van het onderzoeksgebied kruisen, worden ge&euml;xtraheerd.
@@ -84,10 +82,10 @@
         </div>
     </div>
     <div id="OutputFormat">
-        <div><h2>Uitvoergegevensindeling</h2></div>
+        <div><h2>Output bestandsformaat</h2></div>
         <hr/>
         <div>
-            <p>Indeling van de gegevens die worden opgehaald en gedownload.  Layerpackages bevatten altijd filegeodatabases.
+            <p>Bestandsformaat van de gegevens die worden ge&euml;xporteerd. Als u lijn- of oppervlakobjecten exporteert naar CSV-bestanden, worden alleen niet-ruimtelijke attributen ge&euml;xporteerd.  Als u puntobjecten exporteert, worden zowel de ruimtelijke als de niet-ruimtelijke attributen ge&euml;xporteerd.  
             </p>
         </div>
     </div>
@@ -97,14 +95,13 @@
         <div>
             <p>
                 Dit is de naam van het item dat wordt toegevoegd aan uw
-                <b>Mijn Content</b>.  De naam van het item is gebaseerd op de gekozen
-                <b>Uitvoergegevensindeling</b>.     Als het item al bestaat, wordt u gevraagd om te bevestigen of u dit wilt overschrijven.
+                <b>Mijn Content</b>.  De naam van het item is gebaseerd op het gekozen
+                <b>Output bestandsformaat</b>.     Als het item al bestaat, wordt u gevraagd om te bevestigen of u dit wilt overschrijven.
             </p>
             <p>Als u de vervolgkeuzelijst 
                 <b>Resultaat opslaan in</b> gebruikt, kunt u de naam opgeven van een map in
                 <b>Mijn Content</b> waar het resultaat wordt opgeslagen.
             </p>
-            
         </div>
     </div>
 </div>

@@ -22,14 +22,13 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Samle punkter</h2><p/>
         <h2></h2>
         <hr/>
-    <p>Dette verkt&oslash;yet fungerer med et lag med punktgeoobjekter (analyselaget) og et lag med omr&aring;degeoobjekter. Verkt&oslash;yet finner f&oslash;rst ut hvilke punkter som h&oslash;rer til hvert enkelt omr&aring;de. N&aring;r verkt&oslash;yet har fastsatt den geografiske relasjonen mellom punkter og omr&aring;de, beregnes statistikken for alle punktene i omr&aring;det og tilordnes omr&aring;det. Den mest grunnleggende statistikken er antall punkter innenfor omr&aring;det, men du kan beregne annen statistikk ogs&aring;. 
+    <p>Dette verkt&oslash;yet fungerer med et lag med punktgeoobjekter (analyselaget) og et lag med omr&aring;degeoobjekter. Verkt&oslash;yet avgj&oslash;r f&oslash;rst hvilke punkter som h&oslash;rer til hvert enkelt omr&aring;de. N&aring;r verkt&oslash;yet har fastsatt den geografiske relasjonen mellom punkter og omr&aring;de, beregnes statistikken for alle punktene i omr&aring;det og tilordnes omr&aring;det. Den mest grunnleggende statistikken er antall punkter innenfor omr&aring;det, men du kan beregne annen statistikk ogs&aring;. 
     </p>
-    <p>
-        La oss for eksempel si at du har punktgeoobjekter for kafeer og omr&aring;degeoobjekter for fylker, og du vil oppsummere kaffesalget per fylke.  Forutsatt at kafeene har et
+    <p>La oss for eksempel si at du har punktgeoobjekter for kafeer og omr&aring;degeoobjekter for fylker, og du vil oppsummere kaffesalget per fylke.  Forutsatt at kafeene har et 
         <i>TOTAL_SALES</i>-attributt, kan du f&aring; summen for
         <i>TOTAL_SALES</i> i hvert fylke, eller minimum eller maksimum
         <i>TOTAL_SALES</i> i hvert fylke eller standardavviket for alt salg i hvert fylke.
@@ -38,10 +37,6 @@
     </p>
     <p>Hvis det er merket av for 
         <b>Use current map extent</b>, analyseres kun geoobjektene i analyselaget og omr&aring;delaget som vises i gjeldende kartutstrekning.  Hvis det ikke er merket av for dette alternativet, analyseres alle geoobjekter i b&aring;de analyselaget og omr&aring;delaget, selv om de befinner seg utenfor gjeldende kartutstrekning.
-    </p>
-    <p>
-        
-        
     </p>
     </div>
     <!--Parameter divs for each param-->
@@ -52,7 +47,6 @@
             <p>
                 Velg et omr&aring;delag fra webkartet som punktene skal summeres i. Hvis webkartet ikke innholder grenselag, kan du velge et fra listen over grenselag som er tilgjengelig p&aring; ArcGIS Online. Alle punkter som er innenfor grensene til omr&aring;dene i dette laget, telles og blir eventuelt oppsummert ved hjelp av de statistikktypene du velger.
             </p>
-            
         </div>
     </div>
     <div id="KeepBoundaryNoPoints">
@@ -61,7 +55,6 @@
         <div>
             <p>Bestemmer om omr&aring;dene som ikke inneholder punkter, skal vises i resultatlaget.  Hvis det ikke er merket av for dette alternativet, vises ikke omr&aring;der som ikke innholder punkter, i resultatet.  Hvis det er merket av for dette alternativet, vises omr&aring;der som ikke innholder punkter, i resultatet.  
             </p>
-            
         </div>
     </div>
     <div id="SummaryFields">
@@ -80,11 +73,6 @@
                 <i>Crime_type</i>-attributt med fem ulike lovbruddstyper.  Hver lovbruddstype danner en gruppe, og statistikken du velger, beregnes for hver unike verdi for
                 <i>Crime_type</i>.  N&aring;r du velger et grupperingsattributt, opprettes to resultater &ndash; resultatlaget og en tabell som inneholder statistikken for hver unike gruppe.
             </p>
-            <p>
-                
-                
-            </p>
-            
         </div>
     </div>
     <div id="OutputLayer">
@@ -92,13 +80,12 @@
         <hr/>
         <div>
             <p>Dette er navnet p&aring; laget som opprettes i 
-                <b>Mitt innhold</b> og legges til kartet.  Standardnavnet er basert p&aring; analysetypen og navnet p&aring; inndatalaget. Hvis laget finnes allerede, blir du bedt om &aring; bekrefte at du vil overskrive det.
+                <b>Mitt innhold</b> og legges til kartet.  Standardnavnet er basert p&aring; analysetypen og navnet p&aring; analyselaget. Hvis laget finnes allerede, blir du bedt om &aring; bekrefte at du vil overskrive det.
             </p>
             <p>Bruk rullegardinlisten 
                 <b>Save result in</b> til &aring; angi navnet p&aring; en mappe i
                 <b>Mitt innhold</b> som resultatet skal lagres i.
             </p>
-            
             
         </div>
     </div>

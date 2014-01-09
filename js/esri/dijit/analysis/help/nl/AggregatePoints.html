@@ -22,27 +22,21 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Punten aggregeren</h2><p/>
         <h2></h2>
         <hr/>
     <p>Deze tool werkt met een laag van puntobjecten (de analyselaag) en een laag van oppervlakobjecten. De tool bepaalt eerst welke punten binnen elk oppervlak vallen. Nadat de ruimtelijke relatie van de punten in een oppervlak is bepaald, worden statistieken voor alle punten in het oppervlak berekend en aan het oppervlak toegewezen. De meest eenvoudige statistiek is het aantal punten binnen het oppervlak, maar u kunt ook andere statistieken opvragen. 
     </p>
-    <p>
-        Stel bijvoorbeeld dat u puntobjecten van locaties van caf&eacute;s hebt en oppervlakobjecten van provincies en u wilt de verkoop van koffie per provincie samenvatten.  Stel dat de caf&eacute;s over een
+    <p>Stel bijvoorbeeld dat u puntobjecten van locaties van caf&eacute;s hebt en oppervlakobjecten van provincies en u wilt de verkoop van koffie per provincie samenvatten.  Stel dat de caf&eacute;s over een 
         <i>TOTAL_SALES</i>-attribuut beschikken, dan kunt u de som van de
         <i>TOTAL_SALES</i> in elke provincie opvragen of de minimale of maximale
-        <i>TOTAL_SALES</i>
- in elke provincie of de standaardafwijking van alle verkoop binnen elke provincie.
+        <i>TOTAL_SALES</i> in elke provincie of de standaardafwijking van alle verkoop binnen elke provincie.
     </p>
     <p>Het resultaat is een kaart waarvan de kleur van elk oppervlak gebaseerd is op het totale aantal punten dat is opgedeeld volgens de grootte van het oppervlak.  Tellingen opsplitsen per oppervlak wordt ook normalisatie genoemd en is een techniek die cartografen gebruiken om gegevens op een oppervlak weer te geven.  Normalisatie zorgt voor een beter begrip van ruimtelijke patronen, omdat rekening wordt gehouden met de grootte van het oppervlak wanneer oppervlakken visueel met elkaar worden vergeleken.
     </p>
     <p>Als 
-        <b>Huidig extent van de kaart gebruiken</b> is aangevinkt, worden alleen de objecten in de analyse- en oppervlaklaag die binnen het huidige extent van de kaart zichtbaar zijn, geanalyseerd.  Als deze optie niet wordt geselecteerd, worden alle objecten in de analyselaag en de gebiedslaag geanalyseerd, ook als ze zich buiten de huidige kaartextent bevinden.
-    </p>
-    <p>
-        
-        
+        <b>Huidig extent van de kaart gebruiken</b> is aangevinkt, worden alleen de objecten in de analyse- en oppervlaklaag die binnen het huidige extent van de kaart zichtbaar zijn, geanalyseerd.  Als deze optie niet wordt geselecteerd, worden alle objecten in de analyselaag en de gebiedslaag geanalyseerd, ook als ze zich buiten het huidige kaartextent bevinden.
     </p>
     </div>
     <!--Parameter divs for each param-->
@@ -53,7 +47,6 @@
             <p>
                 Selecteer een gebiedenlaag in de webmap waarnaar de punten zullen worden geaggregeerd. Als er geen lagen met grenzen in de webmap zijn, kunt u uw keuze maken uit de lijst met lagen met grenzen die beschikbaar is in ArcGIS Online. Punten die binnen de grenzen van gebieden in deze laag liggen, worden geteld en eventueel samengevat voor uw keuzes van statistieken.
             </p>
-            
         </div>
     </div>
     <div id="KeepBoundaryNoPoints">
@@ -62,7 +55,6 @@
         <div>
             <p>Bepaalt of gebieden die geen punten bevatten, in de resultaatlaag worden weergegeven.  Als deze optie niet is aangevinkt, worden gebieden zonder punten niet weergegeven in het resultaat.  Als deze optie is aangevinkt, worden gebieden zonder punten wel weergegeven in het resultaat.  
             </p>
-            
         </div>
     </div>
     <div id="SummaryFields">
@@ -83,11 +75,6 @@
                 <i>Crime_type</i> kunnen hebben met vijf verschillende misdaadtypen.  Elk uniek misdaadtype vormt een groep en de statistieken die u kiest zullen worden berekend voor elke unieke waarde van
                 <i>Crime_type</i>.  Als u een groeperingsattribuut kiest, worden twee resultaten gemaakt: de resultaatlaag en een tabel met de statistieken voor elke unieke groep.
             </p>
-            <p>
-                
-                
-            </p>
-            
         </div>
     </div>
     <div id="OutputLayer">
@@ -95,13 +82,12 @@
         <hr/>
         <div>
             <p>Dit is de naam van de kaartlaag die in 
-                <b>Mijn Content</b> wordt gemaakt en aan de kaart wordt toegevoegd.  De standaardnaam is gebaseerd op het analysetype en de naam van de invoerlaag. Als de laag al bestaat, wordt u gevraagd om te aan te geven of u deze wilt overschrijven.
+                <b>Mijn Content</b> wordt gemaakt en aan de kaart wordt toegevoegd.  De standaardnaam is gebaseerd op het analysetype en de naam van de analyselaag. Als de laag al bestaat, wordt u gevraagd om te aan te geven of u deze wilt overschrijven.
             </p>
             <p>Als u de vervolgkeuzelijst 
                 <b>Resultaat opslaan in</b> gebruikt, kunt u de naam opgeven van een map in
                 <b>Mijn Content</b> waar het resultaat wordt opgeslagen.
             </p>
-            
             
         </div>
     </div>

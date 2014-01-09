@@ -22,19 +22,16 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Loo puhvrid</h2><p/>
         <h2></h2>
         <hr/>
-    <p>Puhver on ala, mis katab kindla ulatusega tsooni l&auml;htuvalt punktist, joonest v&otilde;i pindobjektist m&auml;&auml;ratud kaugusest. 
+    <p>Puhver on ala, mis katab etteantud vahemaa punktist, joonest v&otilde;i pindobjektist. 
     </p>
-    <p>Puhvreid kasutatakse sageli ka keerukamate geot&ouml;&ouml;tluste (nt &uuml;lekatteanal&uuml;&uuml;sid) tarbeks l&auml;hteandmete loomiseks. Soovides n&auml;iteks saada vastust k&uuml;simusele &ldquo;Mis hooned j&auml;&auml;vad koolimajast &uuml;he kilomeetri kaugusele?&rdquo;, on lahenduseks vastava puhverala tekitamine ning seej&auml;rel saadud tulemuse v&otilde;rdlemine hoonete kihiga.  Viimati nimetatud &uuml;lesande puhul saadakse tulemkiht, mis sisaldab vaid &uuml;he kilomeetri ulatusse j&auml;&auml;vate hoonete objekte.  
+    <p>Puhvreid kasutatakse tavaliselt alade loomiseks, mida edasi anal&uuml;&uuml;sitakse teiste t&ouml;&ouml;riistadega nagu n&auml;iteks kattuvate kihtidega. Kui n&auml;iteks k&uuml;simus on: &quot;Millised hooned asuvad 1 km koolist?&quot;, siis vastuse leiab n&auml;iteks 1 km puhvri leidmise abil ja kasutades edasi puhvrit ning hoonete kihiga kattuvuse anal&uuml;&uuml;si .  L&otilde;pptulemuseks on kiht nende hoonetega, mis j&auml;&auml;vad 1 km raadiusesse koolist.  
     </p>
     <p>Kui 
-        <b>Kasuta kaardi ulatust</b> on sisse l&uuml;litatud, kasutatakse anal&uuml;&uuml;sil ainult neid objekte, mis antud hetkel on ekraanil n&auml;htavad.  Kui vastav tingimus on v&auml;lja l&uuml;litatud, kasutatakse puhvri loomisel k&otilde;iki kihis olevaid objekte s&otilde;ltumata asjaolust, kas need on anal&uuml;&uuml;si k&auml;ivitamise hetkel ekraanil n&auml;htavad v&otilde;i mitte.
-    </p>
-    <p>
-        
+        <b>Kasuta hetke kaardi kuvaulatust</b> on valitud, luuakse puhver ainult objektidele, mis on hetke kaardi kuvaulatuses n&auml;htavad.  Kui ei ole m&auml;rgistatud, luuakse puhver k&otilde;ikidele objektidele. Isegi nendele, mis asuvad kaardi kuvaulatusest v&auml;ljaspool.
     </p>
     </div>
     <!--Parameter divs for each param-->
@@ -42,8 +39,8 @@
         <div><h2>Sisesta puhvri suurus</h2></div>
         <hr/>
         <div>
-            <p>Teil on v&otilde;imalik sisestada kas &uuml;ks v&otilde;i mitu vahemaad kirjeldavat parameetrit, mille vastavate vahemaade m&auml;&auml;ramisel eristage v&auml;&auml;rtused t&uuml;hikuga.  Samuti saate m&auml;&auml;rata puhvri loomist, l&auml;htudes atribuutide tabeli v&auml;lja sisus olevatest v&auml;&auml;rtustest, valides selleks 
-                <b>v&auml;lja</b>.
+            <p>V&otilde;ite sisestada &uuml;he vahemaa v&auml;&auml;rtuse v&otilde;i mitu v&auml;&auml;rtust, eraldades need t&uuml;hikutega.  V&otilde;ite samuti t&auml;psustada atribuudi anal&uuml;&uuml;sitavas kihis, mis sisaldab vahemaa v&auml;&auml;rtust, klikkides 
+                <b>V&auml;li</b>.
             </p>
             
         </div>
@@ -52,18 +49,18 @@
         <div><h2>Valikud</h2></div>
         <hr/>
         <div>
-            <p>Otsustage, kuidas soovite &uuml;lekattesse j&auml;&auml;vaid puhverpindu genereerida. Kui m&otilde;ni pind j&auml;&auml;b teisega &uuml;lekattesse, siis on v&otilde;imalik hoida neid kas eraldi pindadena v&otilde;i sulatada kokku.
+            <p>Valige kattuvate puhvrite k&auml;itumisviis. Iga teisega kattuva puvri kattuvad alad v&otilde;i s&auml;ilitada (Overlap) v&otilde;i kombineerida (Dissolve).
             </p>
             
             
             <p>
-                Kui kasutate mitmest osast koosnevat puhverala tekitamist, saate omapoolselt m&auml;&auml;rata, kuidas esitada vahemaid viimasest segmendist; nt kui vahemaad on 10 ja 14:
+                Kasutades mitut vahemaad v&otilde;ite valida kuidas esitada vahemaa viimase puhvri vahemaast - n&auml;iteks kui vahemaad on 10 ja 14:
                 <ul>
                     <li>Valides 
-                        <b>R&otilde;ngad</b>, tekivad erinevad puhverobjektid, mis on loodud vahemikus 0-10 ja 10-14.
+                        <b>Ringid</b> tulemuste puhvritest, mis l&auml;hevad  0 kuni 10 ja 10 kuni 14.
                     </li>
-                    <li>Valides
-                        <b>Kettad</b>, tekivad erinevad puhverobjektid, mis on loodud vahemikus 0-10 ja 0-14.
+                    <li>Valides 
+                        <b>Kettad</b> tulemuste puhvritest, mis l&auml;hevad  0 kuni 10 ja 0 kuni 14.
                     </li>
                 </ul>
                 
@@ -74,17 +71,17 @@
         <div><h2>Valikud</h2></div>
         <hr/>
         <div>
-            <p>Otsustage, kuidas soovite &uuml;lekattesse j&auml;&auml;vaid puhverpindu genereerida. Kui m&otilde;ni pind j&auml;&auml;b teisega &uuml;lekattesse, siis on v&otilde;imalik hoida neid kas eraldi pindadena v&otilde;i sulatada kokku.
+            <p>Valige kattuvate puhvrite k&auml;itumisviis. Iga teisega kattuva puvri kattuvad alad v&otilde;i s&auml;ilitada (Overlap) v&otilde;i kombineerida (Dissolve).
             </p>
-            <p>Kui loote objekti(de)le &uuml;he puhvri (sisestades selleks vastava vahemaa v&auml;&auml;rtuse), saate omapoolselt valida, kas puhverdatav objekt j&auml;&auml;b tulempuhvrisse v&otilde;i mitte.
+            <p>Kui loote lihtsat &uuml;hekordset puhvrit ala &uuml;mber, v&otilde;ite valida, kas objekt ise arvatakse puhvri hulka v&otilde;i mitte.
             </p>
-            <p>Kui kasutate mitmest osast koosnevat puhverala tekitamist, saate omapoolselt m&auml;&auml;rata, kuidas esitada vahemaid viimasest segmendist; nt kui vahemaad on 10 ja 14:
+            <p>Kasutades mitut vahemaad v&otilde;ite valida kuidas esitada vahemaa viimase puhvri vahemaast - n&auml;iteks kui vahemaad on 10 ja 14:
                 <ul>
                     <li>Valides 
-                        <b>R&otilde;ngad</b>, tekivad erinevad puhverobjektid, mis on loodud vahemikus 0-10 ja 10-14.
+                        <b>Ringid</b> tulemuste puhvritest, mis l&auml;hevad  0 kuni 10 ja 10 kuni 14.
                     </li>
                     <li>Valides 
-                        <b>Kettad</b>, tekivad erinevad puhverobjektid, mis on loodud vahemikus 0-10 ja 0-14.
+                        <b>Kettad</b> tulemuste puhvritest, mis l&auml;hevad  0 kuni 10 ja 0 kuni 14.
                     </li>
                 </ul>
                 
@@ -96,17 +93,17 @@
         <div><h2>Valikud</h2></div>
         <hr/>
         <div>
-            <p>Otsustage, kuidas soovite &uuml;lekattesse j&auml;&auml;vaid puhverpindu genereerida. Kui m&otilde;ni pind j&auml;&auml;b teisega &uuml;lekattesse, siis on v&otilde;imalik hoida neid kas eraldi pindadena v&otilde;i sulatada kokku.
+            <p>Valige kattuvate puhvrite k&auml;itumisviis. Iga teisega kattuva puvri kattuvad alad v&otilde;i s&auml;ilitada (Overlap) v&otilde;i kombineerida (Dissolve).
             </p>
-            <p>Kui loote objekti(de)le &uuml;he puhvri (sisestades selleks vastava vahemaa v&auml;&auml;rtuse), saate omapoolselt valida, kummale poole puhver genereeritakse.  Reeglina tekitatakse puhver m&otilde;lemas suunas.  Parem ja vasak suund m&auml;&auml;ratakse joone esimesest x, y algkoordinaadist viimase x, y l&otilde;pukoordinaadi suhtes.  Valides kas parema v&otilde;i vasaku suuna kirjelduse, on taoline eelinfo igati kasulik teada.   Joonte otspunktid on v&otilde;imalik m&auml;&auml;rata kas &uuml;mara v&otilde;i kandilise nurgaga.
+            <p>Kui loote lihtsat &uuml;htset puhvrit &uuml;mber joonte, v&otilde;ite valida, millisele joone k&uuml;ljele puhver luuakse.  Reeglina tekitatakse puhver m&otilde;lemas suunas.  Parem ja vasak suund m&auml;&auml;ratakse joone esimesest x, y algkoordinaadist viimase x, y l&otilde;pukoordinaadi suhtes.  Valides kas parema v&otilde;i vasaku suuna kirjelduse, on taoline eelinfo igati kasulik teada.   Joone l&otilde;pus v&otilde;ib puhver olla &uuml;mmargune v&otilde;i kandiline.
             </p>
-            <p>Kui kasutate mitmest osast koosnevat puhverala tekitamist, saate omapoolselt m&auml;&auml;rata, kuidas esitada vahemaid viimasest segmendist; nt kui vahemaad on 10 ja 14:
+            <p>Luues mitme vahemaaga puhvrit v&otilde;ite valida kuidas esitada vahemaa viimase puhvri vahemaast - n&auml;iteks kui vahemaad on 10 ja 14:
                 <ul>
                     <li>Valides 
-                        <b>R&otilde;ngad</b>, tekivad erinevad puhverobjektid, mis on loodud vahemikus 0-10 ja 10-14.
+                        <b>Ringid</b> tulemuste puhvritest, mis l&auml;hevad  0 kuni 10 ja 10 kuni 14.
                     </li>
-                    <li>Valides
-                        <b>Kettad</b>, tekivad erinevad puhverobjektid, mis on loodud vahemikus 0-10 ja 0-14.
+                    <li>Valides 
+                        <b>Kettad</b> tulemuste puhvritest, mis l&auml;hevad  0 kuni 10 ja 0 kuni 14.
                     </li>
                 </ul>
                 
@@ -119,13 +116,12 @@
         <hr/>
         <div>
             <p>See on kihi nimi, mis luuakse kasutaja 
-                <b>Minu sisu</b> alla ning lisatakse kaardile.  Vaikimisi nimi on tuletatud anal&uuml;&uuml;si t&uuml;&uuml;bi ja sisendkihi nimetuse j&auml;rgi. Kui see kiht juba eksisteerib, saate selle soovi korral &uuml;le kirjutada.
+                <b>Minu sisu</b>  alla ning lisatakse kaardile.  Vaikimisi nimi baseerub anal&uuml;&uuml;si t&uuml;&uuml;bil ja anal&uuml;&uuml;sitava kihi nimel. Kui see kiht juba eksisteerib, saate selle soovi korral &uuml;le kirjutada.
             </p>
             <p>Kasutades 
                 <b>Salvesta tulemus</b> kasutaja sisu alla, mille saate valida rippmen&uuml;&uuml;st
                 <b>Minu sisu</b>, kuhu tulemus salvestatakse.
             </p>
-            
         </div>
     </div>
 </div>

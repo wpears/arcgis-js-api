@@ -22,11 +22,11 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Synthétiser - A l'intérieur</h2><p/>
         <h2></h2>
         <hr/>
-    <p>Cet outil recherche les entit&eacute;s (et parties d'entit&eacute;s) qui se trouvent au sein des limites des surfaces dans la couche d'analyse. Par exemple :
+    <p>Cet outil recherche les entit&eacute;s (et parties d'entit&eacute;s) qui se trouvent au sein des limites des surfaces dans la couche d'analyse. Par exemple&nbsp;:
         <ul>
             <li>En prenant une couche de limites de bassin versant et une couche de limites d'utilisation du sol par type d'utilisation du sol, calculez la superficie totale du type d'utilisation du sol pour chaque bassin versant. 
             </li>
@@ -44,7 +44,7 @@
         <div><h2>Choisir la couche à synthétiser</h2></div>
         <hr/>
         <div>
-            <p>Les entit&eacute;s de cette couche qui se trouvent au sein des limites des entit&eacute;s dans la couche en entr&eacute;e seront synth&eacute;tis&eacute;es. 
+            <p>Les entit&eacute;s de cette couche qui se trouvent au sein des limites des entit&eacute;s dans la couche d'analyse seront synth&eacute;tis&eacute;es. 
             </p>
         </div>
     </div>
@@ -142,8 +142,7 @@
             <p>Il s'agit d'un attribut des entit&eacute;s &agrave; 
                 <b>synth&eacute;tiser</b> qui permet de calculer les statistiques s&eacute;par&eacute;ment pour chaque valeur attributaire unique. Supposons par exemple que la couche d'analyse contiennent les limites d'une ville et que les entit&eacute;s &agrave;
                 <b>synth&eacute;tiser</b> soient des parcelles. Un des attributs des parcelles est
-                <i>Status</i>, qui contient deux valeurs&nbsp;: VACANT et OCCUPIED. Pour calculer la surface totale (ou tout autre attribut, tel que
-                <i>Value</i>) des parcelles vacantes et occup&eacute;es au sein des limites des villes, utilisez
+                <i>Status</i>, qui contient deux valeurs : VACANT et OCCUPIED. Pour calculer la surface totale des parcelles vacantes et occup&eacute;es au sein des limites des villes, utilisez
                 <i>Status</i> comme groupe par attribut.
             </p>
         </div>

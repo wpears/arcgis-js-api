@@ -22,12 +22,11 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Buscar más cercano</h2><p/>
         <h2></h2>
         <hr/>
-    <p>Esta herramienta busca las entidades m&aacute;s cercanas y, de forma opcional, genera un informe y clasifica la distancia a las entidades pr&oacute;ximas.
- 
+    <p>Esta herramienta busca las entidades m&aacute;s cercanas y genera un informe y clasifica la distancia a las entidades pr&oacute;ximas. 
 Para buscar la m&aacute;s cercana, la herramienta puede medir la distancia en l&iacute;nea recta, la distancia por carretera o bien el tiempo de conducci&oacute;n.
  
 Existen opciones para limitar el n&uacute;mero de entidades cercanas para buscar o el intervalo dentro del cual se har&aacute; la b&uacute;squeda.
@@ -52,10 +51,7 @@ Los resultados de esta herramienta pueden ayudarte a responder las siguientes cl
         </ul>
         
     </p>
-    <p>La opci&oacute;n Buscar m&aacute;s cercano devuelve una capa que contiene las entidades m&aacute;s cercanas y, de forma opcional, una capa de l&iacute;neas que vincula las ubicaciones de partida con sus ubicaciones m&aacute;s cercanas.
- 
-La capa de l&iacute;neas opcional contiene informaci&oacute;n sobre las ubicaciones de partida y cercanas, y las distancias entre ellas.
-
+    <p>La opci&oacute;n Buscar m&aacute;s cercano devuelve una capa que contiene las entidades m&aacute;s cercanas y una capa de l&iacute;neas que vincula las ubicaciones de partida con sus ubicaciones m&aacute;s cercanas. La capa de l&iacute;neas opcional contiene informaci&oacute;n sobre las ubicaciones de partida y cercanas, y las distancias entre ellas.
     </p>
     <p>Si se ha activado 
         <b>Utilizar la extensi&oacute;n de mapa actual al buscar ubicaciones</b>, solo se tendr&aacute;n en cuenta como entidades de partida y potencialmente cercanas aquellas entidades que est&eacute;n visibles en la extensi&oacute;n de mapa actual.
@@ -70,8 +66,7 @@ Si no se ha activado, se tendr&aacute;n en cuenta todas las entidades de la capa
         <div><h2>Buscar las ubicaciones más cercanas en</h2></div>
         <hr/>
         <div>
-            <p>La opci&oacute;n Buscar m&aacute;s cercano mide desde cada una de las ubicaciones en la capa de entrada hasta las ubicaciones de esta capa.
- 
+            <p>La opci&oacute;n Buscar m&aacute;s cercano mide desde cada una de las ubicaciones en la capa de an&aacute;lisis hasta las ubicaciones de esta capa. 
 La herramienta admite hasta 1000 ubicaciones en cada capa.
 
             </p>
@@ -87,85 +82,12 @@ En ambos casos de conducci&oacute;n, las mediciones se hacen en carretera y resp
  
             </p>
             <p>La opci&oacute;n Buscar m&aacute;s cercanos utilizando la distancia en l&iacute;nea recta permite introducir puntos, l&iacute;neas o &aacute;reas.
- 
-Para medir el tiempo de conducci&oacute;n o la distancia de conducci&oacute;n, ambas capas de entrada (ubicaciones de entrada y pr&oacute;ximas) deben contener puntos.
- 
+ Para medir el tiempo de conducci&oacute;n o la distancia de conducci&oacute;n, ambas capas (capa de an&aacute;lisis y ubicaciones pr&oacute;ximas) deben contener puntos. 
             </p>
             <p>Cuando se mide entre l&iacute;neas o &aacute;reas, se encuentra la distancia desde o hasta el punto m&aacute;s cercano en la l&iacute;nea, o el l&iacute;mite del &aacute;rea.
  
             </p>
-        </div>
-    </div>
-    <div id="Cutoffs">
-        <div><h2>Por cada ubicación en</h2></div>
-        <hr/>
-        <div>
             
-            <p>Tambi&eacute;n dispones de dos opciones para limitar la b&uacute;squeda de las ubicaciones m&aacute;s cercanas.
- 
-Una opci&oacute;n es limitar el n&uacute;mero m&aacute;ximo de ubicaciones m&aacute;s cercanas para hacer la b&uacute;squeda por ubicaci&oacute;n de partida.
- 
-Puedes buscar el parque m&aacute;s cercano, los dos m&aacute;s cercanos, etc.
- 
-La otra opci&oacute;n es establecer un tiempo o una distancia de recorrido de b&uacute;squeda m&aacute;ximo.
-
-            </p>
-            <p>Si las opciones se desactivan, el n&uacute;mero m&aacute;ximo de ubicaciones cercanas para buscar es 100 (el l&iacute;mite de la herramienta) y el intervalo de b&uacute;squeda es ilimitado.
-
-            </p>
-            <p>El tiempo de procesamiento depende del n&uacute;mero de ubicaciones de partida, del n&uacute;mero de ubicaciones cercanas y del intervalo de b&uacute;squeda m&aacute;ximo.
- 
-Cuando hay m&aacute;s ubicaciones o intervalos de b&uacute;squeda m&aacute;s amplios, el tiempo de procesamiento es m&aacute;s largo.
-
-                
-            </p>
-            <p>Ten en cuenta que cuando se establece un l&iacute;mite en el intervalo de b&uacute;squeda, es posible que la herramienta no encuentre ninguna ubicaci&oacute;n m&aacute;s cercana dentro de ese intervalo.
- 
-Tambi&eacute;n es posible que se encuentre un n&uacute;mero inferior al m&aacute;ximo de ubicaciones m&aacute;s cercanas que especifiques.
-
-            </p>
-            
-        </div>
-    </div>
-    <div id="UseTypicalTraffic">
-        <div><h2>Usar las condiciones típicas de tráfico para</h2></div>
-        <hr/>
-        <div>
-            <p>
-                
-Cuando se mide el tiempo de conducci&oacute;n, lo m&aacute;s cercano puede depender del tr&aacute;fico o la hora del d&iacute;a.
- 
-Imag&iacute;nate buscando el centro sanitario de urgencias m&aacute;s cercano en hora punta de tr&aacute;fico.
- 
-Durante la hora punta de la ma&ntilde;ana, los veh&iacute;culos que viajan en direcci&oacute;n al centro de la ciudad avanzan con m&aacute;s lentitud que los veh&iacute;culos que van en sentido inverso.
- 
-Es posible que el centro sanitario m&aacute;s cercano ese d&iacute;a est&eacute; en direcci&oacute;n de los veh&iacute;culos que salen de la ciudad.
- 
-Por la tarde, el tr&aacute;fico de entrada en las ciudades es m&aacute;s r&aacute;pido, de modo que es posible que el centro sanitario m&aacute;s cercano en sentido de entrada a la ciudad sea diferente.
-            </p>
-            <p>Al activar 
-                <b>Utilizar condiciones habituales de tr&aacute;fico para</b> y especificar d&iacute;a y hora, la herramienta encuentra el centro m&aacute;s cercano basado en el historial de velocidad media medida a intervalos de cinco minutos a lo largo de una semana normal.
- 
-Lo m&aacute;s cercano puede variar debido a que el tr&aacute;fico y los tiempos de viaje fluct&uacute;an a lo largo de la semana.
-            </p>
-            <p>Ten en cuenta que cuando un veh&iacute;culo empieza el recorrido desde un punto, el tiempo transcurre y las condiciones de tr&aacute;fico cambian.
- 
-Esta herramienta tiene en cuenta estas variaciones si se utiliza tr&aacute;fico; sin embargo, no todas las regiones admiten tr&aacute;fico.
- 
-Haz clic en el v&iacute;nculo 
-                <b>Comprobar disponibilidad</b> de la herramienta para averiguar si se ofrece en tu &aacute;rea de estudio.
-            </p>
-            <p>Desactiva 
-                <b>Utilizar condiciones habituales de tr&aacute;fico para</b> buscar las ubicaciones m&aacute;s cercanas bas&aacute;ndote en las velocidades de tr&aacute;fico predeterminadas como los l&iacute;mites de velocidad.
- 
-Esta es la opci&oacute;n que debes elegir si deseas conocer las ubicaciones cercanas en general, pero no obligatoriamente las condiciones de tr&aacute;fico dadas m&aacute;s cercanas para una hora y un d&iacute;a espec&iacute;fico.
-            </p>
-        </div>
-    </div>
-    <div id="UseTraffic">
-        <div><h2>Utilizar tráfico</h2></div>
-        <hr/>
-        <div>
             <p>Cuando eliges 
                 <b>Tiempo de conducci&oacute;n</b>, dispones de distintas opciones para medir el tiempo de recorrido.
                 <ul>
@@ -198,9 +120,8 @@ Las velocidades de tr&aacute;fico se predicen con 12 horas de antelaci&oacute;n,
  
 Los resultados incluyen el tr&aacute;fico pero eliminan la influencia de las condiciones de tr&aacute;fico y los eventos de ese momento, que pueden variar considerablemente de lo habitual.
                         </p>
-                        <p>
-                            
-Puedes utilizar esta configuraci&oacute;n de tr&aacute;fico hist&oacute;rica para preguntar, por ejemplo, &quot;&iquest;A qu&eacute; entidades puedo llegar m&aacute;s r&aacute;pidamente saliendo de las entidades de partida a las 11:30 de la ma&ntilde;ana de un mi&eacute;rcoles?&quot;
+                        <p>Puedes utilizar esta configuraci&oacute;n de tr&aacute;fico hist&oacute;rica para preguntar, por ejemplo, &quot;&iquest;A qu&eacute; entidades puedo llegar m&aacute;s r&aacute;pidamente saliendo de las entidades de partida a las 11:30 de la ma&ntilde;ana de un mi&eacute;rcoles?&quot;
+ 
                         </p>
                         <p>La hora que establezcas utilizar&aacute; la zona horaria en la que se sit&uacute;an tus entidades de partida.
  
@@ -222,6 +143,31 @@ Esta herramienta tiene en cuenta estas variaciones si se activa
 Haz clic en el v&iacute;nculo
                 <b>Comprobar disponibilidad</b> de la herramienta para averiguar si se ofrece en tu &aacute;rea de estudio.
                 
+            </p>
+        </div>
+    </div>
+    <div id="Cutoffs">
+        <div><h2>Por cada ubicación en</h2></div>
+        <hr/>
+        <div>
+            <p>Tambi&eacute;n dispones de dos opciones para limitar la b&uacute;squeda de las ubicaciones m&aacute;s cercanas.
+ 
+Una opci&oacute;n es limitar el n&uacute;mero m&aacute;ximo de ubicaciones m&aacute;s cercanas para hacer la b&uacute;squeda por ubicaci&oacute;n de partida.
+ 
+Puedes buscar el parque m&aacute;s cercano, los dos m&aacute;s cercanos, etc.
+ 
+La otra opci&oacute;n es establecer un tiempo o una distancia de recorrido de b&uacute;squeda m&aacute;ximo.
+
+            </p>
+            <p>Si las opciones se desactivan, el n&uacute;mero m&aacute;ximo de ubicaciones cercanas para buscar es 100 (el l&iacute;mite de la herramienta) y el intervalo de b&uacute;squeda es ilimitado.
+
+            </p>
+            <p>El tiempo de procesamiento depende del n&uacute;mero de ubicaciones de partida, del n&uacute;mero de ubicaciones cercanas y del intervalo de b&uacute;squeda m&aacute;ximo.
+ 
+Cuando hay m&aacute;s ubicaciones o intervalos de b&uacute;squeda m&aacute;s amplios, el tiempo de procesamiento es m&aacute;s largo.
+
+            </p>
+            <p>Ten en cuenta que cuando se establece un l&iacute;mite en el intervalo de b&uacute;squeda, es posible que la herramienta no encuentre ninguna ubicaci&oacute;n m&aacute;s cercana dentro de ese intervalo o se encuentren menos ubicaciones que el n&uacute;mero m&aacute;ximo de las localizaciones m&aacute;s cercanas que has especificado.
             </p>
         </div>
     </div>

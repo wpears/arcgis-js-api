@@ -22,8 +22,8 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
-        <h2>Summeri ligidusest</h2><p/>
+    <div id="toolDescription" class="largesize">
+        <h2>Summeeri lähedusest</h2><p/>
         <h2></h2>
         <hr/>
     <p>See t&ouml;&ouml;vahend arvutab anal&uuml;&uuml;sikihti m&auml;&auml;ratud kaugusele j&auml;&auml;vate objektide ja nende atribuutide statistikud.  Vahemaad on m&auml;&auml;ratavad sirgjoonena, s&otilde;iduaja (nt 10 minuti jooksul) v&otilde;i vahemaa  (nt 5 km) alusel.  Statistikud leitakse l&auml;hedal asuvate objektide kohta.  N&auml;iteks:
@@ -53,7 +53,9 @@
         <div><h2>Leia lähimad objektid, kasutades</h2></div>
         <hr/>
         <div>
-            <p>Teil on v&otilde;imalik m&auml;&auml;rata, mis t&uuml;&uuml;pi vahemaa m&otilde;&otilde;tmist soovite kasutada: sirgjooneline vahemaa, s&otilde;idu vahemaa v&otilde;i s&otilde;iduaeg.  M&otilde;lemad vahemaa valikud kasutavad teedev&otilde;rgustikku ja arvestavad ka &uuml;hesuunalisust.  S&otilde;iduaja osas v&otilde;etakse arvesse kiirust.   Sisestada saab mitu vahemaad korraga.  Objektid, mis langevad sisestatava vahemaaga kokku v&otilde;i on sellega v&otilde;rdsed, summeeritakse.  
+            <p>Teil on v&otilde;imalik m&auml;&auml;rata, mis t&uuml;&uuml;pi vahemaa m&otilde;&otilde;tmist soovite kasutada: sirgjooneline vahemaa, s&otilde;idu vahemaa v&otilde;i s&otilde;iduaeg.  M&otilde;lemad vahemaa valikud kasutavad teedev&otilde;rgustikku ja arvestavad ka &uuml;hesuunalisust.  S&otilde;iduajad arvestavad teie valitud s&otilde;idukiiruseid: neid mis baseeruvad hetkelisel v&otilde;i t&uuml;&uuml;pilisel liiklusolukorral. Hetke kiirused on kogutud l&auml;bi jooksvate sensorite v&auml;&auml;rtuste ja t&uuml;&uuml;pilised kiirused on arvutatud ajalooliste keskmiste p&otilde;hjal.   
+            </p>
+            <p>Sisestada saab mitu vahemaad korraga.  Objektid, mis langevad sisestatava vahemaaga kokku v&otilde;i on sellega v&otilde;rdsed, summeeritakse.  
             </p>
         </div>
     </div>
@@ -148,9 +150,9 @@
         <div><h2>Vali atribuut grupeerimiseks</h2></div>
         <hr/>
         <div>
-            <p>See on l&auml;hedal asuvate objektide atribuut, mida saate kasutada erinevate statistikute leidmiseks. N&auml;iteks kui anal&uuml;&uuml;sikiht sisaldab vabu maa&uuml;ksusi m&uuml;&uuml;giks ja l&auml;hedal asuvad objektid on ehitiste piirjooned.  &Uuml;ks neist krundi atribuutidest on 
-                <i>UseType</i> , mis sisaldab j&auml;rgnevaid v&auml;&auml;rtusi nagu ELUHOONE, T&Ouml;&Ouml;STUSHOONE, TOOTMISHOONE, AVALIK HOONE jne.  Selleks, et iseloomustada n&auml;iteks 2 km l&auml;hi&uuml;mbruses olevate hoonete jaotumist vabadel maa&uuml;ksustel, saate arvutada kogupindala v&auml;&auml;rtused iga erineva hoone t&uuml;&uuml;bi kaupa, kasutades selleks  atribuudi alusel grupeerimist.
-                <i>UseType</i> atribuudi alusel grupeerimist.
+            <p>See on l&auml;hedal asuvate objektide atribuut, mida saate kasutada erinevate statistikute leidmiseks. N&auml;iteks kui anal&uuml;&uuml;sikiht sisaldab vabu maa&uuml;ksusi m&uuml;&uuml;giks ja l&auml;hedal asuvad objektid on ehitiste piirjooned.  &Uuml;ks hoone j&auml;lje atribuutidest on 
+                <i>UseType</i> , mis sisaldab v&auml;&auml;rtuseid nagu KAUBANDUSLIK, ELAMU, TOOTMINE, AVALIK jne.  Leidmaks iga vaba maat&uuml;ki l&auml;hedal asuvad teisi hooneid iseloomustavad jooned, v&otilde;ite arvutata iga unikaalse hoone t&uuml;&uuml;bi pindala n&auml;iteks kahe kilomeetri raadiuses vabast maat&uuml;kist, kasutades
+                <i>UseType</i> atribuuti grupeerimise alusena.
             </p>
             
             
@@ -163,11 +165,11 @@
         <hr/>
         <div>
             <p>See on kihi nimi, mis luuakse kasutaja 
-                <b>Minu sisu</b> alla ning lisatakse kaardile.  Vaikimisi nimi on tuletatud kihi anal&uuml;&uuml;si sisust. Kui see kiht juba eksisteerib, saate selle soovi korral &uuml;le kirjutada.
+                <b>Minu sisu</b> alla ning lisatakse kaardile.  Vaikimisi nimi on tuletatud kihi anal&uuml;&uuml;si sisust. Kui see kiht juba eksisteerib, k&uuml;sitakse teie k&auml;est selle &uuml;lekirjutamise otsuse kohta.
             </p>
             <p>Kasutades 
-                <b>Salvesta tulemus</b> kasutaja sisu alla, mille saate valida rippmen&uuml;&uuml;st
-                <b>Minu sisu</b>, kuhu tulemus salvestatakse.
+                <b>Salvesta tulemus</b> rippmen&uuml;&uuml;d, saate te t&auml;psustada
+                <b>Minu sisu</b> alla salvestamise asukoha
             </p>
         </div>
     </div>

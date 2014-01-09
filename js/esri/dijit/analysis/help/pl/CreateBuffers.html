@@ -22,19 +22,16 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Utwórz bufory</h2><p/>
         <h2></h2>
         <hr/>
     <p>Bufor jest obszarem obejmującym swym zasięgiem obszar w&nbsp;określonej odległości od punktu, linii lub obiektu poligonowego. 
     </p>
-    <p>Zwykle bufory są używane do tworzenia obszar&oacute;w, kt&oacute;re można poddać dalszej analizie za pomocą narzędzi, takich jak Nał&oacute;ż warstwy. Na przykład,na zadane pytanie &rdquo;Jakie budynki znajdują się w&nbsp;odległości jednego kilometra od szkoły?&rdquo;, można znaleźć odpowiedź, tworząc bufor o&nbsp;promieniu jednego kilometra wok&oacute;ł szkoły i&nbsp;nakładając na niego warstwę zawierającą powierzchnię zabudowy.  Wynik tej operacji stanowi warstwa z&nbsp;budynkami znajdującymi się w&nbsp;odległości jednego kilometra od szkoły.  
+    <p>Bufory są zwykle używane do tworzenia obszar&oacute;w, kt&oacute;re można poddać dalszej analizie za pomocą narzędzi, takich jak Nał&oacute;ż warstwy. Na przykład, na zadane pytanie &rdquo;Jakie budynki znajdują się w&nbsp;odległości jednego kilometra od szkoły?&rdquo;, można znaleźć odpowiedź, tworząc bufor o&nbsp;promieniu jednego kilometra wok&oacute;ł szkoły i&nbsp;nakładając na niego warstwę zawierającą obrys zabudowy za pomocą narzędzia Nał&oacute;ż warstwy.  Wynik tej operacji stanowi warstwa z&nbsp;budynkami znajdującymi się w&nbsp;odległości jednego kilometra od szkoły.  
     </p>
     <p>Jeśli zaznaczono opcję 
-        <b>Użyj bieżącego zasięgu</b>, utworzone zostaną bufory jedynie dla obiekt&oacute;w widocznych w&nbsp;bieżącym zasięgu mapy.  Jeśli opcja ta nie jest zaznaczona, utworzone zostaną bufory dla wszystkich obiekt&oacute;w&nbsp;warstwy wejściowej, nawet jeśli znajdują się one poza bieżącym zasięgiem mapy.
-    </p>
-    <p>
-        
+        <b>Użyj bieżącego zasięgu</b>, utworzone zostaną bufory jedynie dla obiekt&oacute;w widocznych w&nbsp;bieżącym zasięgu mapy.  Jeśli opcja ta nie jest zaznaczona, bufory zostaną utworzone dla wszystkich obiekt&oacute;w w&nbsp;warstwie analizy, nawet jeśli znajdują się one poza bieżącym zasięgiem mapy.
     </p>
     </div>
     <!--Parameter divs for each param-->
@@ -42,7 +39,7 @@
         <div><h2>Podaj wielkość bufora</h2></div>
         <hr/>
         <div>
-            <p>Możesz wprowadzić pojedynczą wartość odległości lub wiele wartości, oddzielając każdą z&nbsp;nich spacją.  Możesz także wskazać atrybut w&nbsp;warstwie wejściowej zawierający wartość odległości, klikając opcję 
+            <p>Możesz wprowadzić pojedynczą wartość odległości lub wiele wartości, oddzielając każdą z&nbsp;nich spacją.  Możesz także wskazać atrybut w&nbsp;warstwie analizy zawierający wartość odległości, klikając opcję 
                 <b>Pole</b>.
             </p>
             
@@ -57,13 +54,13 @@
             
             
             <p>
-                Tworząc wiele bufor&oacute;w, korzystasz z&nbsp;wielu wartości odległości, możesz wybrać spos&oacute;b reprezentowania odległości na podstawie poprzedniej wartości odległości. Na przykład, jeśli odległości to 10 i&nbsp;14:
+                W przypadku wielu odległości można wybrać spos&oacute;b reprezentowania w oparciu o poprzednią wartość odległości, na przykład jeśli wartości odległości to 10 i 14:
                 <ul>
-                    <li>Wybranie opcji 
-                        <b>Pierścienie</b> powoduje utworzenie następujących bufor&oacute;w: od 0 do 10 i&nbsp;od 10 do 14.
+                    <li>Po wybraniu opcji 
+                        <b>Pierścienie</b>, utworzone zostaną bufory od 0 do 10 i od 10 do 14.
                     </li>
-                    <li>Wybranie opcji 
-                        <b>Dyski</b> powoduje utworzenie bufor&oacute;w: od 0 do 10 i&nbsp;od 0 do 14.
+                    <li>Po wybraniu opcji 
+                        <b>Dyski</b>, utworzone zostaną bufory od 0 do 10 i od 0 do 14.
                     </li>
                 </ul>
                 
@@ -76,15 +73,15 @@
         <div>
             <p>Zdecyduj, w&nbsp;jaki spos&oacute;b traktowane mają być częściowo pokrywające się bufory. W&nbsp;przypadku bufor&oacute;w, kt&oacute;re nakładają się na siebie, wsp&oacute;lne obszary mogą być zachowane (Nał&oacute;ż) lub połączone (Agreguj).
             </p>
-            <p>W&nbsp;przypadku tworzenia pojedynczego buforu wok&oacute;ł obiektu poligonowego (wprowadzenie jednej wartości odległości) możesz zdecydować, czy buforowany obiekt ma zostać zawarty w&nbsp;buforze wynikowym czy nie.
+            <p>W&nbsp;przypadku tworzenia pojedynczego buforu wok&oacute;ł obiekt&oacute;w poligonowych (wprowadzenie jednej wartości odległości) można wybrać, czy buforowany obiekt ma być włączony, czy wyłączony z bufora wynikowego.
             </p>
-            <p>Tworząc wiele bufor&oacute;w, korzystasz z&nbsp;wielu wartości odległości, możesz wybrać spos&oacute;b reprezentowania odległości na podstawie poprzedniej wartości&nbsp;odległości. Na przykład, jeśli odległości to 10 i&nbsp;14:
+            <p>W przypadku wielu odległości można wybrać spos&oacute;b reprezentowania w oparciu o poprzednią wartość odległości, na przykład jeśli odległość to 10 i 14:
                 <ul>
-                    <li>Wybranie opcji 
-                        <b>Pierścienie</b> powoduje utworzenie następujących bufor&oacute;w: od 0 do 10 i&nbsp;od 10 do 14.
+                    <li>Po wybraniu opcji 
+                        <b>Pierścienie</b>, utworzone zostaną bufory od 0 do 10 i od 10 do 14.
                     </li>
-                    <li>Wybranie opcji 
-                        <b>Dyski</b> powoduje utworzenie bufor&oacute;w: od 0 do 10 i&nbsp;od 0 do 14.
+                    <li>Po wybraniu opcji 
+                        <b>Dyski</b>, utworzone zostaną bufory od 0 do 10 i od 0 do 14.
                     </li>
                 </ul>
                 
@@ -98,15 +95,15 @@
         <div>
             <p>Zdecyduj, w&nbsp;jaki spos&oacute;b traktowane mają być częściowo pokrywające się bufory. W&nbsp;przypadku bufor&oacute;w, kt&oacute;re nakładają się na siebie, wsp&oacute;lne obszary mogą być zachowane (Nał&oacute;ż) lub połączone (Agreguj).
             </p>
-            <p>W&nbsp;przypadku tworzenia pojedynczego buforu wok&oacute;ł linii (wprowadzenie jednej wartości odległości) można wybrać, po kt&oacute;rej stronie linii ma być utworzony bufor.  Zwykle wybierane są obie strony.  Parametry lewo i&nbsp;prawo są określane, poruszając się od pierwszego punktu linii o&nbsp;wsp&oacute;łrzędnych x,y  (wsp&oacute;łrzędne punktu początkowego linii) do ostatniego punktu linii  (wsp&oacute;łrzędne punktu końcowego).  Wyb&oacute;r parametru lewo lub prawo zwykle oznacza, że obiekt liniowy został utworzony i&nbsp;jest przechowywany z uwzględnieniem&nbsp;określonego kierunku (na przykład w&nbsp;g&oacute;rę rzeki i&nbsp;w&nbsp;d&oacute;ł rzeki w&nbsp;przypadku sieci rzecznej).   Na końcach linii bufor może być zaokrąglony (Okrągły) lub prosty (Płaski).
+            <p>W&nbsp;przypadku tworzenia pojedynczego buforu wok&oacute;ł linii (wprowadzenie jednej wartości odległości) można wybrać, po kt&oacute;rej stronie linii ma być utworzony bufor.  Zwykle wybierane są obie strony.  Parametry lewo i&nbsp;prawo są określane, poruszając się od pierwszego punktu linii o&nbsp;wsp&oacute;łrzędnych x,y (wsp&oacute;łrzędne punktu początkowego linii) do ostatniego punktu linii (wsp&oacute;łrzędne punktu końcowego).  Wyb&oacute;r parametru lewo lub prawo zwykle oznacza, że obiekt liniowy został utworzony i&nbsp;jest przechowywany z uwzględnieniem&nbsp;określonego kierunku (na przykład w&nbsp;g&oacute;rę rzeki i&nbsp;w&nbsp;d&oacute;ł rzeki w&nbsp;przypadku sieci rzecznej).   Na końcach linii bufor może być zaokrąglony (Okrągły) lub prosty (Płaski).
             </p>
-            <p>Gdy tworzysz wiele bufor&oacute;w (kilka wartości odległości), możesz wybrać spos&oacute;b reprezentowania na podstawie poprzedniej wartości odległości. Na przykład, jeśli odległości to 10 i&nbsp;14:
+            <p>W przypadku tworzenia wielu bufor&oacute;w (więcej niż jedna odległość) można wybrać spos&oacute;b reprezentowania w oparciu o poprzednią wartość odległości, na przykład jeśli wartości odległości to 10 i 14:
                 <ul>
-                    <li>Wybranie opcji 
-                        <b>Pierścienie</b> powoduje utworzenie następujących bufor&oacute;w: od 0 do 10 i&nbsp;od 10 do 14.
+                    <li>Po wybraniu opcji 
+                        <b>Pierścienie</b>, utworzone zostaną bufory od 0 do 10 i od 10 do 14.
                     </li>
-                    <li>Wybranie opcji 
-                        <b>Dyski</b> powoduje utworzenie bufor&oacute;w: od 0 do 10 i&nbsp;od 0 do 14.
+                    <li>Po wybraniu opcji 
+                        <b>Dyski</b>, utworzone zostaną bufory od 0 do 10 i od 0 do 14.
                     </li>
                 </ul>
                 
@@ -118,14 +115,13 @@
         <div><h2>Nazwa warstwy wynikowej</h2></div>
         <hr/>
         <div>
-            <p>Nazwa warstwy, kt&oacute;ra zostanie utworzona w&nbsp;zakładce 
-                <b>Moje zasoby</b> i&nbsp;dodana do mapy.  Nazwa domyślna jest tworzona na podstawie typu analizy i&nbsp;nazwy warstwy wejściowej. Jeśli warstwa już istnieje, wyświetlony zostanie komunikat z&nbsp;zapytaniem o&nbsp;potwierdzenie jej zastąpienia.
+            <p>Jest to nazwa warstwy, kt&oacute;ra zostanie utworzona w zakładce 
+                <b>Moje zasoby</b> i dodana do mapy.  Nazwa domyślna jest tworzona na podstawie rodzaju analizy i&nbsp;nazwy warstwy analizy. Jeśli ta warstwa już istnieje, wyświetli się komunikat z pytaniem, czy ma zostać nadpisana.
             </p>
-            <p>Opcja 
-                <b>Zapisz wynik w</b> z listą rozwijaną, umożliwia wyb&oacute;r folderu w&nbsp;zakładce
-                <b>Moje zasoby</b>, gdzie zapisany zostanie wynik operacji.
+            <p>Używając menu rozwijalnego 
+                <b>Zapisz wynik w</b>, można wybrać folder w zakładce
+                <b>Moje zasoby</b>, gdzie zostanie zapisany wynik.
             </p>
-            
         </div>
     </div>
 </div>

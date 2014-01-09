@@ -22,32 +22,30 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
-        <h2>Extrair dados</h2><p/>
+    <div id="toolDescription" class="largesize">
+        <h2>Extrair Dados</h2><p/>
         <h2></h2>
         <hr/>
-    <p>Com esta ferramenta, &eacute; possivel selecionar e transferir dados de uma &aacute;rea espec&iacute;fica de interesse. As camadas ser&atilde;o adicionadas a um ficheiro zip ou a um pacote de camadas.
-
+    <p>Com esta ferramenta, pode seleccionar e descarregar dados de uma &aacute;rea espec&iacute;fica de interesse. As Camadas seleccionadas ser&atilde;o adicionadas a um ficheiro zip ou csv.
     </p>
     </div>
     <!--Parameter divs for each param-->
     <div id="InputLayers">
-        <div><h2>Camadas a extrair</h2></div>
+        <div><h2>Camadas a Extrair</h2></div>
         <hr/>
         <div>
-            <p>As camadas na tabela de conte&uacute;dos a partir das quais pode extrair elementos.  Camadas seleccionadas e inclu&iacute;das num ficheiro zip ou resultante de um pacote de camadas.
-
+            <p>Estas s&atilde;o as camadas na sua tabela de conte&uacute;dos a partir das quais pode extrair elementos.  Camadas seleccionadas s&atilde;o extra&iacute;das e inclu&iacute;das num ficheiro zip ou csv. 
             </p>
-            <p>Para que uma camada apare&ccedil;a na lista de camadas a extrair, deve possuir os dados ou o propriet&aacute;rio dos dados deve permitir exporta&ccedil;&atilde;o dos mesmos.     Para permitir a exporta&ccedil;&atilde;o dos seus dados:
+            <p>Para que a camada apare&ccedil;a na lista das camadas extra&iacute;das, deve possuir os dados ou o propriet&aacute;rio deve permitir a exporta&ccedil;&atilde;o dos mesmos.    Para permitir a exporta&ccedil;&atilde;o dos dados que lhe pertence:
                 <ul>
                     <li>Abra a descri&ccedil;&atilde;o do item dos dados.
                     </li>
                     <li>Clique em EDITAR para alterar a descri&ccedil;&atilde;o do item.
                     </li>
-                    <li>Navegue at&eacute; 
+                    <li>Fa&ccedil;a scroll at&eacute; &aacute; se&ccedil;&atilde;o 
                         <b>Propriedades</b>.
                     </li>
-                    <li>Ative 
+                    <li>Marque a op&ccedil;&atilde;o 
                         <b>Exportar Dados</b>.
                     </li>
                 </ul>
@@ -60,23 +58,23 @@
         <div><h2>Área de estudo</h2></div>
         <hr/>
         <div>
-            <p>&Aacute;rea que define quais os elementos que ser&atilde;o inclu&iacute;dos no ficheiro zip ou no pacote de camadas. Pode escolher entre os seguintes:
+            <p>&Aacute;rea que define quais os elementos que ser&atilde;o inclu&iacute;dos no ficheiro zip ou csv. Pode escolher entre os seguintes:
                 <ul>
                     <li>Extens&atilde;o atual do mapa (
                         <b>Igual &agrave; exibida</b>).
                     </li>
                     <li>Uma das camadas da tabela de conte&uacute;dos.
                     </li>
-                    <li>Desenhar uma &aacute;rea de forma a definir a &aacute;rea de estudo.
+                    <li>Desenhar uma &aacute;rea para definir a &aacute;rea de estudo.
                     </li>
                 </ul>
-                 Todos os elementos que se encontram inseridos na extens&atilde;o do mapa ser&atilde;o extra&iacute;dos.  Para os casos em que os elementos se cruzam ou intersetam com os limites da extens&atilde;o do mapa mas que n&atilde;o est&atilde;o completamente inseridos na extens&atilde;o, tem duas op&ccedil;&otilde;es:
+                 Todos os elementos que se encontram totalmente inseridos na extens&atilde;o do mapa ser&atilde;o extra&iacute;dos.  Para os casos em que os elementos se cruzam ou intersetam com os limites da extens&atilde;o do mapa mas que n&atilde;o est&atilde;o completamente inseridos na extens&atilde;o, tem duas op&ccedil;&otilde;es:
                 <ul>
                     <li>
                         <b>Selecionar os elementos</b>-Os elementos que cruzam com os limites da &aacute;rea de estudo ser&atilde;o extra&iacute;dos.
                     </li>
                     <li>
-                        <b>Recortar elementos</b>-S&oacute; as por&ccedil;&otilde;es dos elementos que est&atilde;o dentro da &aacute;rea de trabalho v&atilde;o ser extra&iacute;dos.
+                        <b>Recortar elementos</b>-S&oacute; as partes dos elementos que est&atilde;o dentro da &aacute;rea de estudo ser&atilde;o extra&iacute;dos.
                     </li>
                 </ul>
                 
@@ -87,7 +85,7 @@
         <div><h2>Formato dos dados de saída</h2></div>
         <hr/>
         <div>
-            <p>Formato dos dados que ser&atilde;o extra&iacute;dos e descarregados.  Os pacotes de camadas incluem sempre geodatabases.
+            <p>Formato dos dados que ser&atilde;o extra&iacute;dos. Quando exporta elementos de linhas ou pol&iacute;gonos para ficheiros CSV, apenas os atributos n&atilde;o-espaciais s&atilde;o extra&iacute;dos.  Quando exporta elementos de pontos, ambos os elementos (espacias e n&atilde;o-espaciais) s&atilde;o extra&iacute;dos.  
             </p>
         </div>
     </div>
@@ -104,7 +102,6 @@
                 <b>Guardar resultado em</b> pode definir o nome da pasta em
                 <b>O Meu Conte&uacute;do</b> onde o resultado ser&aacute; guardado.
             </p>
-            
         </div>
     </div>
 </div>

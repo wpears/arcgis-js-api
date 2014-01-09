@@ -22,11 +22,11 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
-        <h2>Karttatasokerrokset</h2><p/>
+    <div id="toolDescription" class="largesize">
+        <h2>Kerrostasot</h2><p/>
         <h2></h2>
         <hr/>
-    <p>Kerros yhdist&auml;&auml; kaksi tai useampia karttatasoja yhteen karttatasoon.  Karttatasokerros on tavallaan kuin karttapino, jonka alimmassa kartassa n&auml;kyv&auml;t kaikkien pinon karttojen yhdistetyt tiedot.   Itse asiassa ennen GIS:n kehitt&auml;mist&auml; kartantekij&auml;t kopioivatkin kartat kirkkaille asetaattilevyille, asettivat levyt valop&ouml;yd&auml;lle ja piirsiv&auml;t sitten k&auml;sin uuden kartan, jolle tulivat kaikkien p&auml;&auml;llekk&auml;in asetettujen karttojen tiedot. Karttatasokerros on kuitenkin paljon muutakin kuin vain eri karttojen yhteinen kuva, sill&auml; kaikki kerrokseen tulevien kohteiden attribuutit n&auml;kyv&auml;t karttatasokerroksen lopullisessa versiossa. Karttatasokerroksen avulla voit saada vastauksen paikkatietojen perustarkoitukseen: &rdquo;Mik&auml; on mink&auml;kin p&auml;&auml;ll&auml;?&rdquo; Esimerkki:
+    <p>Kerros yhdist&auml;&auml; kaksi tai useampia karttatasoja yhteen karttatasoon.  P&auml;&auml;llekk&auml;isyysanalyysi yhdist&auml;&auml; tavallaan karttapinon kaikkien karttojen tiedot yhteen karttaan. Karttatasokerros on kuitenkin paljon muutakin kuin vain eri karttojen yhteinen kuva, sill&auml; kaikki kerrokseen tulevien kohteiden attribuutit n&auml;kyv&auml;t karttatasokerroksen lopullisessa versiossa. Karttatasokerroksen avulla voit saada vastauksen paikkatietojen perustarkoitukseen: &rdquo;Mik&auml; on mink&auml;kin p&auml;&auml;ll&auml;?&rdquo; Esimerkiksi:
         <ul>
             <li>Mitk&auml; kiinteist&ouml;t ovat edellisten 100 vuoden aikana tulvineen alueen sis&auml;ll&auml; (eli vastaavassa karttatasossa)?
                   
@@ -41,8 +41,7 @@
         </ul>
         
     </p>
-    <p>
-        Jos
+    <p>Jos 
         <b>K&auml;yt&auml; nykyist&auml; karttalaajuutta</b> -toiminto on valittuna, vain analyysikarttatasossa ja karttatasokerroksessa olevat, nykyisess&auml; karttalaajuudessa n&auml;kyv&auml;t kohteet asetetaan p&auml;&auml;llekk&auml;in.  Jos toimintoa ei ole valittu, analyysiin sis&auml;llytet&auml;&auml;n kaikki analyysikarttatason ja karttatasokerroksen kohteet, vaikka ne eiv&auml;t sijaitsisikaan nykyisen karttalaajuuden alueella.
     </p>
     </div>
@@ -81,16 +80,16 @@
         </div>
     </div>
     <div id="OutputLayer">
-        <div><h2>Tuloskarttatason nimi</h2></div>
+        <div><h2>Tulostason nimi</h2></div>
         <hr/>
         <div>
             <p>
-                T&auml;m&auml; on sen karttatason nimi, joka luodaan
-                <b>Oma sis&auml;lt&ouml;</b> -kohdassa ja lis&auml;t&auml;&auml;n karttaan.  Sen kohdetyyppi (alue, viiva tai piste) on sama kuin karttatasokerroksessa.  Oletusarvoinen nimi perustuu peittotapaan ja sy&ouml;tekarttatason nimeen. Jos karttataso on jo olemassa, ohjelmisto pyyt&auml;&auml; vahvistusta sen korvaamiselle.
+                Sen tason nimi, joka luodaan kohtaan
+                <b>Oma sis&auml;lt&ouml;</b> ja joka lis&auml;t&auml;&auml;n karttaan.  Sen kohdetyyppi (alue, viiva tai piste) on sama kuin karttatasokerroksessa.  Oletusarvoinen nimi perustuu peittotapaan ja analyysitason nimeen. Jos taso on jo olemassa, n&auml;ytt&ouml;&ouml;n tulee kehotus vahvistaa tason korvaus.
             </p>
             <p>Avattavan 
-                <b>Tallenna tulokset kansioon</b> -luetteloruudun avulla voit m&auml;&auml;ritt&auml;&auml;
-                <b>Oma sis&auml;lt&ouml;</b> -kohdassa sen kansion nimen, johon tulokset tallennetaan.
+                <b>Tallenna tulos sijaintiin</b> -luetteloruudun avulla voit m&auml;&auml;ritt&auml;&auml;
+                <b>Oma sis&auml;lt&ouml;</b> -kohdassa sen kansion nimen, johon tulos tallennetaan.
             </p>
             
         </div>

@@ -22,15 +22,15 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Sumuj w obrębie</h2><p/>
         <h2></h2>
         <hr/>
     <p>Narzędzie wyszukuje obiekty (i części obiekt&oacute;w), kt&oacute;re znajdują się w granicach obszar&oacute;w w warstwie analizy.  Na przykład:
         <ul>
-            <li>Uwzględniając warstwę wododział&oacute;w i warstwę granic użytkowania terenu według typu użytkowania terenu, oblicz całkowity areał typu użytkowania terenu dla każdego działu wodnego. 
+            <li>Mając warstwę wododział&oacute;w i warstwę granic użytkowania terenu według typu użytkowania terenu, oblicz całkowity areał typ&oacute;w użytkowania terenu dla każdego działu wodnego. 
             </li>
-            <li>Mając warstwę działek w hrabstwie i warstwę granic miast, podsumuj średnią wartość działek wystawionych na sprzedaż w granicach każdego miasta.
+            <li>Uwzględniając warstwę działek w hrabstwie i warstwę granic miast, podsumuj średnią wartość działek wystawionych na sprzedaż w granicach każdego miasta.
             </li>
         </ul>
         
@@ -44,7 +44,7 @@
         <div><h2>Wybierz warstwę do sumowania</h2></div>
         <hr/>
         <div>
-            <p>Zsumowane zostaną obiekty w tej warstwie, kt&oacute;re mieszczą się w granicach obiekt&oacute;w warstwy wejściowej. 
+            <p>Zsumowane zostaną obiekty w tej warstwie, kt&oacute;re mieszczą się w granicach obiekt&oacute;w warstwy analizy. 
             </p>
         </div>
     </div>
@@ -113,7 +113,7 @@
             <p>Można także obliczyć dane statystyczne dla atrybut&oacute;w numerycznych pobliskich obszar&oacute;w. 
             </p>
             <p>Jeśli zaznaczona jest opcja 
-                <b>Sumuj obszary używając</b>, obliczona zostanie  całkowita powierzchnia obiekt&oacute;w, kt&oacute;re mieszczą się w granicach każdego obszaru w warstwie analizy.  Ponadto można obliczyć dane statystyczne dla atrybut&oacute;w numerycznych obiekt&oacute;w, kt&oacute;re mieszczą się w granicach każdego obszaru.
+                <b>Sumuj obszary używając</b>, obliczona zostanie całkowita powierzchnia obiekt&oacute;w, kt&oacute;re mieszczą się w granicach każdego obszaru w warstwie analizy.  Ponadto można obliczyć dane statystyczne dla atrybut&oacute;w numerycznych obiekt&oacute;w, kt&oacute;re mieszczą się w granicach każdego obszaru.
             </p>
             <ul>
                 <li>
@@ -139,12 +139,11 @@
         <div><h2>Wybierz pole, według którego wykonane będzie grupowanie</h2></div>
         <hr/>
         <div>
-            <p>Jest to atrybut obiekt&oacute;w 
-                <b>Sumowania</b>, kt&oacute;rego można użyć, aby obliczyć dane statystyczne dla wartości każdego unikalnego atrybutu. Na przykład, zał&oacute;żmy że warstwa analizy zawiera granice miasta, a obiekty
+            <p>Jest to atrybut 
+                <b>Sumowania</b> obiekt&oacute;w, kt&oacute;rego można użyć, aby obliczyć dane statystyczne dla wartości każdego unikalnego atrybutu. Na przykład, zał&oacute;żmy że warstwa analizy zawiera granice miasta, a obiekty
                 <b>Sumowania</b> to działki.  Jeden z atrybut&oacute;w działek to
-                <i>Status</i> zawierający dwie wartości: WOLNA i ZAJĘTA. Aby obliczyć całkowitą powierzchnię (lub dowolny inny atrybut, taki jak
-                <i>Value</i>) wolnych i zajętych działek w granicach miast, użyj atrybutu
-                <i>Status</i> do pogrupowania według atrybutu.
+                <i>Status</i>, kt&oacute;ry zawiera dwie wartości: WOLNA i ZAJĘTA. Aby obliczyć całkowitą powierzchnię wolnych i zajętych działek w granicach miast, użyj atrybutu
+                <i>Status</i> jako grupy według atrybut&oacute;w.
             </p>
         </div>
     </div>

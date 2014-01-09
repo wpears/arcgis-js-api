@@ -22,13 +22,13 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Summer innenfor</h2><p/>
         <h2></h2>
         <hr/>
-    <p>Dette verkt&oslash;yet finner geoobjekter (og deler av geoobjekter) som er innenfor grensene for omr&aring;dene i analyselaget.  Eksempel:
+    <p>Dette verkt&oslash;yet finner geoobjekter (og deler av geoobjekter) som er innenfor grensene for omr&aring;dene i analyselaget.  For eksempel:
         <ul>
-            <li>Hvis du har et lag med nedb&oslash;rsfeltgrenser og et lag med arealbruksgrenser etter arealbrukstype, kan du beregne totalt areal for arealbrukstypen for hvert nedb&oslash;rsfelt. 
+            <li>Hvis du har et lag med nedb&oslash;rsfeltgrenser og et lag med arealbruksgrenser etter arealbrukstype, kan du beregne samlet areal for arealbrukstypen for hvert nedb&oslash;rsfelt. 
             </li>
             <li>Hvis du har et lag med tomtene i et fylke og et lag med bygrenser, kan du summere gjennomsnittsverdien p&aring; ledige tomter innenfor hver enkelt bygrense.
             </li>
@@ -44,7 +44,7 @@
         <div><h2>Velg lag som skal summeres</h2></div>
         <hr/>
         <div>
-            <p>Geoobjektene i dette laget som faller innenfor grensene for geoobjektene i inndatalaget, summeres. 
+            <p>Geoobjektene i dette laget som faller innenfor grensene for geoobjektene i analyselaget, summeres. 
             </p>
         </div>
     </div>
@@ -142,8 +142,7 @@
             <p>Dette er et attributt for 
                 <b>Summarize</b>-geoobjekter som du kan bruke til &aring; beregne statistikk for hver unike attributtverdi for seg. La oss for eksempel si at analyselaget inneholder bygrenser og
                 <b>Summarize</b>-geooobjektene er tomter.  Ett av attributtene for tomtene er
-                <i>Status</i> som inneholder to verdier: VACANT og OCCUPIED. N&aring;r du skal beregne det totale omr&aring;det (eller et annet attributt, for eksempel
-                <i>Value</i>) av ledige og opptatte tomter innenfor byenes grenser, grupperer du etter attributtet
+                <i>Status</i> som inneholder to verdier: VACANT og OCCUPIED. N&aring;r du skal beregne det totale omr&aring;det med ledige og opptatte tomter innenfor byenes grenser, grupperer du etter attributtet
                 <i>Status</i>.
             </p>
         </div>

@@ -22,20 +22,19 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Aggregate Points</h2><p/>
         <h2></h2>
         <hr/>
     <p>This tool works with a layer of
 point features (the analysis layer) and a layer of area features. It first
-figures out which points fall within each area. After determining
+determines which points fall within each area. After determining
 this point-in-area spatial relationship, statistics about all
 points in the area are calculated and assigned to the area. The
 most basic statistic is the count of the number of points within
 the area, but you can get other statistics as well. 
     </p>
-    <p>
-        For example, suppose you have point features of coffee shop locations and area features of counties, and you want to summarize coffee sales by county.  Assuming the  coffee shops have a
+    <p>For example, suppose you have point features of coffee shop locations and area features of counties, and you want to summarize coffee sales by county.  Assuming the  coffee shops have a   
         <i>TOTAL_SALES</i> attribute, you can get the sum of all
         <i>TOTAL_SALES</i> within each county, or the minimum or maximum
         <i>TOTAL_SALES</i>
@@ -45,10 +44,6 @@ the area, but you can get other statistics as well.
     </p>
     <p>If 
         <b>Use current map extent</b> is checked, only the features in the analysis and area layer visible within the current map extent will be analyzed.  If unchecked, all features in both the analysis layer and the area layer will be analyzed, even if they are outside the current map extent.
-    </p>
-    <p>
-        
-        
     </p>
     </div>
     <!--Parameter divs for each param-->
@@ -64,7 +59,6 @@ you in ArcGIS Online. Any points that fall within the boundaries of
 areas within this layer will be counted and optionally summarized using your choices of
 statistics.
             </p>
-            
         </div>
     </div>
     <div id="KeepBoundaryNoPoints">
@@ -73,7 +67,6 @@ statistics.
         <div>
             <p>Determines whether areas that have no points within them appear in the result layer.  If unchecked, areas without points will not appear in the result.  If checked, areas without points will appear in the result.  
             </p>
-            
         </div>
     </div>
     <div id="SummaryFields">
@@ -95,11 +88,6 @@ contain a new attribute for each statistic calculated. Any number of statistics 
                 <i>Crime_type</i> with five different crime types.  Each unique crime type forms a group, and the statistics you choose will be calculated for each unique value of
                 <i>Crime_type</i>.  When you choose a grouping attribute, two results are created: the result layer and a table containing the statistics for each unique group.
             </p>
-            <p>
-                
-                
-            </p>
-            
         </div>
     </div>
     <div id="OutputLayer">
@@ -108,13 +96,12 @@ name</h2></div>
         <hr/>
         <div>
             <p>This is the name of the layer that will be created in  your 
-                <b>My Contents</b>  and added to the map.  The default  name is based on the analysis type and the input layer name. If the layer already exists, you will be asked to confirm if you want to overwrite it.
+                <b>My Contents</b>  and added to the map.  The default  name is based on the analysis type and the analysis layer name. If the layer already exists, you will be asked to confirm if you want to overwrite it.
             </p>
             <p>Using the 
                 <b>Save result in</b> drop-down box, you can  specify the name of a folder in
                 <b>My Contents</b> where the result will be saved.
             </p>
-            
             
         </div>
     </div>

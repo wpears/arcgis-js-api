@@ -22,12 +22,11 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Extrair Dados</h2><p/>
         <h2></h2>
         <hr/>
-    <p>Com esta ferramenta, voc&ecirc; pode selecionar e baixar dados para uma &aacute;rea de interesse espec&iacute;fica. As camadas que voc&ecirc; selecionar ser&atilde;o adicionadas em um pacote de camada ou arquivo ZIP.
-
+    <p>Com esta ferramenta, voc&ecirc; pode selecionar e baixar dados para uma &aacute;rea de interesse espec&iacute;fica. As camadas que voc&ecirc; selecionar ser&atilde;o adicionadas no arquivo zip ou arquivo csv.
     </p>
     </div>
     <!--Parameter divs for each param-->
@@ -35,8 +34,7 @@
         <div><h2>Camadas para Extrair</h2></div>
         <hr/>
         <div>
-            <p>As camadas em sua &aacute;rea de controle das quais voc&ecirc; pode extrair fei&ccedil;&otilde;es.  As camadas que est&atilde;o selecionadas s&atilde;o extra&iacute;das e inclu&iacute;das em um pacote de camada ou arquivo ZIP resultante.
-
+            <p>Estas s&atilde;o as camadas na sua &aacute;rea de controle das quais voc&ecirc; pode extrair fei&ccedil;&otilde;es.  As camadas que est&atilde;o selecionadas s&atilde;o extra&iacute;das e inclu&iacute;das no arquivo csv ou zip resultante.
             </p>
             <p>Para uma camada aparecer na lista de camadas pra extrair, voc&ecirc; deve ser propriet&aacute;rio dos dados ou o propriet&aacute;rio dos dados deve habilitar a exporta&ccedil;&atilde;o dos dados.    Para habilitar a exporta&ccedil;&atilde;o dos dados de sua propriedade:
                 <ul>
@@ -60,7 +58,7 @@
         <div><h2>Área de Estudo</h2></div>
         <hr/>
         <div>
-            <p>A &aacute;rea que define quais fei&ccedil;&otilde;es ser&atilde;o inclu&iacute;das no pacote de camada ou arquivo ZIP de sa&iacute;da. Voc&ecirc; pode escolher do seguinte:
+            <p>A &aacute;rea que define quais fei&ccedil;&otilde;es ser&atilde;o inclu&iacute;das no arquivo csv ou zip de sa&iacute;da. Voc&ecirc; pode escolher do seguinte:
                 <ul>
                     <li>A extens&atilde;o vis&iacute;vel atual do seu mapa (
                         <b>Mesmo da Visualiza&ccedil;&atilde;o</b>).
@@ -84,10 +82,10 @@
         </div>
     </div>
     <div id="OutputFormat">
-        <div><h2>Formato dos dados de saída</h2></div>
+        <div><h2>Formato dos dados de saída escolhido</h2></div>
         <hr/>
         <div>
-            <p>O formato dos dados que ser&atilde;o extra&iacute;dos e baixados.  Os pacotes de camada sempre incluir&atilde;o arquivo geodatabases.
+            <p>O formato dos dados que ser&atilde;o extra&iacute;dos. Ao exportar fei&ccedil;&otilde;es de &aacute;rea ou linha para arquivos csv, somente atributos n&atilde;o espaciais s&atilde;o extra&iacute;dos.  Ao exportar fei&ccedil;&otilde;es de ponto, ambos os atributos espaciais e n&atilde;o espaciais s&atilde;o extra&iacute;dos.  
             </p>
         </div>
     </div>
@@ -104,7 +102,6 @@
                 <b>Salvar resultado em</b>, &eacute; poss&iacute;vel especificar o nome de uma pasta em
                 <b>Meu Conte&uacute;do</b> onde o resultado ser&aacute; salvo.
             </p>
-            
         </div>
     </div>
 </div>

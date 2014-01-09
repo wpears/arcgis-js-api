@@ -22,19 +22,16 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Opprett buffere</h2><p/>
         <h2></h2>
         <hr/>
     <p>En buffer er et omr&aring;de som dekker en gitt avstand fra et punkt-, linje- eller omr&aring;degeoobjekt. 
     </p>
-    <p>Buffere brukes vanligvis til &aring; opprette omr&aring;der som kan analyseres ytterligere ved hjelp av et verkt&oslash;y som for eksempel Legg lag opp&aring;. Hvis for eksempel sp&oslash;rsm&aring;let er &quot;Hvilke bygninger ligger innenfor 1,6 kilometer fra skolen?&quot;, finner du svaret ved &aring; opprette en buffer p&aring; 1,6 kilometer rundt skolen og legge laget som som inneholder avmerkede bygninger, over bufferen.  Sluttresultatet er et lag som inneholder de bygningene som ligger innenfor 1,6 kilometer fra skolen.  
+    <p>Buffere brukes vanligvis til &aring; opprette omr&aring;der som kan analyseres ytterligere ved hjelp av verkt&oslash;y, for eksempel Legg lag opp&aring;. Hvis for eksempel sp&oslash;rsm&aring;let er &quot;Hvilke bygninger ligger innenfor 1,6 kilometer fra skolen?&quot;, finner du svaret ved &aring; opprette en buffer p&aring; 1,6 kilometer rundt skolen og ved hjelp av Legg over lag-verkt&oslash;yet legge laget som inneholder avmerkede bygninger, over bufferen.  Sluttresultatet er et lag som inneholder de bygningene som ligger innenfor 1,6 kilometer fra skolen.  
     </p>
     <p>Hvis det er merket av for 
-        <b>Use current map extent</b>, er det kun geoobjektene som vises i gjeldende kartvisning, som bufres.  Hvis det ikke er merket av for dette alternativet, blir alle geoobjektene i inndatalaget bufret, selv om de befinner seg utenfor gjeldende kartutstrekning.
-    </p>
-    <p>
-        
+        <b>Use current map extent</b>, er det kun geoobjektene som vises i gjeldende kartvisning, som bufres.  Hvis det ikke er merket av for dette alternativet, blir alle geoobjektene i analyselaget bufret, selv om de befinner seg utenfor gjeldende kartutstrekning.
     </p>
     </div>
     <!--Parameter divs for each param-->
@@ -42,7 +39,7 @@
         <div><h2>Angi bufferstørrelse</h2></div>
         <hr/>
         <div>
-            <p>Du kan angi en eller flere avstandsverdier. Sett inn et mellomrom mellom hver verdi.  Du kan ogs&aring; angi et attributt p&aring; inndatalaget som inneholder avstandsverdien, ved &aring; klikke p&aring; 
+            <p>Du kan angi en eller flere avstandsverdier. Sett inn et mellomrom mellom hver verdi.  Du kan ogs&aring; angi et attributt p&aring; analyselaget som inneholder avstandsverdien, ved &aring; klikke p&aring; 
                 <b>Felt</b>.
             </p>
             
@@ -119,13 +116,12 @@
         <hr/>
         <div>
             <p>Dette er navnet p&aring; laget som opprettes i 
-                <b>Mitt innhold</b> og legges til kartet.  Standardnavnet er basert p&aring; analysetypen og navnet p&aring; inndatalaget. Hvis laget finnes allerede, blir du bedt om &aring; bekrefte at du vil overskrive det.
+                <b>Mitt innhold</b> og legges til kartet.  Standardnavnet er basert p&aring; analysetypen og navnet p&aring; analyselaget. Hvis laget finnes allerede, blir du bedt om &aring; bekrefte at du vil overskrive det.
             </p>
             <p>Bruk rullegardinlisten 
                 <b>Save result in</b> til &aring; angi navnet p&aring; en mappe i
                 <b>Mitt innhold</b> som resultatet skal lagres i.
             </p>
-            
         </div>
     </div>
 </div>

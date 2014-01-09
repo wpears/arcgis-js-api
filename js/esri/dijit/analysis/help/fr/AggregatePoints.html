@@ -22,14 +22,13 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Agréger les points</h2><p/>
         <h2></h2>
         <hr/>
     <p>Cet outil fonctionne avec une couche d'entit&eacute;s ponctuelles (la couche d'analyse) et une couche d'entit&eacute;s surfaciques. Il commence par identifier les points qui se trouvent au sein de chaque surface. Apr&egrave;s avoir d&eacute;termin&eacute; cette relation spatiale des points au sein de la surface, des statistiques concernant tous les points de la surface sont calcul&eacute;es et affect&eacute;es &agrave; la surface. La statistique la plus &eacute;l&eacute;mentaire est le nombre total de points au sein de la surface, mais vous pouvez &eacute;galement en obtenir d'autres. 
     </p>
-    <p>
-        Supposons par exemple que des entit&eacute;s ponctuelles correspondent &agrave; l'emplacement des caf&eacute;s restaurants et que des entit&eacute;s surfaciques correspondent aux comt&eacute;s, et que vous souhaitez r&eacute;capituler la consommation de caf&eacute; par comt&eacute;. En admettant que les caf&eacute;s aient un attribut
+    <p>Supposons par exemple que des entit&eacute;s ponctuelles correspondent &agrave; l'emplacement des caf&eacute;s restaurants et que des entit&eacute;s surfaciques correspondent aux comt&eacute;s, et que vous souhaitez r&eacute;capituler la consommation de caf&eacute; par comt&eacute;. En admettant que les caf&eacute;s aient un attribut 
         <i>TOTAL_SALES</i>, vous pouvez calculer la somme de tous les attributs
         <i>TOTAL_SALES</i> au sein de chaque comt&eacute;, l'attribut
         <i>TOTAL_SALES</i> minimal ou maximal au sein de chaque comt&eacute; ou l'&eacute;cart type de toutes les ventes au sein de chaque comt&eacute;.
@@ -38,10 +37,6 @@
     </p>
     <p>Si l'option 
         <b>Utiliser l'&eacute;tendue courante de la carte</b> est s&eacute;lectionn&eacute;e, seules les entit&eacute;s de la couche d'analyse et de la couche surfacique qui sont visibles au sein de l'&eacute;tendue courante de la carte seront analys&eacute;es. Si l'option n'est pas s&eacute;lectionn&eacute;e, toutes les entit&eacute;s qui se trouvent &agrave; la fois dans la couche d'analyse et dans la couche surfacique seront analys&eacute;es, m&ecirc;me si elles se trouvent en dehors de l'&eacute;tendue courante de la carte.
-    </p>
-    <p>
-        
-        
     </p>
     </div>
     <!--Parameter divs for each param-->
@@ -52,7 +47,6 @@
             <p>
                 S&eacute;lectionnez une couche surfacique sur la carte Web dans laquelle les points seront agr&eacute;g&eacute;s. Si la carte Web ne comporte pas de couche de limite, vous pouvez en s&eacute;lectionner une dans la liste des couches de limite disponible dans ArcGIS Online. Les points qui se trouvent au sein des limites des surfaces &agrave; l'int&eacute;rieur de cette couche seront comptabilis&eacute;s et peuvent &ecirc;tre r&eacute;sum&eacute;s avec les statistiques que vous avez choisies.
             </p>
-            
         </div>
     </div>
     <div id="KeepBoundaryNoPoints">
@@ -61,7 +55,6 @@
         <div>
             <p>D&eacute;termine si les surfaces qui ne comportent aucun point apparaissent dans la couche de r&eacute;sultat. Si cette option est d&eacute;sactiv&eacute;e, les surfaces qui ne comportent pas de points n'apparaissent pas dans le r&eacute;sultat. Si cette option est activ&eacute;e, les surfaces qui ne comportent pas de points apparaissent dans le r&eacute;sultat.  
             </p>
-            
         </div>
     </div>
     <div id="SummaryFields">
@@ -82,11 +75,6 @@
                 <i>Crime_type</i> avec cinq types de crimes diff&eacute;rents. Chaque type de crime unique forme un groupe, et les statistiques que vous choisissez seront calcul&eacute;es pour chaque valeur unique de
                 <i>Crime_type</i>. Lorsque vous choisissez un attribut de regroupement, deux r&eacute;sultats sont cr&eacute;&eacute;s&nbsp;: la couche de r&eacute;sultat et une table contenant les statistiques pour chaque groupe unique.
             </p>
-            <p>
-                
-                
-            </p>
-            
         </div>
     </div>
     <div id="OutputLayer">
@@ -94,13 +82,12 @@
         <hr/>
         <div>
             <p>Il s'agit du nom de la couche qui sera cr&eacute;&eacute;e dans votre page 
-                <b>Mes contenus</b> et ajout&eacute;e &agrave; la carte. Le nom par d&eacute;faut repose sur le type d'analyse et sur le nom de la couche en entr&eacute;e. Si la couche existe d&eacute;j&agrave;, vous serez amen&eacute; &agrave; confirmer son remplacement.
+                <b>Mes contenus</b> et ajout&eacute;e &agrave; la carte. Le nom par d&eacute;faut repose sur le type d'analyse et sur le nom de la couche d'analyse. Si la couche existe d&eacute;j&agrave;, vous serez amen&eacute; &agrave; confirmer son remplacement.
             </p>
             <p>La zone de liste d&eacute;roulante 
                 <b>Enregistrer le r&eacute;sultat dans</b> vous permet de sp&eacute;cifier le nom d'un dossier dans
                 <b>Mes contenus</b> o&ugrave; le r&eacute;sultat sera enregistr&eacute;.
             </p>
-            
             
         </div>
     </div>

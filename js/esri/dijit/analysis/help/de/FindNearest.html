@@ -22,17 +22,16 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Nächstgelegene suchen</h2><p/>
         <h2></h2>
         <hr/>
-    <p>Dieses Werkzeug findet die am n&auml;chsten gelegenen Features und erfasst und bewertet optional die Entfernung der nahe gelegenen Features.
- 
+    <p>Dieses Werkzeug findet die am n&auml;chsten gelegenen Features und erfasst und bewertet die Entfernung der nahe gelegenen Features. 
 Um zu ermitteln, welche Features am n&auml;chsten liegen, kann das Werkzeug entweder die geradlinige Entfernung, Stra&szlig;enentfernung oder Fahrzeit messen.
  
 Es sind Optionen verf&uuml;gbar, mit deren Hilfe die Anzahl der zu suchenden n&auml;chsten Features oder der Suchbereich, in dem sie gesucht werden sollen, eingeschr&auml;nkt werden kann.
  
-Die Ergebnisse dieses Werkzeugs erleichtern Ihnen die Beantwortung der folgenden Arten von Fragen:
+Die Ergebnisse dieses Werkzeugs erleichtern Ihnen die Beantwortung folgender Fragen:
 
         <ul>
             <li>Welcher Park liegt diesem Standort am n&auml;chsten?
@@ -43,19 +42,16 @@ Die Ergebnisse dieses Werkzeugs erleichtern Ihnen die Beantwortung der folgenden
 Wie lange w&uuml;rde die Fahrt an einem Dienstag um 17:30 Uhr w&auml;hrend der Hauptverkehrszeit dauern?
 
             </li>
-            <li>Wie lang ist die Fahrtstrecke zwischen diesen Hauptst&auml;dten?
+            <li>Wie lang ist die Fahrtstrecke zwischen diesen St&auml;dten?
 
             </li>
-            <li>Welche dieser Patienten wohnen im Umkreis von zwei Meilen von diesen Chemiewerken?
+            <li>Welche dieser Patienten wohnen im Umkreis von zwei Kilometern von diesen Chemiewerken?
 
             </li>
         </ul>
         
     </p>
-    <p>Die Option &quot;N&auml;chstgelegene suchen&quot; gibt einen Layer mit den n&auml;chsten Features sowie optional einen Linien-Layer zur&uuml;ck, der die Startpositionen mit den jeweils n&auml;chstgelegenen Positionen verkn&uuml;pft.
- 
-Der optionale Linien-Layer enth&auml;lt Informationen zu den Start- und n&auml;chstgelegenen Positionen sowie deren Entfernungen zueinander.
-
+    <p>Die Option &quot;N&auml;chstgelegene suchen&quot; gibt einen Layer mit den n&auml;chsten Features sowie einen Linien-Layer zur&uuml;ck, der die Startpositionen mit den jeweils n&auml;chstgelegenen Positionen verkn&uuml;pft. Der Linien-Layer enth&auml;lt Informationen zu den Start- und n&auml;chstgelegenen Positionen sowie deren Entfernungen zueinander.
     </p>
     <p>Wenn die Option 
         <b>Aktuelle Kartenausdehnung verwenden</b> aktiviert ist, werden nur die Features als Start- und potenziell n&auml;chste Features betrachtet, die in der aktuellen Kartenausdehnung angezeigt werden.
@@ -70,8 +66,7 @@ Wenn diese Option deaktiviert ist, werden auch dann alle Features im Eingabe-Lay
         <div><h2>Nächste Positionen suchen in</h2></div>
         <hr/>
         <div>
-            <p>Mit der Option &quot;N&auml;chstgelegene suchen&quot; wird die Entfernung von jeder Position im Eingabe-Layer zu den Positionen in diesem Layer gemessen.
- 
+            <p>Mit der Option &quot;N&auml;chstgelegene suchen&quot; wird die Entfernung von jeder Position im Analyse-Layer zu den Positionen in diesem Layer gemessen. 
 Das Werkzeug unterst&uuml;tzt bis zu 1.000&nbsp;Positionen pro Layer.
 
             </p>
@@ -87,85 +82,12 @@ Beim Ermitteln der Fahrentfernung und Fahrzeit erfolgen die Messungen entlang vo
  
             </p>
             <p>Die Suche nach n&auml;chstgelegenen Features mittels geradliniger Entfernung l&auml;sst die Eingabe von Punkten, Linien oder Fl&auml;chen zu.
- 
-Zum Messen der Fahrzeit oder Fahrentfernung m&uuml;ssen beide Eingabe-Layer (Eingabeposition und nahe gelegene Standorte) Punkte enthalten.
- 
+ Zum Messen der Fahrzeit oder Fahrentfernung m&uuml;ssen beide Eingabe-Layer (Analyse-Layer und nahe gelegene Standorte) Punkte enthalten. 
             </p>
             <p>Beim Messen zwischen Linien und Fl&auml;chen wird die Entfernung vom oder zum n&auml;chsten Punkt entlang der Linie oder Grenze der Fl&auml;che ermittelt.
  
             </p>
-        </div>
-    </div>
-    <div id="Cutoffs">
-        <div><h2>Für jede Position in</h2></div>
-        <hr/>
-        <div>
             
-            <p>Zum Einschr&auml;nken der Suche nach n&auml;chstgelegenen Positionen stehen zwei Optionen zur Verf&uuml;gung.
- 
-Eine M&ouml;glichkeit besteht in der Einschr&auml;nkung der maximalen Anzahl der n&auml;chstgelegenen Positionen, die pro Startposition gesucht werden sollen.
- 
-Sie k&ouml;nnen den n&auml;chsten Park, die zwei n&auml;chsten Parks usw. finden.
- 
-Die zweite M&ouml;glichkeit besteht darin, eine maximale Suchentfernung oder Fahrzeit festzulegen.
-
-            </p>
-            <p>Wenn die Optionen deaktiviert sind, betr&auml;gt die maximal zu suchende Anzahl von n&auml;chstgelegenen Positionen 100 (der Grenzwert des Werkzeugs) und der maximale Suchbereich ist unbegrenzt.
-
-            </p>
-            <p>Die Verarbeitungszeit h&auml;ngt von der Anzahl der Startpositionen, der Anzahl der nahe gelegenen Positionen sowie dem maximalen Suchbereich ab.
- 
-Die Verarbeitung nimmt mehr Zeit in Anspruch, wenn mehr Positionen oder gr&ouml;&szlig;ere Suchbereiche vorhanden sind.
-
-                
-            </p>
-            <p>Beachten Sie, dass das Werkzeug m&ouml;glicherweise keine n&auml;chstgelegenen Positionen innerhalb des Bereichs findet, wenn der Suchbereich begrenzt ist.
- 
-Es k&ouml;nnen auch weniger als die angegebene maximale Anzahl von n&auml;chstgelegenen Positionen gefunden werden.
-
-            </p>
-            
-        </div>
-    </div>
-    <div id="UseTypicalTraffic">
-        <div><h2>Normale Verkehrslage verwenden für</h2></div>
-        <hr/>
-        <div>
-            <p>
-                
-Beim Messen der Fahrzeit k&ouml;nnen die Verkehrslage und Tageszeit f&uuml;r die Ermittlung der am n&auml;chsten gelegenen Orte ausschlaggebend sein.
- 
-Stellen Sie sich vor, Sie suchen den n&auml;chsten &auml;rztlichen Notdienst w&auml;hrend der Hauptverkehrszeit.
- 
-W&auml;hrend der morgendlichen Hauptverkehrszeit fahren die Fahrzeuge in Richtung Innenstadt langsamer als die Fahrzeuge aus Richtung Innenstadt.
- 
-Zu dieser Tageszeit liegt die n&auml;chste Einrichtung m&ouml;glicherweise in ausgehender Richtung.
- 
-Abends l&auml;uft der Verkehr Richtung Innenstadt schneller, sodass m&ouml;glicherweise eine andere Einrichtung in Richtung Innenstadt am n&auml;chsten gelegen ist.
-            </p>
-            <p>Wenn Sie die Option 
-                <b>Normale Verkehrslage verwenden f&uuml;r</b> aktivieren sowie einen Tag und eine Uhrzeit ausw&auml;hlen, findet das Werkzeug die n&auml;chsten Features basierend auf historischen Durchschnittsgeschwindigkeiten f&uuml;r jedes 5-Minuten-Intervall &uuml;ber eine normale Woche hinweg.
- 
-Welcher Ort am n&auml;chsten gelegen ist, kann je nach Fluktuation der Verkehrslage und von Fahrzeiten w&auml;hrend der Woche variieren.
-            </p>
-            <p>Beachten Sie, dass Zeit vergeht und Verkehrslagen sich &auml;ndern w&auml;hrend sich ein Fahrzeug von einem Punkt wegbewegt.
- 
-Dieses Werkzeug ber&uuml;cksichtigt diese Unterschiede bei Verwendung von Verkehrsdaten, die jedoch nicht von allen Regionen unterst&uuml;tzt werden.
- 
-Klicken Sie in dem Werkzeug auf den Link 
-                <b>Verf&uuml;gbarkeit anzeigen</b>, um zu ermitteln, ob dies f&uuml;r Ihr Einzugsgebiet zutrifft.
-            </p>
-            <p>Deaktivieren Sie die Option 
-                <b>Normale Verkehrslage verwenden f&uuml;r</b>, um die n&auml;chsten Features basierend auf statischen Verkehrsgeschwindigkeiten, wie Geschwindigkeitsbegrenzungen, zu suchen.
- 
-Sie m&uuml;ssen diese Option ausw&auml;hlen, wenn Sie wissen m&ouml;chten, welche Features allgemein am n&auml;chsten gelegen sind, aber nicht unbedingt die n&auml;chstgelegenen Verkehrsbedingungen f&uuml;r eine bestimmte Uhrzeit und einen bestimmten Tag ermitteln m&ouml;chten.
-            </p>
-        </div>
-    </div>
-    <div id="UseTraffic">
-        <div><h2>Verkehrsdaten verwenden</h2></div>
-        <hr/>
-        <div>
             <p>Bei Auswahl von 
                 <b>Fahrzeit</b> werden Optionen zum Messen der Fahrzeit bereitgestellt.
                 <ul>
@@ -198,9 +120,8 @@ Fahrgeschwindigkeiten werden f&uuml;r die n&auml;chsten 12 Stunden vorhergesagt,
  
 Die Ergebnisse umfassen Verkehrsdaten, lassen den Einfluss aktueller Verkehrssituationen und -ereignisse, die erheblich von der Norm abweichen k&ouml;nnen, allerdings au&szlig;er Acht.
                         </p>
-                        <p>
-                            
-Sie k&ouml;nnen diese Einstellungen f&uuml;r historische Verkehrsdaten verwenden, um beispielsweise folgende Frage zu stellen: &quot;Welche Features k&ouml;nnen am schnellsten erreicht werden, wenn ich von den Start-Features an einem Mittwoch um 11:30 Uhr losfahre?&quot;.
+                        <p>Sie k&ouml;nnen diese Einstellungen f&uuml;r historische Verkehrsdaten verwenden, um beispielsweise folgende Frage zu stellen: &quot;Welche Features k&ouml;nnen am schnellsten erreicht werden, wenn ich von den Start-Features an einem Mittwoch um 11:30 Uhr losfahre?&quot;.
+ 
                         </p>
                         <p>Die festgelegte Zeit bezieht sich auf die Zeitzone, in der sich die Start-Features befinden.
  
@@ -222,6 +143,31 @@ Dieses Werkzeug ber&uuml;cksichtigt diese Unterschiede bei Verwendung der Option
 Klicken Sie in dem Werkzeug auf den Link
                 <b>Verf&uuml;gbarkeit anzeigen</b>, um zu ermitteln, ob dies f&uuml;r Ihr Einzugsgebiet zutrifft.
                 
+            </p>
+        </div>
+    </div>
+    <div id="Cutoffs">
+        <div><h2>Für jede Position in</h2></div>
+        <hr/>
+        <div>
+            <p>Zum Einschr&auml;nken der Suche nach n&auml;chstgelegenen Positionen stehen zwei Optionen zur Verf&uuml;gung.
+ 
+Eine M&ouml;glichkeit besteht in der Einschr&auml;nkung der maximalen Anzahl der n&auml;chstgelegenen Positionen, die pro Startposition gesucht werden sollen.
+ 
+Sie k&ouml;nnen den n&auml;chsten Park, die zwei n&auml;chsten Parks usw. finden.
+ 
+Die zweite M&ouml;glichkeit besteht darin, eine maximale Suchentfernung oder Fahrzeit festzulegen.
+
+            </p>
+            <p>Wenn die Optionen deaktiviert sind, betr&auml;gt die maximal zu suchende Anzahl von n&auml;chstgelegenen Positionen 100 (der Grenzwert des Werkzeugs) und der maximale Suchbereich ist unbegrenzt.
+
+            </p>
+            <p>Die Verarbeitungszeit h&auml;ngt von der Anzahl der Startpositionen, der Anzahl der nahe gelegenen Positionen sowie dem maximalen Suchbereich ab.
+ 
+Die Verarbeitung nimmt mehr Zeit in Anspruch, wenn mehr Positionen oder gr&ouml;&szlig;ere Suchbereiche vorhanden sind.
+
+            </p>
+            <p>Beachten Sie, dass das Werkzeug m&ouml;glicherweise keine n&auml;chstgelegenen Positionen innerhalb des Bereichs findet, wenn der Suchbereich begrenzt ist, oder dass weniger als die von Ihnen festgelegte maximale Anzahl n&auml;chstgelegener Positionen gefunden werden.
             </p>
         </div>
     </div>

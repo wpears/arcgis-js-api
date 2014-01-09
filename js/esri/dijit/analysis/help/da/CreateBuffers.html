@@ -22,19 +22,16 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Opret buffere</h2><p/>
         <h2></h2>
         <hr/>
     <p>En buffer er et omr&aring;de, der d&aelig;kker en given afstand fra et punkt, en linje eller et omr&aring;deobjekt. 
     </p>
-    <p>Buffere benyttes typisk til at oprette omr&aring;der, der kan underkastes yderligere analyse ved hj&aelig;lp af et v&aelig;rkt&oslash;j, som f.eks. Overlay Layers. Hvis sp&oslash;rgsm&aring;let f.eks. er &quot;Hvilke bygninger ligger inden for &eacute;n kilometer fra skolen?&quot;, kan svaret findes ved at oprette en 1-km buffer omkring skolen og derefter l&aelig;gge et lag, der indeholder bygningsoplysninger, oven p&aring; bufferen.  Slutresultatet er et lag med de bygninger, der ligger inden for en kilometer fra skolen.  
+    <p>Buffere benyttes typisk til at oprette omr&aring;der, der kan underkastes yderligere analyse ved hj&aelig;lp af et v&aelig;rkt&oslash;j, som f.eks. Overlay Layers. Hvis sp&oslash;rgsm&aring;let f.eks. lyder: &quot;Hvilke bygninger ligger inden for en kilometer fra skolen?&quot;, kan svaret findes ved at oprette en buffer p&aring; 1 km rundt om skolen og bruge v&aelig;rkt&oslash;jet Overlay Layers til at integrere bufferen med det lag, der indeholder aftryk af bygninger.  Det endelige resultat er et lag med de bygninger, der ligger inden for 1 km fra skolen.  
     </p>
     <p>Hvis feltet 
-        <b>Brug aktuel kortudstr&aelig;kning</b> er markeret, er det kun objekterne, der er synlige inden for den aktuelle kortudstr&aelig;kning, der medtages i bufferen.  Hvis feltet ikke er markeret, medtages alle objekter i inputlaget i bufferen, ogs&aring; selvom de befinder sig uden for den aktuelle kortudstr&aelig;kning.
-    </p>
-    <p>
-        
+        <b>Brug aktuel kortudstr&aelig;kning</b> er markeret, er det kun objekterne, der er synlige inden for den aktuelle kortudstr&aelig;kning, der medtages i bufferen.  Hvis feltet ikke er markeret, medtages alle objekter i analyselaget i bufferen, selv om de er uden for den aktuelle kortudstr&aelig;kning.
     </p>
     </div>
     <!--Parameter divs for each param-->
@@ -42,7 +39,7 @@
         <div><h2>Angiv bufferstørrelse</h2></div>
         <hr/>
         <div>
-            <p>Du kan indtaste en enkelt afstandsv&aelig;rdi eller flere -v&aelig;rdier ved at adskiller hver v&aelig;rdi med et mellemrum.  Du kan ogs&aring; angive en attribut for det inputlag, der indeholder afstandsv&aelig;rdien, ved at klikk ep&aring; 
+            <p>Du kan indtaste en enkelt afstandsv&aelig;rdi eller flere -v&aelig;rdier ved at adskille hver v&aelig;rdi med et mellemrum.  Du kan ogs&aring; angive en attribut for det analyselag, der indeholder afstandsv&aelig;rdien, ved at klikke p&aring; 
                 <b>Felt</b>.
             </p>
             
@@ -119,13 +116,12 @@
         <hr/>
         <div>
             <p>Dette er navnet p&aring; det lag, der oprettes i 
-                <b>Mit indhold</b>, og som f&oslash;jes til kortet.  Standardnavnet er baseret p&aring; analysetypen og navnet p&aring; inputlaget. Hvis laget findes allerede, vil du blive bedt om at bekr&aelig;fte, at du vil overskrive det.
+                <b>Mit indhold</b>, og som f&oslash;jes til kortet.  Standardnavnet er baseret p&aring; analysetypen og analyselagets navn. Hvis laget findes allerede, vil du blive bedt om at bekr&aelig;fte, at du vil overskrive det.
             </p>
             <p>Ved hj&aelig;lp af rullelisten 
                 <b>Gem resultat i</b> kan du angive navnet p&aring; en mappe i
                 <b>Mit indhold</b>, hvor resultatet skal gemmes.
             </p>
-            
         </div>
     </div>
 </div>

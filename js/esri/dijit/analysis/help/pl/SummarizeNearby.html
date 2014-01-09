@@ -22,13 +22,13 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Sumuj w pobliżu</h2><p/>
         <h2></h2>
         <hr/>
-    <p>Narzędzie wyszukuje obiekty, kt&oacute;re znajdują się w określonej odległości w warstwie analizy.  Odległość można zmierzyć w linii prostej, odległość czasu dojazdu (np. w ciągu 10 minut) lub długośc trasy (w zasięgu 5 kilometr&oacute;w).  W&oacute;wczas można obliczyć dane statystyczne dla pobliskich obiekt&oacute;w.  Na przykład:
+    <p>Narzędzie wyszukuje obiekty, kt&oacute;re znajdują się w określonej odległości w warstwie analizy.  Odległość można zmierzyć w linii prostej, odległość czasu dojazdu (np. w ciągu 10 minut) lub odległość dojazdu (w zasięgu 5 kilometr&oacute;w).  W&oacute;wczas można obliczyć dane statystyczne dla pobliskich obiekt&oacute;w.  Na przykład:
         <ul>
-            <li>Oblicz całkowitą liczbę os&oacute;b mieszkających w odległości pięciu minut drogi od zaproponowanej nowej lokalizacji sklepu.
+            <li>Oblicz całkowitą populację ludności w zasięgu pięciu minut drogi od zaproponowanej nowej lokalizacji sklepu.
             </li>
             <li>Oblicz liczbę zjazd&oacute;w z autostrady w promieniu p&oacute;łtora kilometra odległości od zaproponowanej nowej lokalizacji sklepu, aby dokonać oceny dostępności sklepu.
             </li>
@@ -53,7 +53,9 @@
         <div><h2>Znajdź najbliższe obiekty, używając</h2></div>
         <hr/>
         <div>
-            <p>Można zdefiniować, jakiego rodzaju pomiary odległości mają być użyte: odległość w linii prostej, długość trasy lub czas przejazdu.  W przypadku zar&oacute;wno długości trasy, jak i czasu dojazdu użyj sieci dr&oacute;g i uwzględnij takie ograniczenia, jak drogi jednokierunkowe.  Czas przejazdu uwzględnia bieżące ograniczenia prędkości.   Można wprowadzić wiele odległości.  Zsumowane zostaną obiekty, kt&oacute;re znajdują się w zasięgu wprowadzonych odległości (lub są im r&oacute;wne).  
+            <p>Można zdefiniować, jakiego rodzaju pomiary odległości mają być użyte: odległość w linii prostej, długość trasy lub czas przejazdu.  W przypadku zar&oacute;wno długości trasy, jak i czasu dojazdu użyj sieci dr&oacute;g i uwzględnij takie ograniczenia, jak drogi jednokierunkowe.  Czas przejazdu uwzględnia wybraną prędkość podr&oacute;ży: opartą na aktualnych lub typowych prędkościach ruchu drogowego. Aktualna prędkość ruchu drogowego jest określana na podstawie bieżących odczyt&oacute;w z czujnik&oacute;w, natomiast wartość typowa jest obliczana z użyciem historycznych średnich wartości.   
+            </p>
+            <p>Można wprowadzić wiele odległości.  Zsumowane zostaną obiekty, kt&oacute;re znajdują się w zasięgu wprowadzonych odległości (lub są im r&oacute;wne).  
             </p>
         </div>
     </div>
@@ -71,7 +73,7 @@
                     <b>Suma</b> &mdash; całkowita wartość określonego pola.
                 </li>
                 <li>
-                    <b>Średnia</b> &mdash; wartość średnia dla określonego pola.
+                    <b>Średnia</b> &mdash; wartość średnia określonego pola.
                 </li>
                 <li>
                     <b>Minimum</b> &mdash; najniższa wartość określonego pola.
@@ -80,7 +82,7 @@
                     <b>Maksimum</b> &mdash; najwyższa wartość określonego pola.
                 </li>
                 <li>
-                    <b>Odch. standardowe</b> &mdash; odchylenie standardowe wartości w określonym polu.
+                    <b>Odch. standardowe</b> &mdash; odchylenie standardowe wartości dla określonego pola.
                 </li>
             </ul>
             
@@ -92,8 +94,8 @@
         <div>
             <p>Można także obliczyć dane statystyczne dla atrybut&oacute;w numerycznych pobliskich linii. 
             </p>
-            <p>Jeśli opcja 
-                <b>Długość całkowita</b> jest zaznaczona, obliczona zostanie całkowita długość pobliskich linii.  Ponadto można obliczyć dane statystyczne dla p&oacute;l numerycznych pobliskich linii.
+            <p>Jeśli jest zaznaczona opcja 
+                <b>Długość całkowita</b>, obliczona zostanie całkowita długość pobliskich linii.  Ponadto można obliczyć dane statystyczne dla p&oacute;l numerycznych pobliskich linii.
             </p>
             <ul>
                 <li>
@@ -109,7 +111,7 @@
                     <b>Maksimum</b> &mdash; najwyższa wartość określonego pola.
                 </li>
                 <li>
-                    <b>Odch. standardowe</b> &mdash; odchylenie standardowe wartości w określonym polu.
+                    <b>Odch. standardowe</b> &mdash; odchylenie standardowe wartości dla określonego polu.
                 </li>
             </ul>
             
@@ -121,8 +123,8 @@
         <div>
             <p>Można także obliczyć dane statystyczne dla atrybut&oacute;w numerycznych pobliskich obszar&oacute;w. 
             </p>
-            <p>Jeśli opcja 
-                <b>Powierzchnia całkowita</b> jest zaznaczona, system obliczy całkowitą powierzchnię pobliskich obiekt&oacute;w.  Ponadto można obliczyć dane statystyczne dla p&oacute;l numerycznych pobliskich obiekt&oacute;w.
+            <p>Jeśli jest zaznaczona opcja 
+                <b>Powierzchnia całkowita</b>, system obliczy całkowitą powierzchnię pobliskich obiekt&oacute;w.  Ponadto można obliczyć dane statystyczne dla p&oacute;l numerycznych pobliskich obiekt&oacute;w.
             </p>
             <ul>
                 <li>
@@ -138,7 +140,7 @@
                     <b>Maksimum</b> &mdash; najwyższa wartość określonego pola.
                 </li>
                 <li>
-                    <b>Odch. standardowe</b> &mdash; odchylenie standardowe wartości w określonym polu.
+                    <b>Odch. standardowe</b> &mdash; odchylenie standardowe wartości dla określonyego pola.
                 </li>
             </ul>
             
@@ -149,8 +151,8 @@
         <hr/>
         <div>
             <p>Jest to atrybut pobliskich obiekt&oacute;w, kt&oacute;rego można użyć, aby obliczyć dane statystyczne dla każdej unikalnej wartości atrybutu. Na przykład, zał&oacute;żmy że warstwa analizy zawiera wolne działki na sprzedaż, a pobliskie obiekty to budynki.  Jednym z atrybut&oacute;w budynk&oacute;w jest 
-                <i>UseType</i> zawierający wartości, takie jak HANDLOWY, MIESZKALNY, PRODUKCJA, PUBLICZNY itd.  Aby scharakteryzować r&oacute;żnorodność przeznaczenia budynk&oacute;w w pobliżu każdej wolnej działki, można obliczyć całkowitą powierzchnię każdego unikalnego typu użytkowania budynku w promieniu dw&oacute;ch kilometr&oacute;w od wolnych działek, z zastosowaniem atrybutu
-                <i>UseType</i> do pogrupowania według atrybutu.
+                <i>UseType</i>, kt&oacute;ry zawiera wartości takie jak HANDLOWY, MIESZKALNY, PRODUKCYJNY, PUBLICZNY itd.  Aby scharakteryzować r&oacute;żnorodność zastosowań budynk&oacute;w w pobliżu każdej wolnej działki, można obliczyć całkowitą powierzchnię każdego unikalnego typu użytkowania budynku w promieniu dw&oacute;ch kilometr&oacute;w od wolnych działek, z zastosowaniem
+                <i>UseType</i> jako grupy według atrybut&oacute;w.
             </p>
             
             

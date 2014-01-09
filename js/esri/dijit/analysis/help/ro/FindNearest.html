@@ -22,11 +22,11 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Găsire cele mai apropiate</h2><p/>
         <h2></h2>
         <hr/>
-    <p>Acest instrument găseşte cele mai apropiate obiecte spaţiale şi, opţional, raportează şi ordonează distanţele p&acirc;nă la obiectele spaţiale din apropiere. Pentru a găsi cele mai apropiate elemente, instrumentul poate măsura fie distanţa &icirc;n linie dreaptă, fie distanţa pe drumuri, fie timpul de conducere. Există opţiuni pentru limitarea numărului celor mai apropiate obiecte spaţiale de găsit sau intervalul de căutare &icirc;n care să fie găsite. Rezultatele obţinute de la acest instrument vă pot ajuta să răspundeţi la următoarele tipuri de &icirc;ntrebări:
+    <p>Acest instrument găseşte cele mai apropiate obiecte spaţiale şi raportează şi ordonează distanţele p&acirc;nă la obiectele spaţiale din apropiere. Pentru a găsi cele mai apropiate elemente, instrumentul poate măsura fie distanţa &icirc;n linie dreaptă, fie distanţa pe drumuri, fie timpul de conducere. Există opţiuni pentru limitarea numărului celor mai apropiate obiecte spaţiale de găsit sau intervalul de căutare &icirc;n care să fie găsite. Rezultatele obţinute de la acest instrument vă pot ajuta să răspundeţi la următoarele tipuri de &icirc;ntrebări:
         <ul>
             <li>Care este cel mai apropiat parc de aici?
             </li>
@@ -39,7 +39,7 @@
         </ul>
         
     </p>
-    <p>Instrumentul Găsire cele mai apropiate returnează un strat tematic conţin&acirc;nd cele mai apropiate obiecte spaţiale şi, opţional, un strat tematic linie care leagă locaţiile de pornire de cele mai apropiate locaţii. Stratul tematic linie opţional conţine informaţii despre locaţiile de pornire şi cele mai apropiate şi distanţele dintre ele.
+    <p>Instrumentul Găsire cele mai apropiate returnează un strat tematic conţin&acirc;nd cele mai apropiate obiecte spaţiale şi un strat tematic linie care leagă locaţiile de pornire de cele mai apropiate locaţii. Stratul tematic linie conţine informaţii despre locaţiile de pornire şi cele mai apropiate şi distanţele dintre ele.
     </p>
     <p>Dacă se bifează 
         <b>Utilizare extindere curentă a hărţii</b>, numai obiectele spaţiale vizibile &icirc;n extinderea curentă a hărţii vor fi considerate drept puncte de pornire şi obiecte spaţiale potenţial aflate cel mai aproape.  Dacă nu se bifează, vor fi luate &icirc;n considerare toate obiectele spaţiale din stratul tematic de intrare, chiar dacă se află &icirc;n afara extinderii curente a hărţii.
@@ -52,7 +52,7 @@
         <div><h2>Găsire cele mai apropiate locații din</h2></div>
         <hr/>
         <div>
-            <p>Instrumentul Găsire cele mai apropiate măsoară de la fiecare locaţie din stratul tematic de intrare p&acirc;nă la locaţiile din stratul tematic de faţă. Instrumentul acceptă p&acirc;nă la 1.000 de locaţii pentru fiecare strat tematic.
+            <p>Instrumentul Găsire cele mai apropiate măsoară de la fiecare locaţie din stratul tematic de analiză p&acirc;nă la locaţiile din stratul tematic de faţă. Instrumentul acceptă p&acirc;nă la 1.000 de locaţii pentru fiecare strat tematic.
             </p>
         </div>
     </div>
@@ -62,51 +62,11 @@
         <div>
             <p>Alegeţi dacă cele mai apropiate locaţii să fie găsite pe baza distanţei &icirc;n linie dreaptă, a distanţei rutiere sau a timpului de conducere. &Icirc;n ambele cazuri rutiere, măsurătorile sunt făcute pe drumuri şi respectă sensurile unice, reglementările de circulaţie şi aşa mai departe. 
             </p>
-            <p>Găsirea celor mai apropiate elemente cu ajutorul distanţei &icirc;n linie dreaptă permite intrări de tip punct, linie sau suprafaţă. Pentru a măsura timpul de conducere sau distanţa rutieră, ambele straturi tematice de intrare (cel introdus şi cel cu locaţiile din apropiere) trebuie să conţină puncte. 
+            <p>Găsirea celor mai apropiate elemente cu ajutorul distanţei &icirc;n linie dreaptă permite intrări de tip punct, linie sau suprafaţă. Pentru a măsura timpul de conducere sau distanţa rutieră, ambele straturi tematice (stratul tematic de analiză şi locaţiile apropiate) trebuie să conţină puncte. 
             </p>
             <p>La măsurarea &icirc;ntre linii sau suprafeţe, este determinată distanţa de la sau p&acirc;nă la cel mai apropiat punct de-a lungul liniei sau graniţei suprafeţei. 
             </p>
-        </div>
-    </div>
-    <div id="Cutoffs">
-        <div><h2>Pentru fiecare locație din</h2></div>
-        <hr/>
-        <div>
             
-            <p>Pentru a limita căutarea celor mai apropiate locaţii, aveţi două opţiuni. O opţiune este să limitaţi numărul maxim de locaţii cele mai apropiate de găsit pentru fiecare locaţie de pornire. Puteţi găsi un parc cel mai apropiat, două cele mai apropiate şi aşa mai departe. Cealaltă opţiune este să setaţi o distanţă sau un timp de conducere de căutat maxim.
-            </p>
-            <p>Debif&acirc;nd opţiunile, numărul maxim al celor mai apropiate locaţii de găsit este 100 (limita instrumentului), iar intervalul maxim de căutare este infinit.
-            </p>
-            <p>Timpul de procesare depinde de numărul de locaţii, numărul de locaţii din apropiere şi intervalul maxim de căutare.   Procesarea durează mai mult atunci c&acirc;nd există mai multe locaţii sau intervale de căutare mai mari.
-                
-            </p>
-            <p>Reţineţi că, atunci c&acirc;nd este setată o limită asupra intervalului de căutare, este posibil ca instrumentul să nu găsească nicio locaţie &icirc;n intervalul dat. De asemenea, este posibil să găsească mai puţine locaţii dec&acirc;t numărul maxim al celor mai apropiate locaţii specificat de dvs.
-            </p>
-            
-        </div>
-    </div>
-    <div id="UseTypicalTraffic">
-        <div><h2>Utilizare condiţii de trafic obişnuite pentru</h2></div>
-        <hr/>
-        <div>
-            <p>
-                La măsurarea timpul de conducere, cea mai apropiată locaţie poate depinde de trafic şi de momentul zilei. Imaginaţi-vă găsirea celei mai apropiate unităţi spitaliceşti de urgenţă la o oră de v&acirc;rf de trafic. &Icirc;n orele de v&acirc;rf ale dimineţii, vehiculele care se &icirc;ndreaptă spre centrul oraşului tind să se deplaseze mai lent dec&acirc;t cele care pleacă dinspre centru. Cea mai apropiată unitate la momentul respectiv din zi poate fi pe direcţia ieşirii dinspre centru. Seara, traficul spre centru este mai rapid, prin urmare poate exista o altă unitate mai apropiată spre centru.
-            </p>
-            <p>Bif&acirc;nd 
-                <b>Utilizare condiţii de trafic obişnuite pentru</b> şi specific&acirc;nd ziua şi ora, instrumentul găseşte cele mai apropiate obiecte spaţiale &icirc;n funcţie de viteza medie istorică pentru fiecare interval de cinci minute de pe parcursul unei săptăm&acirc;ni obişnuite. Cea mai apropiată locaţie poate să difere, deoarece traficul şi duratele călătoriilor fluctuează pe parcursul săptăm&acirc;nii.
-            </p>
-            <p>Reţineţi că, pe măsură ce un vehicul se deplasează &icirc;nainte dintr-un punct, timpul se scurge şi condiţiile de trafic se modifică. Acest instrument ţine cont de aceste variaţii c&acirc;nd utilizaţi traficul; cu toate acestea, nu &icirc;n toate regiunile este oferit suport pentru trafic. Faceţi clic pe linkul 
-                <b>Vizualizare disponibilitate</b> de pe instrument pentru a afla dacă acest suport este oferit &icirc;n zona care vă interesează.
-            </p>
-            <p>Debifaţi 
-                <b>Utilizare condiţii de trafic obişnuite pentru</b> pentru a găsi cele mai apropiate obiecte spaţiale &icirc;n funcţie de vitezele de deplasare fixe, cum ar fi limitele de viteză. Aceasta este opţiunea pe care trebuie să o alegeţi dacă doriţi să ştiţi ce este &icirc;n general cel mai aproape, &icirc;nsă nu neapărat cel mai aproape &icirc;n condiţiile de trafic aferente unei anumite ore şi unei anumite zile.
-            </p>
-        </div>
-    </div>
-    <div id="UseTraffic">
-        <div><h2>Utilizare trafic</h2></div>
-        <hr/>
-        <div>
             <p>Dacă alegeţi 
                 <b>Timp de conducere</b>, beneficiaţi de opţiuni pentru modul de măsurare a timpului de conducere.
                 <ul>
@@ -128,8 +88,7 @@
                             <b>Utilizare trafic</b> şi se alege
                             <b>Trafic &icirc;n funcţie de condiţiile normale pentru</b> o zi şi o oră, instrumentul găseşte cele mai apropiate obiecte spaţiale pe baza vitezei medii istorice pentru fiecare interval de cinci minute de pe parcursul unei săptăm&acirc;ni obişnuite. Rezultatele includ traficul, &icirc;nsă elimină influenţa condiţiilor şi evenimentelor de trafic curente, care pot să difere semnificativ faţă de standard.
                         </p>
-                        <p>
-                            Puteţi utiliza aceste setări de trafic istorice pentru a &icirc;ntreba, de exemplu, &bdquo;La ce obiecte spaţiale se poate ajunge cel mai repede dacă pornesc de la obiectele spaţiale de pornire la ora 11:30 &icirc;ntr-o zi de miercuri?&rdquo;
+                        <p>Puteţi utiliza aceste setări de trafic istorice pentru a &icirc;ntreba, de exemplu, &bdquo;La ce obiecte spaţiale se poate ajunge cel mai repede dacă pornesc de la obiectele spaţiale de pornire la ora 11:30 &icirc;ntr-o zi de miercuri?&rdquo; 
                         </p>
                         <p>Ora pe care o setaţi este evaluată pe fusul orar &icirc;n care se află obiectele spaţiale de pornire. Prin urmare, dacă setaţi ora la 08:00 şi aveţi două obiecte spaţiale de pornire, unul &icirc;n New York City şi altul &icirc;n Los Angeles, cele mai apropiate locaţii vor fi găsite presupun&acirc;ndu-se ora de pornire 08:00 ora coastei de est şi, respectiv, 08:00 ora Pacificului.
                         </p>
@@ -139,6 +98,20 @@
                 <b>Utilizare trafic</b>; cu toate acestea, nu &icirc;n toate regiunile este oferit suport pentru trafic. Faceţi clic pe linkul
                 <b>Vizualizare disponibilitate</b> de pe instrument pentru a afla dacă acest suport este oferit &icirc;n zona care vă interesează.
                 
+            </p>
+        </div>
+    </div>
+    <div id="Cutoffs">
+        <div><h2>Pentru fiecare locație din</h2></div>
+        <hr/>
+        <div>
+            <p>Pentru a limita căutarea celor mai apropiate locaţii, aveţi două opţiuni. O opţiune este să limitaţi numărul maxim de locaţii cele mai apropiate de găsit pentru fiecare locaţie de pornire. Puteţi găsi un parc cel mai apropiat, două cele mai apropiate şi aşa mai departe. Cealaltă opţiune este să setaţi o distanţă sau un timp de conducere de căutat maxim.
+            </p>
+            <p>Debif&acirc;nd opţiunile, numărul maxim al celor mai apropiate locaţii de găsit este 100 (limita instrumentului), iar intervalul maxim de căutare este infinit.
+            </p>
+            <p>Timpul de procesare depinde de numărul de locaţii, numărul de locaţii din apropiere şi intervalul maxim de căutare.   Procesarea durează mai mult atunci c&acirc;nd există mai multe locaţii sau intervale de căutare mai mari.
+            </p>
+            <p>Reţineţi că, la setarea unei limite asupra unui interval de căutare, este posibil ca instrumentul să nu găsească nicio locaţie apropiată &icirc;n intervalul respectiv sau să găsească mai puţine locaţii dec&acirc;t numărul maxim de locaţii cele mai apropiate pe care &icirc;l specificaţi.
             </p>
         </div>
     </div>

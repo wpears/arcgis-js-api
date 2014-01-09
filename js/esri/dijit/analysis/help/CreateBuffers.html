@@ -22,19 +22,16 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Create Buffers</h2><p/>
         <h2></h2>
         <hr/>
     <p>A buffer is an area that covers a given distance from a point, line, or area feature. 
     </p>
-    <p>Buffers are typically used to create areas that can be further analyzed using a tool such as Overlay Layers. For example, if the question is &quot;What buildings are within one mile of the school?&quot;, the answer can be found by creating a one-mile buffer around the school and overlaying the buffer with the layer containing building footprints.  The end result is a layer of  those buildings within one mile of the school.  
+    <p>Buffers are typically used to create areas that can be further analyzed using a tool such as Overlay Layers. For example, if the question is &quot;What buildings are within one mile of the school?&quot;, the answer can be found by creating a one-mile buffer around the school and using the Overlay Layers tool to overlay the buffer with the layer containing building footprints.  The end result is a layer of  those buildings within one mile of the school.  
     </p>
     <p>If 
-        <b>Use current map extent</b> is checked, only the features that are visible within the current map extent will be buffered.  If unchecked, all features in the input layer will be buffered, even if they are outside the current map extent.
-    </p>
-    <p>
-        
+        <b>Use current map extent</b> is checked, only the features that are visible within the current map extent will be buffered.  If unchecked, all features in the analysis layer will be buffered, even if they are outside the current map extent.
     </p>
     </div>
     <!--Parameter divs for each param-->
@@ -42,7 +39,7 @@
         <div><h2>Enter buffer size</h2></div>
         <hr/>
         <div>
-            <p>You can enter a single distance value or multiple values, separating each value with a space.  You can also specify an attribute on the input layer that contains the distance value by clicking 
+            <p>You can enter a single distance value or multiple values, separating each value with a space.  You can also specify an attribute on the analysis layer that contains the distance value by clicking 
                 <b>Field</b>.
             </p>
             
@@ -119,13 +116,12 @@
         <hr/>
         <div>
             <p>This is the name of the layer that will be created in your 
-                <b>My Contents</b> and added to the map.  The default  name is based on the analysis type and the input layer name. If the layer already exists, you will be asked to confirm if you want to overwrite it.
+                <b>My Contents</b> and added to the map.  The default  name is based on the analysis type and the analysis layer name. If the layer already exists, you will be asked to confirm if you want to overwrite it.
             </p>
             <p>Using the 
                 <b>Save result in</b> drop-down box, you can  specify the name of a folder in
                 <b>My Contents</b> where the result will be saved.
             </p>
-            
         </div>
     </div>
 </div>

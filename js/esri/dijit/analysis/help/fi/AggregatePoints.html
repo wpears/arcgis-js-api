@@ -22,14 +22,13 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Kokoa pisteet</h2><p/>
         <h2></h2>
         <hr/>
     <p>Ty&ouml;kalu k&auml;ytt&auml;&auml; pistekohdetasoja (analyysitasoa) sek&auml; aluekohdetasoja. Toiminto m&auml;&auml;ritt&auml;&auml; ensin, mitk&auml; pisteet kuuluvat kuhunkin alueeseen. T&auml;m&auml;n j&auml;lkeen toiminto laskee alueen kaikkien pisteiden tilastotiedot ja kohdistaa ne alueeseen. Perustiedot k&auml;sitt&auml;v&auml;t alueen pistem&auml;&auml;r&auml;n, mutta my&ouml;s muita tilastotietoja on saatavilla. 
     </p>
-    <p>
-        Voit esimerkiksi laatia yhteenvedon piirikuntakohtaisesta kahvinmyynnist&auml;, kun k&auml;yt&auml;t kahvilasijainteja sis&auml;lt&auml;vi&auml; pistekohteita sek&auml; piirikuntia sis&auml;lt&auml;vi&auml; aluekohteita.  Jos kahvioilla on ominaisuus
+    <p>Voit esimerkiksi laatia yhteenvedon piirikuntakohtaisesta kahvinmyynnist&auml;, kun k&auml;yt&auml;t kahvilasijainteja sis&auml;lt&auml;vi&auml; pistekohteita sek&auml; piirikuntia sis&auml;lt&auml;vi&auml; aluekohteita.  Jos kahvioilla on ominaisuus 
         <i>TOTAL_SALES</i>, voit laskea kaikkien ominaisuuksien
         <i>TOTAL_SALES</i> summan piirikunnittain, minimin ja maksimin
         <i>TOTAL_SALES</i> piirikunnittain sek&auml; piirikuntakohtaisen myynnin keskipoikkeaman.
@@ -38,10 +37,6 @@
     </p>
     <p>Jos vaihtoehto 
         <b>K&auml;yt&auml; nykyist&auml; karttalaajuutta</b> on valittuna, nykyisess&auml; kartassa n&auml;kyv&auml; analyysi- ja aluetaso analysoidaan.  Jos vaihtoehto ei ole valittuna, analyysi- ja aluetason kaikki kohteet analysoidaan, vaikka ne eiv&auml;t kuuluisi kartan laajuuteen.
-    </p>
-    <p>
-        
-        
     </p>
     </div>
     <!--Parameter divs for each param-->
@@ -52,7 +47,6 @@
             <p>
                 Valitse aluetaso web-kartasta, johon pisteet kootaan. Jos web-kartassa ei ole rajatasoja, voit valita rajatason ArcGIS Onlinen valikoimasta. Pisteet, jotka kuuluvat tason alueiden rajojen sis&auml;puolelle, lasketaan ja haluttaessa koostetaan yhteenvedoksi valittujen tilastotietojen perusteella.
             </p>
-            
         </div>
     </div>
     <div id="KeepBoundaryNoPoints">
@@ -61,7 +55,6 @@
         <div>
             <p>M&auml;&auml;ritt&auml;&auml;, n&auml;kyv&auml;tk&ouml; pisteett&ouml;m&auml;t alueet tulostasossa.  Jos vaihtoehto ei ole valittuna, pisteett&ouml;m&auml;t alueet eiv&auml;t n&auml;y tulostasossa.  Jos vaihtoehto on valittuna, pisteett&ouml;m&auml;t alueet n&auml;kyv&auml;t tulostasossa.  
             </p>
-            
         </div>
     </div>
     <div id="SummaryFields">
@@ -80,11 +73,6 @@
                 <i>Crime_type</i>, johon liittyy viisi eri rikostyyppi&auml;.  Jokainen tyyppi muodostaa ryhm&auml;n, ja valitsemasi tilastotiedot lasketaan kullekin ominaisuuden
                 <i>Crime_type</i> arvolle.  Kun valitset ryhmittelyominaisuuden, toiminto luo kaksi tulosta: tulostason sek&auml; taulukon, joka sis&auml;lt&auml;&auml; kunkin ryhm&auml;n tilastotiedot.
             </p>
-            <p>
-                
-                
-            </p>
-            
         </div>
     </div>
     <div id="OutputLayer">
@@ -92,13 +80,12 @@
         <hr/>
         <div>
             <p>Sen tason nimi, joka luodaan kohtaan 
-                <b>Oma sis&auml;lt&ouml;</b> ja joka lis&auml;t&auml;&auml;n karttaan.  Oletusnimi perustuu analyysityyppiin ja l&auml;ht&ouml;tason nimeen. Jos taso on jo olemassa, n&auml;ytt&ouml;&ouml;n tulee kehotus vahvistaa tason korvaus.
+                <b>Oma sis&auml;lt&ouml;</b> ja joka lis&auml;t&auml;&auml;n karttaan.  Oletusnimi perustuu analyysityyppiin ja analyysitason nimeen. Jos taso on jo olemassa, n&auml;ytt&ouml;&ouml;n tulee kehotus vahvistaa tason korvaus.
             </p>
             <p>Avattavan 
-                <b>Tallenna tulos kohteeseen</b> -valikon avulla voit m&auml;&auml;ritt&auml;&auml; sen
-                <b>Oma sis&auml;lt&ouml;</b> -kansion nimen, johon tulos tallennetaan.
+                <b>Tallenna tulos sijaintiin</b> -luetteloruudun avulla voit m&auml;&auml;ritt&auml;&auml;
+                <b>Oma sis&auml;lt&ouml;</b> -kohdassa sen kansion nimen, johon tulos tallennetaan.
             </p>
-            
             
         </div>
     </div>

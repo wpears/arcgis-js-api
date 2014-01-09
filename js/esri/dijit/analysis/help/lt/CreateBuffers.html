@@ -22,19 +22,16 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Kurti buferius</h2><p/>
         <h2></h2>
         <hr/>
-    <p>Buferis - tai zona aplink ta&scaron;ką, liniją ar poligoną tam tikru atstumu. 
+    <p>Buferis yra plotas, dengiantis duotą atstumą nuo ta&scaron;kinio, linijinio ar plotinio element. 
     </p>
-    <p>Buferiai dažnai kuriami tam, kad būtų galima atlikti tolesnę analizę naudojant kitus įrankius, pavyzdžiui, Perdengti sluoksnius. Tarkime, jei domina, kurie pastatai yra vieno km. atstumu nuo mokyklos, atsakymas gali būti gautas pirmiausia sukūrus vieno kilometro buferį apie mokyklą ir perdengus buferį pastatų sluoksniu.  Rezultatas bus sluoksnis i&scaron; pastatų, nutolusių nuo mokyklos nedidesniu nei vieno kilometro atstumu.  
+    <p>Buferiai dažnai kuriami tam, kad būtų galima atlikti tolesnę analizę naudojant kitus įrankius, pavyzdžiui, Perdengti Sluoksnius. Pavyzdžiui, jei klausimas yra &ldquo;Kurie pastatai yra vieno kilometro atstumu nuo mokyklos?&rdquo;, atsakymas gali būti surastas sukuriant vieno kilometro buferį aplink mokyklą, ir naudojant Perdengti sluoksnius įrankį perdengti buferį su pastatų plotiniu sluoksniu.  Rezultatas bus sluoksnis i&scaron; pastatų, nutolusių nuo mokyklos nedidesniu nei vieno kilometro atstumu.  
     </p>
     <p>Jei 
-        <b>Naudoti esamą žemėlapio aprėptį</b> pažymėtas, buferiai bus sudaromi tik apie aprėptyje matomus elementus.  Jei nepažymėtas, buferiai bus sudaromi apie visus sluoksnio elementus.
-    </p>
-    <p>
-        
+        <b>Naudoti esamą žemėlapio aprėptį</b> pažymėtas, tik elementams, esantiems matomoje žemėlapio aprėptyje bus kuriami buferiai.  Jei nepažymėtas, visiems elementams anlizės sluoksnyje bus sukuriami buferiai, net jei tie elementai yra už esamos žemėlapio aprėpties ribų.
     </p>
     </div>
     <!--Parameter divs for each param-->
@@ -42,8 +39,8 @@
         <div><h2>Nurodykite buferio dydį</h2></div>
         <hr/>
         <div>
-            <p>Galite įvesti vieną arba keletą tarpais atskirtų atstumo reik&scaron;mių.  Taip pat galite nurodyti sluoksnio atributą, jei norite panaudoti jo reik&scaron;mę, paspausdami 
-                <b>Laukas</b>.
+            <p>Galite įvesti vieną arba kelias atstumo reik&scaron;mes, atskirdami kiekvieną reik&scaron;mę tarpu.  Taip pat galite nurodyti atributinį lauką analizės sluoksnyje, kuriame saugomos atstumų reik&scaron;mės, spausdami 
+                <b>Field</b>.
             </p>
             
         </div>
@@ -52,18 +49,18 @@
         <div><h2>Parinktys</h2></div>
         <hr/>
         <div>
-            <p>Nurodykite, kaip turi būti pasielgta su besikertančiais buferiais. Besikertantys buferiai gali būti palikti kaip atskiri elementai arba apjungti.
+            <p>Pasirinkite ką norite daryti su persidengiančiais buferiais. Kiekvienam buferiui, esančiam vir&scaron; kito buferio, bendri plotai gali būti i&scaron;saugoti (Overlap) arba apjungti (Dissolve).
             </p>
             
             
             <p>
-                Jei naudojate keletą buferių atstumų, galite pasirinkti, kaip jie bus atidėti;   pavyzdžiui, jei atstumai yra 10 ir 14:
+                Naudojant keletą atstumų, galite pasirinkti kaip atrodys paskutinis buferio atstumas. Pavyzdžiui, jei atstumai yra 10 ir 14:
                 <ul>
                     <li>Pasirinkus 
-                        <b>Žiedai</b> rezultatas bus zonos tarp 0 ir 10 bei 10 ir 14.
+                        <b>Rings</b> rezultatas bus buferiai nuo 0 iki 10 ir nuo 10 iki 14.
                     </li>
-                    <li>Pasirinkus
-                        <b>Diskai</b> rezultatas bus beferiai tarp 0 ir 10 bei 0 ir 14.
+                    <li>Pasirinkus 
+                        <b>Disks</b> rezultatas bus buferiai nuo 0 iki 10 ir nuo 0 iki 14.
                     </li>
                 </ul>
                 
@@ -74,17 +71,17 @@
         <div><h2>Parinktys</h2></div>
         <hr/>
         <div>
-            <p>Nurodykite, kaip turi būti pasielgta su besikertančiais buferiais. 
+            <p>Pasirinkite ką norite daryti su persidengiančiais buferiais. Kiekvienam buferiui, esančiam vir&scaron; kito buferio, bendri plotai gali būti i&scaron;saugoti (Overlap) arba apjungti (Dissolve).
             </p>
-            <p>Jei kuriate buferį aplink plotinį objektą (įvestas vienas atstumas), galite nurodyti, ar elemento plotas turi būti įtrauktas į buferio zoną.
+            <p>Kurdami vieną buferį plotiniams elementams (įvedamas vienas atstumas), galite pasirinkti ar elementas, kuriam kuriamas buferis bus ar nebus įtraukiamas į rezultatą.
             </p>
-            <p>Jei naudojate keletą buferių atstumų galite pasirinkti, kaip jie bus atidėti;   pavyzdžiui, jei atstumai yra 10 ir 14:
+            <p>Naudojant keletą atstumų, galite pasirinkti kaip atrodys paskutinis buferio atstumas. Pavyzdžiui, jei atstumai yra 10 ir 14:
                 <ul>
                     <li>Pasirinkus 
-                        <b>Žiedai</b> rezultatas bus zonos tarp 0 ir 10 bei 10 ir 14.
+                        <b>Rings</b> rezultatas bus buferiai nuo 0 iki 10 ir nuo 10 iki 14.
                     </li>
                     <li>Pasirinkus 
-                        <b>Plok&scaron;tės</b> rezultatas bus beferiai tarp 0 ir 10 bei 0 ir 14.
+                        <b>Disks</b> rezultatas bus buferiai nuo 0 iki 10 ir nuo 0 iki 14.
                     </li>
                 </ul>
                 
@@ -96,17 +93,17 @@
         <div><h2>Parinktys</h2></div>
         <hr/>
         <div>
-            <p>Nurodykite, kaip turi būti pasielgta su besikertančiais buferiais. Besikertantys buferiai gali būti palikti kaip atskiri elementai arba apjungti.
+            <p>Pasirinkite ką norite daryti su persidengiančiais buferiais. Kiekvienam buferiui, esančiam vir&scaron; kito buferio, bendri plotai gali būti i&scaron;saugoti (Overlap) arba apjungti (Dissolve).
             </p>
-            <p>Jei buferis kuriamas apie liniją (įvestas vienas atstumas), galite pasirinkti, kurioje linijos pusėje buferis turi būti sukurtas.  Pagal nutylėjimą, buferis bus kuriamas abiejose pusėse.  Kairė ir de&scaron;inė pusės suprantamos pagal kryptį i&scaron; liniją sudarančios pirmos x,y koordinačių poros iki paskutinės.  Rinkitės kairę arba de&scaron;inę pusę, jei žinote linijų koordinačių i&scaron;sidėstymo tvarką (pavyzdžiui, auk&scaron;tyn ar žemyn upių tinkle).   Buferis linijos gali gale būti arba suapvalintas, arba tiesus.
+            <p>Kurdami vieną buferį linijoms (įvestas vienas atstumas), galite pasirinkti, kuriąi linijos pusei sukurti buferį.  Pagal nutylėjimą, buferis bus kuriamas abiejose pusėse.  Kairė ir de&scaron;inė pusės suprantamos pagal kryptį i&scaron; liniją sudarančios pirmos x,y koordinačių poros iki paskutinės.  Rinkitės kairę arba de&scaron;inę pusę, jei žinote linijų koordinačių i&scaron;sidėstymo tvarką (pavyzdžiui, auk&scaron;tyn ar žemyn upių tinkle).   Buferio linijų galai gali būti suapvalinti (Round) arba tiesūs (Flat).
             </p>
-            <p>Jei naudojate keletą buferių atstumų, galite pasirinkti, kaip jie bus atidėti;   pavyzdžiui, jei atstumai yra 10 ir 14:
+            <p>Kuriant keletą buferių (daugiau negu vienas atstumas), galite pasirinkti kaip atrodys paskutinis buferio atstumas. Pavyzdžiui, jei atstumai yra 10 ir 14:
                 <ul>
                     <li>Pasirinkus 
-                        <b>Žiedai</b>, rezultatas bus zonos tarp 0 ir 10 bei 10 ir 14.
+                        <b>Rings</b> rezultatas bus buferiai nuo 0 iki 10 ir nuo 10 iki 14.
                     </li>
-                    <li>Pasirinkus
-                        <b>Plok&scaron;tės</b>, rezultatas bus beferiai tarp 0 ir 10 bei 0 ir 14.
+                    <li>Pasirinkus 
+                        <b>Disks</b> rezultatas bus buferiai nuo 0 iki 10 ir nuo 0 iki 14.
                     </li>
                 </ul>
                 
@@ -119,13 +116,12 @@
         <hr/>
         <div>
             <p>Tai sluoksnio, kuris bus sukurtas ir patalpintas 
-                <b>Mano Turinyje</b> ir pridėtas į žemėlapį, pavadinimas.  Pagal nutylėjimą pavadinimas sudaromas pagal analizės tipą ir analizuojamo sluoksnio pavadinimą. Jei sluoksnis jau egzistuoja, galėsite pasirinkti jį perra&scaron;yti.
+                <b>Mano Turinyje</b> bei pridėtas į žemėlapį, pavadinimas.  Pagal nutylėjimą pavadinimas atspindi analizės tipą ir analizės sluoksnio pavadinimą. Jei sluoksnis jau egzistuoja, galėsite pasirinkti jį perra&scaron;yti.
             </p>
             <p>Naudodami 
                 <b>Rezultatą įra&scaron;yti į</b> sąra&scaron;ą, galite nurodyti
                 <b>Mano Turinyje</b> esančio aplanko pavadinimą.
             </p>
-            
         </div>
     </div>
 </div>

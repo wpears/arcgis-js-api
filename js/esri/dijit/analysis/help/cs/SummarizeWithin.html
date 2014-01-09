@@ -22,13 +22,13 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Sumarizovat společné</h2><p/>
         <h2></h2>
         <hr/>
     <p>Tento n&aacute;stroj vyhled&aacute;v&aacute; prvky (a č&aacute;sti prvků), kter&eacute; se nach&aacute;zej&iacute; v hranic&iacute;ch oblast&iacute; ve vrstvě anal&yacute;zy. Např&iacute;klad:
         <ul>
-            <li>Pomoc&iacute; vrstvy hranic oblast&iacute; povod&iacute; a vrstvy hranic oblast&iacute; využit&iacute; půdy podle typu využit&iacute; půdy spoč&iacute;tej celkovou rozlohu využ&iacute;van&eacute; půdy v&nbsp;každ&eacute;m povod&iacute;. 
+            <li>Pomoc&iacute; vrstvy hranic oblast&iacute; povod&iacute; a vrstvy hranic oblast&iacute; využit&iacute; půdy podle typu využit&iacute; půdy spoč&iacute;tej celkovou rozlohu využ&iacute;van&eacute; půdy v každ&eacute;m povod&iacute;. 
             </li>
             <li>Pomoc&iacute; vrstvy parcel v kraji a vrstvy hranic měst spoč&iacute;tej průměrnou cenu voln&yacute;ch parcel v rozsahu hranic každ&eacute;ho města.
             </li>
@@ -36,7 +36,7 @@
         
     </p>
     <p>Pokud je za&scaron;krtnuto 
-        <b>Použ&iacute;vat rozsah aktu&aacute;ln&iacute; mapy</b>, budou analyzov&aacute;ny pouze prvky ve vrstvě anal&yacute;zy a&nbsp;v&nbsp;sumarizovan&eacute; vrstvě viditeln&eacute; v rozsahu aktu&aacute;ln&iacute; mapy. Pokud toto pole za&scaron;krtnuto nen&iacute;, budou analyzov&aacute;ny v&scaron;echny prvky ve vrstvě anal&yacute;zy a v sumarizovan&eacute; vrstvě, včetně těch, kter&eacute; se nach&aacute;z&iacute; mimo rozsah aktu&aacute;ln&iacute; mapy.
+        <b>Použ&iacute;vat rozsah aktu&aacute;ln&iacute; mapy</b>, budou analyzov&aacute;ny pouze prvky ve vrstvě anal&yacute;zy a v sumarizovan&eacute; vrstvě viditeln&eacute; v rozsahu aktu&aacute;ln&iacute; mapy. Pokud toto pole za&scaron;krtnuto nen&iacute;, budou analyzov&aacute;ny v&scaron;echny prvky ve vrstvě anal&yacute;zy a v sumarizovan&eacute; vrstvě, včetně těch, kter&eacute; se nach&aacute;z&iacute; mimo rozsah aktu&aacute;ln&iacute; mapy.
     </p>
     </div>
     <!--Parameter divs for each param-->
@@ -44,7 +44,7 @@
         <div><h2>Vybrat vrstvu pro sumarizaci</h2></div>
         <hr/>
         <div>
-            <p>Sumarizov&aacute;ny budou prvky v t&eacute;to vrstvě spadaj&iacute;c&iacute; do hranic prvků ve vstupn&iacute; vrstvě. 
+            <p>Sumarizov&aacute;ny budou prvky v t&eacute;to vrstvě spadaj&iacute;c&iacute; do hranic prvků ve vrstvě anal&yacute;zy. 
             </p>
         </div>
     </div>
@@ -142,8 +142,7 @@
             <p>Toto je atribut prvků anal&yacute;zy 
                 <b>Sumarizovat</b>, kter&eacute; lze použ&iacute;t k vypoč&iacute;t&aacute;n&iacute; statistik odděleně pro každou jedinečnou hodnotu atributu. Předpokl&aacute;dejme např&iacute;klad, že vrstva anal&yacute;zy obsahuje hranice měst a prvky anal&yacute;zy
                 <b>Sumarizovat</b> tvoř&iacute; parcely. Jeden z atributů parcel je
-                <i>Status</i>, kter&yacute; obsahuje dvě hodnoty: VOLN&Eacute; a OBSAZEN&Eacute;. Chcete-li spoč&iacute;tat celkovou oblast (nebo jak&yacute;koliv jin&yacute; atribut, např&iacute;klad
-                <i>Value</i>) obsazen&yacute;ch parcel v&nbsp;hranic&iacute;ch měst, použijte atribut
+                <i>Status</i>, kter&yacute; obsahuje dvě hodnoty: VOLN&Eacute; a OBSAZEN&Eacute;. Chcete-li spoč&iacute;tat celkovou oblast voln&yacute;ch a obsazen&yacute;ch parcel v hranic&iacute;ch měst, použijte atribut
                 <i>Status</i> jako atribut k seskupen&iacute;.
             </p>
         </div>
@@ -155,7 +154,7 @@
             <p>Jde o n&aacute;zev vrstvy, kter&aacute; se vytvoř&iacute; ve složce 
                 <b>Můj obsah</b> a přid&aacute; na mapu. V&yacute;choz&iacute; n&aacute;zev se ř&iacute;d&iacute; n&aacute;zvem vrstvy anal&yacute;zy. Pokud vrstva již existuje, budete pož&aacute;d&aacute;ni o potvrzen&iacute;, že si přejete ji přepsat.
             </p>
-            <p>V&nbsp;rozbalovac&iacute;m seznamu 
+            <p>V rozbalovac&iacute;m seznamu 
                 <b>Uložit v&yacute;sledek do</b> můžete zadat n&aacute;zev složky ve složce
                 <b>Můj obsah</b>, do kter&eacute; se m&aacute; v&yacute;sledek uložit.
             </p>

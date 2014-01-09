@@ -7,10 +7,13 @@
               <td class="esriAlignLeading">${i18n.createBuffers}</td>
               <td>
                 <div class="esriFloatTrailing" style="padding:0;">
-                  <a href="#" class='esriFloatLeading helpIcon' esriHelpTopic="toolDescription"></a>
-                  <a href="#" data-dojo-attach-point="_closeBtn" title="${i18n.close}" class="closeIcon">              
-                  <img data-dojo-attach-point="_closeImg" border="0"/></a>
-                </div>
+                    <div class="esriFloatLeading">
+                      <a href="#" class='esriFloatLeading helpIcon' esriHelpTopic="toolDescription"></a>
+                    </div>
+                    <div class="esriFloatTrailing">
+                      <a href="#" data-dojo-attach-point="_closeBtn" title="${i18n.close}" class="esriAnalysisCloseIcon"></a>
+                    </div>              
+                </div>  
               </td>
             </tr>
          </table>
@@ -26,11 +29,11 @@
           </td>
         </tr>
         <tr>
-          <td style="padding-top:5px;">
+          <td class="longTextInput" style="padding-top:5px;">
             <label data-dojo-attach-point="_labelOne" class="esriFloatLeading esriTrailingMargin025">${i18n.oneLabel}</label>
             <label data-dojo-attach-point="_polylabel" class="">${i18n.sizeLabel}</label>
           </td>
-          <td class="longTextInput">
+          <td>
             <a href="#" class='esriFloatTrailing helpIcon' data-dojo-attach-point="_analysisFieldHelpLink" esriHelpTopic="BufferSize"></a>
           </td>
         </tr>
@@ -253,11 +256,11 @@
         </tr>
     
         <tr>
-          <td  style="padding:5px 0px;">
+          <td  class="longTextInput" style="padding:5px 0px;">
             <label data-dojo-attach-point="_labelOne" class="esriFloatLeading esriTrailingMargin025">${i18n.twoLabel}</label>
             <label data-dojo-attach-point="_polylabel" class="">${i18n.resultLabel}</label>
           </td>
-          <td class="longTextInput">
+          <td>
             <a href="#" class='esriFloatTrailing helpIcon' data-dojo-attach-point="_analysisFieldHelpLink" esriHelpTopic="BufferLayer"></a>
           </td>
         </tr>
@@ -286,7 +289,7 @@
            ${i18n.useMapExtent}
        </label>
       </div>
-      <button data-dojo-type="dijit/form/Button" type="submit" data-dojo-attach-point="_saveBtn" class="esriLeadingMargin4" data-dojo-attach-event="onClick:_handleSaveBtnClick">
+      <button data-dojo-type="dijit/form/Button" type="submit" data-dojo-attach-point="_saveBtn" class="esriLeadingMargin4 esriAnalysisSubmitButton" data-dojo-attach-event="onClick:_handleSaveBtnClick">
           ${i18n.runAnalysis}
       </button>
     </div>

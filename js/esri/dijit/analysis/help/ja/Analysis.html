@@ -136,16 +136,19 @@
             </p>
             <br/>
         </div>
-    <div id="FindLocationsCategory" class="smallsize">
+    <div id="FindLocationsCategory" class="regularsize">
         <h2>場所の検索</h2>
         <hr/>
-        <p>これらのツールは、指定したさまざまな条件を満たすエリアを特定するために使用されます。これらの条件は、属性検索（空の土地区画など）と空間検索（河川から 1 キロメートル以内など）に基づくことができます。検索するエリアを既存のフィーチャ（土地区画など）から選択したり、すべての要件を満たす新しいフィーチャを作成したりできます。
+        <p>これらのツールは、指定したさまざまな条件を満たす場所を特定するために使用されます。これらの条件は、属性検索（所有者のいない土地区画など）と空間検索（河川から 1 キロメートル以内など）に基づきます。検索するエリアを既存のフィーチャ（土地区画など）から選択したり、すべての要件を満たす新しいフィーチャを作成したりできます。
             <ul>
                 <li>
-                    <b>[既存の場所の検索（Find Existing Locations）]</b> は、一連の条件を満たす、解析レイヤ内の既存のエリアを検索します。
+                    <b>[既存フィーチャの検索（Find Existing Locations）]</b> は、一連の条件を満たす、解析レイヤ内の既存のエリアを検索します。
                 </li>
                 <li>
-                    <b>[新しい場所の生成（Derive New Locations）]</b> は、一連の条件を満たす分析範囲内の場所から、新しいエリアを作成します。
+                    <b>[新規エリアの作成（Derive New Locations）]</b> は、一連の条件を満たす分析範囲内の場所から、新しいエリアを作成します。
+                </li>
+                <li>
+                    <b>[類似場所の検索（Find Similar Locations）]</b> ツールは、指定した条件に基づいて、1 つ以上のターゲット フィーチャに最も類似している、または最も類似していないフィーチャを検索します。
                 </li>
             </ul>
             
@@ -158,13 +161,13 @@
             <table class="toolSummaryTable">
                 <thead></thead>
                 <tbody><tr>
-                    <td><h2>既存の場所の検索</h2></td>
+                    <td><h2>既存フィーチャの検索（Find Existing Locations）</h2></td>
                     <td>
                     </td>
                 </tr></tbody>
             </table>
 <hr/>
-            <p>指定した一連の条件を満たす、分析範囲内の既存のフィーチャを選択します。これらの条件は、属性検索（空の土地区画など）と空間検索（河川から 1 マイル以内など）に基づくことができます。
+            <p>指定した一連の条件を満たす、分析範囲内の既存のフィーチャを選択します。これらの条件は、属性検索（空の土地区画など）と空間検索（河川から 1 マイル以内など）に基づきます。
 
             </p>
             <br/>
@@ -173,14 +176,28 @@
             <table class="toolSummaryTable">
                 <thead></thead>
                 <tbody><tr>
-                    <td><h2>新しい場所の作成</h2></td>
+                    <td><h2>新規エリアの作成（Derive New Locations）</h2></td>
                     <td>
                     </td>
                 </tr></tbody>
             </table>
 <hr/>
-            <p>指定した一連の条件を満たす分析範囲内で、新しいフィーチャを作成します。これらの条件は、属性検索（空の土地区画など）と空間検索（河川から 1 マイル以内など）に基づくことができます。
+            <p>指定した一連の条件を満たす分析範囲内で、新しいフィーチャを作成します。これらの条件は、属性検索（空の土地区画など）と空間検索（河川から 1 マイル以内など）に基づきます。
 
+            </p>
+            <br/>
+        </div>
+        <div id="FindSimilarLocationsTool" class="smallsize">
+            <table class="toolSummaryTable">
+                <thead></thead>
+                <tbody><tr>
+                    <td><h2>類似場所の検索（Find Similar Locations）</h2></td>
+                    <td>
+                    </td>
+                </tr></tbody>
+            </table>
+<hr/>
+            <p>指定した条件に基づいて、1 つ以上のターゲット フィーチャに最も類似している、または最も類似していないフィーチャを検索します。
             </p>
             <br/>
         </div>
@@ -297,9 +314,9 @@
             <table class="toolSummaryTable">
                 <thead></thead>
                 <tbody><tr>
-                    <td><h2>最近接フィーチャの検索（Find Nearest）</h2></td>
+                    <td><h2>最寄りの検索（Find Nearest）</h2></td>
                     <td>
-                    <img src="../images/GUID-712E0E63-3047-4D1C-B2A9-D336FEC79BF0-web.png" class="titleImage" alt="最近接フィーチャの検索（Find Nearest）">
+                    <img src="../images/GUID-712E0E63-3047-4D1C-B2A9-D336FEC79BF0-web.png" class="titleImage" alt="最寄りの検索（Find Nearest）">
                     </td>
                 </tr></tbody>
             </table>
@@ -408,9 +425,9 @@
             <table class="toolSummaryTable">
                 <thead></thead>
                 <tbody><tr>
-                    <td><h2>レイヤのオーバーレイ（Overlay Layers）</h2></td>
+                    <td><h2>オーバーレイ（Overlay Layers）</h2></td>
                     <td>
-                    <img src="../images/GUID-F7C42432-C8C5-4E4F-8275-EC7E95D00CB7-web.png" class="titleImage" alt="レイヤのオーバーレイ（Overlay Layers）">
+                    <img src="../images/GUID-F7C42432-C8C5-4E4F-8275-EC7E95D00CB7-web.png" class="titleImage" alt="オーバーレイ（Overlay Layers）">
                     </td>
                 </tr></tbody>
             </table>

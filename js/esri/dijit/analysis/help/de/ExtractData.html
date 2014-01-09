@@ -22,12 +22,11 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Daten extrahieren</h2><p/>
         <h2></h2>
         <hr/>
-    <p>Mit diesem Werkzeug k&ouml;nnen Sie Daten f&uuml;r einen bestimmten Interessenbereich ausw&auml;hlen und herunterladen. Ausgew&auml;hlte Layer werden einer ZIP-Datei oder einem Layer-Paket hinzugef&uuml;gt.
-
+    <p>Mit diesem Werkzeug k&ouml;nnen Sie Daten f&uuml;r einen bestimmten Interessenbereich ausw&auml;hlen und herunterladen. Ausgew&auml;hlte Layer werden einer ZIP- oder CSV-Datei hinzugef&uuml;gt.
     </p>
     </div>
     <!--Parameter divs for each param-->
@@ -35,8 +34,7 @@
         <div><h2>Zu extrahierende Layer</h2></div>
         <hr/>
         <div>
-            <p>Die Layer im Inhaltsverzeichnis, aus dem Features extrahiert werden k&ouml;nnen. Aktivierte Layer werden extrahiert und in eine resultierende ZIP-Datei oder ein Layer-Paket eingef&uuml;gt.
-
+            <p>Dies sind die Layer im Inhaltsverzeichnis, aus dem Features extrahiert werden k&ouml;nnen. Aktivierte Layer werden extrahiert und in die resultierende ZIP-Datei oder CSV-Datei eingef&uuml;gt.
             </p>
             <p>Damit der Layer in der Liste der zu extrahierenden Layer angezeigt wird, m&uuml;ssen Sie der Besitzer der Daten sein oder der Besitzer der Daten muss das Exportieren der Daten aktivieren. So aktivieren Sie den Datenexport f&uuml;r Daten, die Sie besitzen:
                 <ul>
@@ -60,7 +58,7 @@
         <div><h2>Kartenausschnitt</h2></div>
         <hr/>
         <div>
-            <p>Die Fl&auml;che zur Definition welche Features in die Ausgabe-ZIP-Datei bzw. das Layer-Paket eingef&uuml;gt werden. Ihnen steht Folgendes zur Auswahl:
+            <p>Die Fl&auml;che zur Definition welche Features in die Ausgabe-ZIP- bzw. die CSV-Datei eingef&uuml;gt werden. Ihnen steht Folgendes zur Auswahl:
                 <ul>
                     <li>Die aktuell sichtbare Ausdehnung der Karte (
                         <b>Gleich wie Anzeige</b>).
@@ -87,7 +85,7 @@
         <div><h2>Format der Ausgabedaten</h2></div>
         <hr/>
         <div>
-            <p>Das Format der Daten, die extrahiert und heruntergeladen werden. Layer-Pakete enthalten immer File-Geodatabases.
+            <p>Das Format der Daten, die extrahiert werden. Beim Exportieren von Linien- oder Fl&auml;chen-Features in CSV-Dateien werden nur nicht r&auml;umliche Attribute extrahiert. Beim Exportieren von Punkt-Features werden sowohl r&auml;umliche als auch nicht r&auml;umliche Attribute extrahiert.  
             </p>
         </div>
     </div>
@@ -104,7 +102,6 @@
                 <b>Ergebnis speichern in</b> k&ouml;nnen Sie den Namen eines Ordners in
                 <b>Eigene Inhalte</b> angeben, in dem das Ergebnis gespeichert werden soll.
             </p>
-            
         </div>
     </div>
 </div>

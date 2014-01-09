@@ -22,19 +22,16 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Créer des zones tampon</h2><p/>
         <h2></h2>
         <hr/>
     <p>Une zone tampon est une surface qui couvre une distance donn&eacute;e &agrave; partir d'une entit&eacute; ponctuelle, lin&eacute;aire ou surfacique. 
     </p>
-    <p>Les zones tampon sont g&eacute;n&eacute;ralement utilis&eacute;es pour cr&eacute;er des surfaces qui peuvent faire l'objet d'analyses plus approfondies &agrave; l'aide d'un outil, tel que Superposer les couches. Par exemple, si vous vous posez la question suivante : &quot;Quels sont les b&acirc;timents qui se trouvent &agrave; moins d'un kilom&egrave;tre de l'&eacute;cole ?&quot;, vous pouvez obtenir la r&eacute;ponse en cr&eacute;ant une zone tampon d'un kilom&egrave;tre autour de l'&eacute;cole et en superposant la zone tampon avec la couche contenant les emprises de b&acirc;timents. Le r&eacute;sultat final est une couche des b&acirc;timents qui se trouvent &agrave; moins d'un kilom&egrave;tre de l'&eacute;cole.  
+    <p>Les zones tampon sont g&eacute;n&eacute;ralement utilis&eacute;es pour cr&eacute;er des surfaces qui peuvent faire l'objet d'analyses plus approfondies &agrave; l'aide d'un outil, tel que Superposer les couches. Par exemple, si vous vous posez la question suivante&nbsp;: &quot;Quels sont les b&acirc;timents qui se trouvent &agrave; moins d'un kilom&egrave;tre de l'&eacute;cole ?&quot;, vous pouvez obtenir la r&eacute;ponse en cr&eacute;ant une zone tampon d'un kilom&egrave;tre autour de l'&eacute;cole et en utilisant l'outil Superposer les couches pour superposer la zone tampon avec la couche contenant les emprises de b&acirc;timents. Le r&eacute;sultat final est une couche des b&acirc;timents qui se trouvent &agrave; moins d'un kilom&egrave;tre de l'&eacute;cole.  
     </p>
     <p>Si l'option 
-        <b>Utiliser l'&eacute;tendue courante de la carte</b> est s&eacute;lectionn&eacute;e, seules les entit&eacute;s qui sont visibles au sein de l'&eacute;tendue courante de la carte seront bufferis&eacute;es. Si l'option n'est pas s&eacute;lectionn&eacute;e, toutes les entit&eacute;s qui se trouvent dans la couche en entr&eacute;e seront bufferis&eacute;es, m&ecirc;me si elles se trouvent en dehors de l'&eacute;tendue courante de la carte.
-    </p>
-    <p>
-        
+        <b>Utiliser l'&eacute;tendue courante de la carte</b> est s&eacute;lectionn&eacute;e, seules les entit&eacute;s qui sont visibles au sein de l'&eacute;tendue courante de la carte seront bufferis&eacute;es. Si l'option n'est pas s&eacute;lectionn&eacute;e, toutes les entit&eacute;s de la couche d'analyse seront bufferis&eacute;es, m&ecirc;me si elles se trouvent en dehors de l'&eacute;tendue courante de la carte.
     </p>
     </div>
     <!--Parameter divs for each param-->
@@ -42,7 +39,7 @@
         <div><h2>Entrer la taille de la zone tampon</h2></div>
         <hr/>
         <div>
-            <p>Vous pouvez entrer une seule distance ou plusieurs valeurs en s&eacute;parant chaque valeur par un espace. Vous pouvez &eacute;galement sp&eacute;cifier un attribut sur la couche en entr&eacute;e qui contient la distance en cliquant sur 
+            <p>Vous pouvez entrer une seule distance ou plusieurs valeurs en s&eacute;parant chaque valeur par un espace. Vous pouvez &eacute;galement sp&eacute;cifier un attribut sur la couche d'analyse qui contient la distance en cliquant sur 
                 <b>Champ</b>.
             </p>
             
@@ -119,13 +116,12 @@
         <hr/>
         <div>
             <p>Il s'agit du nom de la couche qui sera cr&eacute;&eacute;e dans votre page 
-                <b>Mes contenus</b> et ajout&eacute;e &agrave; la carte. Le nom par d&eacute;faut repose sur le type d'analyse et sur le nom de la couche en entr&eacute;e. Si la couche existe d&eacute;j&agrave;, vous serez amen&eacute; &agrave; confirmer son remplacement.
+                <b>Mes contenus</b> et ajout&eacute;e &agrave; la carte. Le nom par d&eacute;faut repose sur le type d'analyse et sur le nom de la couche d'analyse. Si la couche existe d&eacute;j&agrave;, vous serez amen&eacute; &agrave; confirmer son remplacement.
             </p>
             <p>La zone de liste d&eacute;roulante 
                 <b>Enregistrer le r&eacute;sultat dans</b> vous permet de sp&eacute;cifier le nom d'un dossier dans
                 <b>Mes contenus</b> o&ugrave; le r&eacute;sultat sera enregistr&eacute;.
             </p>
-            
         </div>
     </div>
 </div>

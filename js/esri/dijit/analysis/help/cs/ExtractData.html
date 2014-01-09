@@ -22,12 +22,11 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Extrahovat data</h2><p/>
         <h2></h2>
         <hr/>
-    <p>Pomoc&iacute; tohoto n&aacute;stroje můžete vybrat a st&aacute;hnout data pro stanovenou oblast z&aacute;jmu. Vrstvy, kter&eacute; vyberete, se přidaj&iacute; do souboru zip nebo do bal&iacute;čku vrstev.
-
+    <p>Pomoc&iacute; tohoto n&aacute;stroje můžete vybrat a st&aacute;hnout data pro stanovenou z&aacute;jmovou oblast. Vrstvy, kter&eacute; vyberete, se přidaj&iacute; do souboru zip nebo csv.
     </p>
     </div>
     <!--Parameter divs for each param-->
@@ -35,8 +34,7 @@
         <div><h2>Vrstvy k extrakci</h2></div>
         <hr/>
         <div>
-            <p>Vrstvy v obsahu, ze kter&yacute;ch můžete extrahovat prvky. Za&scaron;krtnut&eacute; vrstvy se extrahuj&iacute; a přidaj&iacute; do v&yacute;sledn&eacute;ho souboru zip nebo bal&iacute;čku vrstev.
-
+            <p>Toto jsou vrstvy v obsahu, ze kter&yacute;ch můžete extrahovat prvky. Za&scaron;krtnut&eacute; vrstvy se extrahuj&iacute; a přidaj&iacute; do v&yacute;sledn&eacute;ho souboru zip nebo csv.
             </p>
             <p>Aby se vrstva zobrazila v seznamu vrstev k extrakci, mus&iacute;te př&iacute;slu&scaron;n&aacute; data vlastnit nebo je třeba, aby jejich vlastn&iacute;k povolil export. Chcete-li povolit export dat, kter&aacute; vlastn&iacute;te:
                 <ul>
@@ -57,26 +55,26 @@
         </div>
     </div>
     <div id="AreaOfInterest">
-        <div><h2>Oblast studie</h2></div>
+        <div><h2>Zájmová oblast</h2></div>
         <hr/>
         <div>
-            <p>Tato oblast určuje, kter&eacute; prvky se přidaj&iacute; do v&yacute;stupn&iacute;ho souboru zip nebo bal&iacute;čku vrstev. Můžete vyb&iacute;rat z n&aacute;sleduj&iacute;c&iacute;ch:
+            <p>Tato oblast určuje, kter&eacute; prvky se přidaj&iacute; do v&yacute;stupn&iacute;ho souboru zip nebo csv. Můžete vyb&iacute;rat z n&aacute;sleduj&iacute;c&iacute;ch:
                 <ul>
                     <li>Aktu&aacute;lně viditeln&yacute; rozsah mapy (
                         <b>stejn&yacute; jako zobrazen&yacute;</b>).
                     </li>
                     <li>Jedna z vrstev v obsahu.
                     </li>
-                    <li>Oblast studie vyberete tažen&iacute;m my&scaron;&iacute;.
+                    <li>Z&aacute;jmovou oblast vyberete tažen&iacute;m my&scaron;&iacute;.
                     </li>
                 </ul>
                  Extrahuj&iacute; se v&scaron;echny prvky v r&aacute;mci rozsahu mapy. U prvků, kter&eacute; proch&aacute;zej&iacute; hranicemi rozsahu mapy nebo je kř&iacute;ž&iacute;, ale nenach&aacute;z&iacute; se v rozsahu mapy &uacute;plně, m&aacute;te dvě možnosti:
                 <ul>
                     <li>
-                        <b>Vybrat prvky</b> &ndash; Prvky, kter&eacute; kř&iacute;ž&iacute; hranici oblasti studie, se extrahuj&iacute; cel&eacute;.
+                        <b>Vybrat prvky</b> &ndash; Prvky, kter&eacute; kř&iacute;ž&iacute; hranici z&aacute;jmov&eacute; oblasti, se extrahuj&iacute; cel&eacute;.
                     </li>
                     <li>
-                        <b>Oř&iacute;znout prvky</b> &ndash; Extrahuj&iacute; se pouze č&aacute;sti prvků, kter&eacute; se nach&aacute;zej&iacute; v oblasti studie.
+                        <b>Oř&iacute;znout prvky</b> &ndash; Extrahuj&iacute; se pouze č&aacute;sti prvků, kter&eacute; se nach&aacute;zej&iacute; v z&aacute;jmov&eacute; oblasti.
                     </li>
                 </ul>
                 
@@ -87,7 +85,7 @@
         <div><h2>Formát výstupních dat</h2></div>
         <hr/>
         <div>
-            <p>Form&aacute;t dat, kter&aacute; se extrahuj&iacute; a st&aacute;hnou. Bal&iacute;čky vrstev vždy zahrnuj&iacute; geodatab&aacute;ze souboru.
+            <p>Form&aacute;t dat, kter&aacute; se extrahuj&iacute;. Při exportu liniov&yacute;ch prvků nebo prvků oblasti do souborů CSV se extrahuj&iacute; pouze neprostorov&eacute; atributy. Při exportov&aacute;n&iacute; bodov&yacute;ch prvků se extrahuj&iacute; prostorov&eacute; i neprostorov&eacute; atributy.  
             </p>
         </div>
     </div>
@@ -100,11 +98,10 @@
                 <b>Můj obsah</b>. N&aacute;zev položky se ř&iacute;d&iacute; zvolen&yacute;m
                 <b>form&aacute;tem v&yacute;stupn&iacute;ch dat</b>. Pokud položka již existuje, budete pož&aacute;d&aacute;ni o potvrzen&iacute;, že si přejete ji přepsat.
             </p>
-            <p>V&nbsp;rozbalovac&iacute;m seznamu 
+            <p>V rozbalovac&iacute;m seznamu 
                 <b>Uložit v&yacute;sledek do</b> můžete zadat n&aacute;zev složky ve složce
                 <b>Můj obsah</b>, do kter&eacute; se m&aacute; v&yacute;sledek uložit.
             </p>
-            
         </div>
     </div>
 </div>

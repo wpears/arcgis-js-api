@@ -91,9 +91,9 @@
             <table class="toolSummaryTable">
                 <thead></thead>
                 <tbody><tr>
-                    <td><h2>Yhteenveto alueesta</h2></td>
+                    <td><h2>Yhteenveto alueella</h2></td>
                     <td>
-                    <img src="../images/GUID-2E97B2ED-56A7-4242-B0E0-C1824E6F643F-web.png" class="titleImage" alt="Yhteenveto alueesta">
+                    <img src="../images/GUID-2E97B2ED-56A7-4242-B0E0-C1824E6F643F-web.png" class="titleImage" alt="Yhteenveto alueella">
                     </td>
                 </tr></tbody>
             </table>
@@ -125,7 +125,7 @@
             <table class="toolSummaryTable">
                 <thead></thead>
                 <tbody><tr>
-                    <td><h2>Tason lisätiedot</h2></td>
+                    <td><h2>Rikasta taso</h2></td>
                     <td>
                     </td>
                 </tr></tbody>
@@ -136,15 +136,18 @@
             <br/>
         </div>
     <div id="FindLocationsCategory" class="largesize">
-        <h2>Etsi sijainteja</h2>
+        <h2>Hae sijainnit</h2>
         <hr/>
-        <p>N&auml;iden ty&ouml;kalujen avulla voidaan tunnistaa alueet, jotka vastaavat useita erilaisia m&auml;&auml;ritt&auml;mi&auml;si kriteerej&auml;.  N&auml;m&auml; kriteerit voivat perustua attribuuttikyselyihin (esimerkiksi vapaisiin kiinteist&ouml;ihin) ja tila-avaruuden kyselyihin (esimerkiksi yhden kilometrin s&auml;teell&auml; joesta).  Voit valita l&ouml;ydetyt alueet olemassa olevista kohteista (kuten olemassa olevat kiinteist&ouml;t) tai voit luoda uusia kohteita, jotka t&auml;ytt&auml;v&auml;t kaikki vaatimukset.
+        <p>N&auml;iden ty&ouml;kalujen avulla voidaan tunnistaa alueet, jotka vastaavat useita erilaisia m&auml;&auml;ritt&auml;mi&auml;si kriteerej&auml;.  N&auml;m&auml; kriteerit voivat perustua attribuuttikyselyihin (esimerkiksi vapaisiin kiinteist&ouml;ihin) ja tila-avaruuden kyselyihin (esimerkiksi yhden kilometrin s&auml;teell&auml; joesta).  Voit valita l&ouml;ydetyt alueet olemassa olevista kohteista (kuten olemassa olevista kiinteist&ouml;ist&auml;) tai voit luoda uusia kohteita, jotka t&auml;ytt&auml;v&auml;t kaikki vaatimukset.
             <ul>
                 <li>
-                    <b>Etsi olemassa olevista sijainneista</b> hakee analyysikarttatasossa olevia alueita, jotka vastaavat m&auml;&auml;ritettyj&auml; kriteereit&auml;.
+                    <b>Hae nykyiset sijainnit</b> hakee analyysikarttatasossa olevia alueita, jotka vastaavat m&auml;&auml;ritettyj&auml; kriteereit&auml;.
                 </li>
                 <li>
-                    <b>Johda uusia sijainteja</b> luo uusia, m&auml;&auml;ritettyj&auml; kriteereit&auml; vastaavia alueita tutkittavalta alueelta olevista sijainneista.
+                    <b>Laske uudet sijainnit</b> luo uusia alueita tutkimusalueesi sijainneista, jotka t&auml;ytt&auml;v&auml;t hakukriteerit.
+                </li>
+                <li>
+                    <b>Hae samankaltaiset sijainnit</b> hakee kohteita, jotka ovat mahdollisimman samanlaisia tai erilaisia kuin kohdekohteet ja jotka vastaavat m&auml;&auml;ritt&auml;mi&auml;si kriteereit&auml;.
                 </li>
             </ul>
             
@@ -157,13 +160,13 @@
             <table class="toolSummaryTable">
                 <thead></thead>
                 <tbody><tr>
-                    <td><h2>Etsi olemassa olevista sijainneista</h2></td>
+                    <td><h2>Hae nykyiset sijainnit</h2></td>
                     <td>
                     </td>
                 </tr></tbody>
             </table>
 <hr/>
-            <p>Hakee tutkittavalta alueelta olemassa olevat kohteet, jotka vastaavat m&auml;&auml;ritt&auml;mi&auml;si kriteereit&auml;. Kriteereit&auml; voivat olla attribuuttikyselyt (esimerkiksi vapaat kiinteist&ouml;t) tai tila-avaruuden kyselyt (esimerkiksi yhden kilometrin s&auml;teell&auml; joesta).
+            <p>Valitsee tutkittavalta alueelta olemassa olevat kohteet, jotka vastaavat m&auml;&auml;ritt&auml;mi&auml;si kriteereit&auml;. Kriteereit&auml; voivat olla attribuuttikyselyt (esimerkiksi vapaat kiinteist&ouml;t) tai tila-avaruuden kyselyt (esimerkiksi yhden kilometrin s&auml;teell&auml; joesta).
             </p>
             <br/>
         </div>
@@ -171,13 +174,27 @@
             <table class="toolSummaryTable">
                 <thead></thead>
                 <tbody><tr>
-                    <td><h2>Johda uusia sijainteja</h2></td>
+                    <td><h2>Laske uudet sijainnit</h2></td>
                     <td>
                     </td>
                 </tr></tbody>
             </table>
 <hr/>
             <p>Luo tutkittavalle alueelle uusia kohteita, jotka vastaavat m&auml;&auml;ritt&auml;mi&auml;si kriteereit&auml;. Kriteereit&auml; voivat olla attribuuttikyselyt (esimerkiksi vapaat kiinteist&ouml;t) tai tila-avaruuden kyselyt (esimerkiksi yhden kilometrin s&auml;teell&auml; joesta).
+            </p>
+            <br/>
+        </div>
+        <div id="FindSimilarLocationsTool" class="smallsize">
+            <table class="toolSummaryTable">
+                <thead></thead>
+                <tbody><tr>
+                    <td><h2>Hae samankaltaiset sijainnit</h2></td>
+                    <td>
+                    </td>
+                </tr></tbody>
+            </table>
+<hr/>
+            <p>Hakee kohteita, jotka ovat mahdollisimman samanlaisia tai erilaisia kuin kohdekohteet ja jotka vastaavat m&auml;&auml;ritt&auml;mi&auml;si kriteereit&auml;.
             </p>
             <br/>
         </div>
@@ -251,9 +268,9 @@
             <table class="toolSummaryTable">
                 <thead></thead>
                 <tbody><tr>
-                    <td><h2>Luo puskureita</h2></td>
+                    <td><h2>Luo puskurit</h2></td>
                     <td>
-                    <img src="../images/GUID-652EECCB-3A95-4984-9283-16E5CD36D569-web.png" class="titleImage" alt="Luo puskureita">
+                    <img src="../images/GUID-652EECCB-3A95-4984-9283-16E5CD36D569-web.png" class="titleImage" alt="Luo puskurit">
                     </td>
                 </tr></tbody>
             </table>
@@ -294,9 +311,9 @@
             <table class="toolSummaryTable">
                 <thead></thead>
                 <tbody><tr>
-                    <td><h2>Etsi lähin</h2></td>
+                    <td><h2>Hae lähin</h2></td>
                     <td>
-                    <img src="../images/GUID-712E0E63-3047-4D1C-B2A9-D336FEC79BF0-web.png" class="titleImage" alt="Etsi l&auml;hin">
+                    <img src="../images/GUID-712E0E63-3047-4D1C-B2A9-D336FEC79BF0-web.png" class="titleImage" alt="Hae l&auml;hin">
                     </td>
                 </tr></tbody>
             </table>
@@ -404,9 +421,9 @@
             <table class="toolSummaryTable">
                 <thead></thead>
                 <tbody><tr>
-                    <td><h2>Karttatasokerrokset</h2></td>
+                    <td><h2>Kerrostasot</h2></td>
                     <td>
-                    <img src="../images/GUID-F7C42432-C8C5-4E4F-8275-EC7E95D00CB7-web.png" class="titleImage" alt="Karttatasokerrokset">
+                    <img src="../images/GUID-F7C42432-C8C5-4E4F-8275-EC7E95D00CB7-web.png" class="titleImage" alt="Kerrostasot">
                     </td>
                 </tr></tbody>
             </table>

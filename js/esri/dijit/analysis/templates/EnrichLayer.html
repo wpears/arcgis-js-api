@@ -7,9 +7,12 @@
             <td class="esriAlignLeading">${i18n.enrichLayer}</td>
             <td>
               <div class="esriFloatTrailing" style="padding:0;">
-                  <a href="#" class='esriFloatLeading helpIcon' esriHelpTopic="toolDescription"></a>
-                  <a href="#" data-dojo-attach-point="_closeBtn" title="${i18n.close}" class="closeIcon">              
-                  <img data-dojo-attach-point="_closeImg" border="0"/></a>            
+                  <div class="esriFloatLeading">
+                    <a href="#" class='esriFloatLeading helpIcon' esriHelpTopic="toolDescription"></a>
+                  </div>
+                  <div class="esriFloatTrailing">
+                    <a href="#" data-dojo-attach-point="_closeBtn" title="${i18n.close}" class="esriAnalysisCloseIcon"></a>
+                  </div>              
               </div>                
             </td>
           </tr>
@@ -32,8 +35,14 @@
             </td>
           </tr>
           <tr>
+            <td colspan="3" class="clear"></td>
+          </tr>          
+          <tr>
             <td colspan="3" style="padding-top:0;">
-              <select multiple="true"  class="esriLeadingMargin1 longInput"  style="margin-top:10px;" data-dojo-type="dojox/form/CheckedMultiSelect" data-dojo-props="required:true"   data-dojo-attach-point="_dataSelect"></select>
+              <!--<select multiple="true"  class="esriLeadingMargin1 longInput"  style="margin-top:10px;" data-dojo-type="dojox/form/CheckedMultiSelect" data-dojo-props="required:true"   data-dojo-attach-point="_dataSelect"></select>-->
+              <div style="width:95%;height:200px;border:1px #EFEEEF solid;" data-dojo-attach-point="_enrichOptionsCtr">
+                <div data-dojo-attach-point="_enrichOptionsDiv" data-dojo-props="style:'overflow-y:auto;'" style="overflow-y:auto;"></div>
+              </div>
             </td>
           </tr>
           
@@ -117,7 +126,7 @@
            ${i18n.useMapExtent}
        </label>
       </div>
-      <button data-dojo-type="dijit/form/Button" type="submit" data-dojo-attach-point="_saveBtn" class="esriLeadingMargin4" data-dojo-attach-event="onClick:_handleSaveBtnClick">
+      <button data-dojo-type="dijit/form/Button" type="submit" data-dojo-attach-point="_saveBtn" class="esriLeadingMargin4 esriAnalysisSubmitButton" data-dojo-attach-event="onClick:_handleSaveBtnClick">
           ${i18n.runAnalysis}
       </button>
     </div>

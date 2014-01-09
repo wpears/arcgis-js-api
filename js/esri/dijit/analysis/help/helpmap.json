@@ -1,6 +1,10 @@
 {
     "version": "1.0",
     "map": {
+        "DeriveNewLocations": {
+            "toolDescription": "Derive_New_Locations/010q000000z8000000.htm",
+            "Expression": "Derive_New_Locations/010q000000z8000000/"
+        },
         "EnrichLayer": {
             "toolDescription": "About_the_Enrich_Layer_tool/010q000000wv000000.htm",
             "DataCollection":"About_the_Enrich_Layer_tool/010q000000wv000000/"
@@ -8,6 +12,10 @@
         "ExtractData": {
             "toolDescription": "About_the_Extract_Data_tool/010q000000ww000000.htm",
             "InputLayers": "About_the_Extract_Data_tool/010q000000ww000000/"
+        },
+        "FindExistingLocations": {
+            "toolDescription": "Find_Existing_Locations/010q000000z9000000.htm",
+            "Expression": "Find_Existing_Locations/010q000000z9000000/"
         },
         "FindHotSpots": {
             "toolDescription": "Find_Hot_Spots/010q000000w1000000.htm",

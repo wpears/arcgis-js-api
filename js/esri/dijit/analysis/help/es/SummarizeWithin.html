@@ -22,14 +22,12 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Resumir dentro de</h2><p/>
         <h2></h2>
         <hr/>
     <p>Esta herramienta busca entidades (y partes de entidades) que est&aacute;n dentro de los l&iacute;mites de las &aacute;reas de la capa de an&aacute;lisis.
- 
-Por ejemplo:
-
+ Por ejemplo:
         <ul>
             <li>Dada una capa de l&iacute;mites de cuencas hidrogr&aacute;ficas y una capa de l&iacute;mites de uso del suelo, calcula la superficie total del tipo de uso del suelo para cada cuenca hidrogr&aacute;fica.
  
@@ -51,8 +49,7 @@ Si no se ha activado, se analizar&aacute;n todas las entidades de la capa de an&
         <div><h2>Elegir la capa para resumir</h2></div>
         <hr/>
         <div>
-            <p>Se resumir&aacute;n las entidades de esta capa que est&eacute;n dentro de los l&iacute;mites de entidades de la capa de entrada.
- 
+            <p>Se resumir&aacute;n las entidades de esta capa que est&eacute;n dentro de los l&iacute;mites de entidades de la capa de an&aacute;lisis. 
             </p>
         </div>
     </div>
@@ -161,11 +158,11 @@ Tambi&eacute;n puedes calcular las estad&iacute;sticas de los atributos num&eacu
  
 Por ejemplo, supongamos que la capa de an&aacute;lisis contiene l&iacute;mites de ciudad y que las entidades
                 <b>Resumir</b> son parcelas.
- Uno de los atributos de las parcelas es
-                <i>Status</i> que contiene dos valores: VACANT y OCCUPIED. 
-Para calcular el &aacute;rea total (o cualquier otro atributo, como
-                <i>Value</i>) de las parcelas vacantes y ocupadas dentro de los l&iacute;mites de las ciudades, utiliza
-                <i>Status</i> como el grupo por atributo.
+ 
+Uno de los atributos de las parcelas es
+                <i>Status</i> que contiene dos valores: VACANT y OCCUPIED.
+ Para calcular el &aacute;rea total de parcelas vacantes y ocupadas dentro de los l&iacute;mites de las ciudades, utilice
+                <i>Status</i> como el atributo para agrupar.
             </p>
         </div>
     </div>

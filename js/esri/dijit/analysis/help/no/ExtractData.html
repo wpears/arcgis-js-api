@@ -22,11 +22,11 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Ekstraher data</h2><p/>
         <h2></h2>
         <hr/>
-    <p>Med dette verkt&oslash;yet kan du velge og laste ned data for et bestemt interesseomr&aring;de. Lagene du velger, legges til i en ZIP-fil eller lagpakke.
+    <p>Med dette verkt&oslash;yet kan du velge og laste ned data for et bestemt interesseomr&aring;de. Lagene du velger, legges til i en ZIP-fil eller CSV-fil.
     </p>
     </div>
     <!--Parameter divs for each param-->
@@ -34,7 +34,7 @@
         <div><h2>Lag som skal trekkes ut</h2></div>
         <hr/>
         <div>
-            <p>Lagene i innholdsfortegnelsen som du kan trekke ut geoobjekter fra.  Lagene det er merket av for, trekkes ut og inkluderes i en resulterende ZIP-fil eller lagpakke.
+            <p>Dette er lagene i innholdsfortegnelsen som du kan trekke ut geoobjekter fra.  Lagene det er merket av for, trekkes ut og inkluderes i en resulterende ZIP-fil eller CSV-fil.
             </p>
             <p>For at et lag skal vises i listen over lag som skal trekkes ut, m&aring; du enten eie dataene eller dataenes eier m&aring; aktivere eksport av dataene.    Slik aktiverer du eksport av data du eier:
                 <ul>
@@ -58,7 +58,7 @@
         <div><h2>Studieområde</h2></div>
         <hr/>
         <div>
-            <p>Omr&aring;det som definerer hvilke geoobjekter som skal inkluderes i ZIP-filen eller datapakken. Du kan velge blant f&oslash;lgende:
+            <p>Omr&aring;det som definerer hvilke geoobjekter som skal inkluderes i ZIP-filen eller CSV-filen. Du kan velge blant f&oslash;lgende:
                 <ul>
                     <li>Gjeldende synlige kartutstrekning (
                         <b>Samme som skjerm</b>).
@@ -85,7 +85,7 @@
         <div><h2>Utdataformat</h2></div>
         <hr/>
         <div>
-            <p>Formatet p&aring; dataene trekkes ut og lastes ned.  Lagpakker inneholder alltid filgeodatabaser.
+            <p>Formatet p&aring; dataene som trekkes ut. N&aring;r du eksporterer linje- eller omr&aring;degeoobjekter til CSV-filer, er det bare ikke-romlige attributter som trekkes ut.  N&aring;r du eksporterer punktgeoobjekter, trekkes b&aring;de romlige og ikke-romlige attributter ut.  
             </p>
         </div>
     </div>
@@ -98,11 +98,10 @@
                 <b>Mitt innhold</b>.  Elementnavnet baseres p&aring; valgt
                 <b>Utdataformat</b>.     Hvis elementet finnes allerede, blir du bedt om &aring; bekrefte at du vil overskrive det.
             </p>
-            <p>Bruk rullegardinlisten 
-                <b>Save result in</b> til &aring; angi navnet p&aring; en mappe i
+            <p>Bruk rullegardinmenyen 
+                <b>Lagre resultatet i</b> til &aring; angi navnet p&aring; en mappe i
                 <b>Mitt innhold</b> som resultatet skal lagres i.
             </p>
-            
         </div>
     </div>
 </div>

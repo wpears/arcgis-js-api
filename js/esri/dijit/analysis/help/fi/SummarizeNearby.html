@@ -22,7 +22,7 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Yhteenveto lähistöstä</h2><p/>
         <h2></h2>
         <hr/>
@@ -41,7 +41,7 @@
     </div>
     <!--Parameter divs for each param-->
     <div id="Summarize">
-        <div><h2>Valitse yhteenvetokarttataso</h2></div>
+        <div><h2>Valitse taso yhteenvetoa varten</h2></div>
         <hr/>
         <div>
             <p>T&auml;ss&auml; karttatasossa olevista kohteista, jotka sijaitsevat m&auml;&auml;ritetyn et&auml;isyyden sis&auml;ll&auml; analyysikarttatason kohteista, tehd&auml;&auml;n yhteenveto. 
@@ -53,7 +53,9 @@
         <div><h2>Etsi lähimmät kohteet mittaustavalla</h2></div>
         <hr/>
         <div>
-            <p>Voit m&auml;&auml;ritt&auml;&auml;, mit&auml; et&auml;isyytt&auml; haluat k&auml;ytt&auml;&auml; hakuperusteena: suoraviivaista et&auml;isyytt&auml;, ajoet&auml;isyytt&auml; vai ajoaikaa.  Sek&auml; ajoet&auml;isyys ett&auml; ajoaika mittaavat et&auml;isyyden teit&auml; pitkin, ja mittauksessa otetaan huomioon erin&auml;iset rajoitteet, kuten yksisuuntaiset kadut.  Ajoajan perusteella haettaessa huomioidaan nykyiset nopeusrajoitukset.   Voit antaa useita et&auml;isyyksi&auml;.  Yhteenvetoon sis&auml;llytet&auml;&auml;n kohteet, jotka sijaitsevat haluamasi et&auml;isyyden sis&auml;ll&auml; (tai vastaavalla et&auml;isyydell&auml;).  
+            <p>Voit m&auml;&auml;ritt&auml;&auml;, mit&auml; et&auml;isyytt&auml; haluat k&auml;ytt&auml;&auml; hakuperusteena: suoraviivaista et&auml;isyytt&auml;, ajoet&auml;isyytt&auml; vai ajoaikaa.  Sek&auml; ajoet&auml;isyys ett&auml; ajoaika mittaavat et&auml;isyyden teit&auml; pitkin, ja mittauksessa otetaan huomioon erin&auml;iset rajoitteet, kuten yksisuuntaiset kadut.  Ajoajan laskemisessa k&auml;ytet&auml;&auml;n valitsemaasi ajonopeutta, joka voi perustua joko reaaliaikaisiin tai tyypillisiin liikennetietoihin. Reaaliaikaiset nopeudet perustuvat nykyisiin anturilukemiin ja tyypilliset nopeudet lasketaan historiallisten keskiarvojen perusteella.   
+            </p>
+            <p>Voit antaa useita et&auml;isyyksi&auml;.  Yhteenvetoon sis&auml;llytet&auml;&auml;n kohteet, jotka sijaitsevat haluamasi et&auml;isyyden sis&auml;ll&auml; (tai vastaavalla et&auml;isyydell&auml;).  
             </p>
         </div>
     </div>
@@ -159,15 +161,15 @@
         </div>
     </div>
     <div id="OutputName">
-        <div><h2>Tuloskarttatason nimi</h2></div>
+        <div><h2>Tulostason nimi</h2></div>
         <hr/>
         <div>
-            <p>T&auml;m&auml; on sen karttatason nimi, joka luodaan 
-                <b>Oma sis&auml;lt&ouml;</b> -kohdassa ja lis&auml;t&auml;&auml;n karttaan.  Oletusarvoiset nimet perustuvat analyysikarttatason nimeen. Jos karttataso on jo olemassa, ohjelmisto pyyt&auml;&auml; vahvistusta sen korvaamiselle.
+            <p>Sen tason nimi, joka luodaan kohtaan 
+                <b>Oma sis&auml;lt&ouml;</b> ja joka lis&auml;t&auml;&auml;n karttaan.  Oletusnimi perustuu analyysitason nimeen. Jos taso on jo olemassa, n&auml;ytt&ouml;&ouml;n tulee kehotus vahvistaa tason korvaus.
             </p>
             <p>Avattavan 
-                <b>Tallenna tulokset kansioon</b> -luetteloruudun avulla voit m&auml;&auml;ritt&auml;&auml;
-                <b>Oma sis&auml;lt&ouml;</b> -kohdassa sen kansion nimen, johon tulokset tallennetaan.
+                <b>Tallenna tulos sijaintiin</b> -luetteloruudun avulla voit m&auml;&auml;ritt&auml;&auml;
+                <b>Oma sis&auml;lt&ouml;</b> -kohdassa sen kansion nimen, johon tulos tallennetaan.
             </p>
         </div>
     </div>

@@ -22,19 +22,16 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Skapa buffertar</h2><p/>
         <h2></h2>
         <hr/>
     <p>En buffert &auml;r ett omr&aring;de som t&auml;cker ett givet avst&aring;nd fr&aring;n ett punkt-, linje- eller omr&aring;desgeoobjekt. 
     </p>
-    <p>Buffertar anv&auml;nds normalt sett f&ouml;r att skapa omr&aring;den som kan analyseras ytterligare med verktyg som &Ouml;verlagra lager. Om fr&aring;gan till exempel &auml;r &quot;Vilka byggnader ligger inom en kilometer fr&aring;n skolan?&quot;, kan du hitta svaret genom att skapa en buffert p&aring; en kilometer kring skolan och sedan &ouml;verlagra bufferten med det lager som inneh&aring;ller byggnadsavtrycken.  Slutresultatet blir ett lager med de byggnader som ligger inom en kilometer fr&aring;n skolan.  
+    <p>Buffertar anv&auml;nds normalt sett f&ouml;r att skapa omr&aring;den som kan analyseras ytterligare med verktyg som &Ouml;verlagra lager. Om fr&aring;gan till exempel &auml;r &quot;Vilka byggnader ligger inom en kilometer fr&aring;n skolan?&quot;, kan du hitta svaret genom att skapa en buffert p&aring; en kilometer kring skolan och sedan &ouml;verlagra bufferten med det lager som inneh&aring;ller byggnadsavtrycken med hj&auml;lp av verktyget &Ouml;verlagra lager.  Slutresultatet blir ett lager med de byggnader som ligger inom en kilometer fr&aring;n skolan.  
     </p>
     <p>Om 
-        <b>Anv&auml;nd aktuell kartutbredning</b> &auml;r markerat buffras endast de geoobjekt som &auml;r synliga i den aktuella kartutbredningen.  Om alternativet inte markeras buffras alla geoobjekt i indatalagret, &auml;ven om de ligger utanf&ouml;r den aktuella kartutbredningen.
-    </p>
-    <p>
-        
+        <b>Anv&auml;nd aktuell kartutbredning</b> &auml;r markerat buffras endast de geoobjekt som &auml;r synliga i den aktuella kartutbredningen.  Om alternativet inte markeras buffras alla geoobjekt i analyslagret, &auml;ven om de ligger utanf&ouml;r den aktuella kartutbredningen.
     </p>
     </div>
     <!--Parameter divs for each param-->
@@ -42,7 +39,7 @@
         <div><h2>Ange buffertstorlek</h2></div>
         <hr/>
         <div>
-            <p>Du kan ange ett enda avst&aring;ndsv&auml;rde eller flera v&auml;rden. Avgr&auml;nsa varje v&auml;rde med ett blanksteg.  Du kan &auml;ven ange ett attribut f&ouml;r det indatalager som inneh&aring;ller avst&aring;ndsv&auml;rdet genom att klicka p&aring; 
+            <p>Du kan ange ett enda avst&aring;ndsv&auml;rde eller flera v&auml;rden. Avgr&auml;nsa varje v&auml;rde med ett blanksteg.  Du kan &auml;ven ange ett attribut f&ouml;r det analyslager som inneh&aring;ller avst&aring;ndsv&auml;rdet genom att klicka p&aring; 
                 <b>F&auml;lt</b>.
             </p>
             
@@ -119,13 +116,12 @@
         <hr/>
         <div>
             <p>Det h&auml;r &auml;r namnet p&aring; lagret som skapas i 
-                <b>Mitt inneh&aring;ll</b> och l&auml;ggs till i kartan.  Standardnamnet bygger p&aring; analystypen och indatalagrets namn. Om lagret redan finns uppmanas du bekr&auml;fta att du vill skriva &ouml;ver det.
+                <b>Mitt inneh&aring;ll</b> och l&auml;ggs till i kartan.  Standardnamnet bygger p&aring; analystypen och analyslagrets namn. Om lagret redan finns uppmanas du att bekr&auml;fta att du vill skriva &ouml;ver det.
             </p>
             <p>Om du anv&auml;nder listrutan 
                 <b>Spara resultat i</b> kan du ange namnet p&aring; en mapp i
                 <b>Mitt inneh&aring;ll</b> d&auml;r resultatet ska sparas.
             </p>
-            
         </div>
     </div>
 </div>

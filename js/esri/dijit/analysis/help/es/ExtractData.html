@@ -22,12 +22,11 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Extraer datos</h2><p/>
         <h2></h2>
         <hr/>
-    <p>Con esta herramienta, puedes seleccionar y descargar los datos de un &aacute;rea de inter&eacute;s concreta. Las capas que selecciones se agregar&aacute;n a un archivo zip o a un paquete de capas.
-
+    <p>Con esta herramienta, puedes seleccionar y descargar los datos de un &aacute;rea de inter&eacute;s concreta. Las capas que selecciones se agregar&aacute;n a un archivo zip o csv.
     </p>
     </div>
     <!--Parameter divs for each param-->
@@ -35,8 +34,7 @@
         <div><h2>Capas para extraer</h2></div>
         <hr/>
         <div>
-            <p>Las capas de la tabla de contenido de las que puedes extraer entidades. Las capas que se activan se extraen y se incluyen en un archivo zip o en un paquete de capas resultante.
-
+            <p>Estas son las capas de la tabla de contenido de las que puedes extraer entidades. Las capas que se activan se extraen y se incluyen en un archivo zip o csv resultante.
             </p>
             <p>Para que una capa aparezca en la lista de capas para extraer, hay que ser el propietario de los datos o el propietario de los mismos debe habilitar la exportaci&oacute;n de los datos. Para habilitar la exportaci&oacute;n de datos de tu propiedad:
                 <ul>
@@ -60,7 +58,7 @@
         <div><h2>Área de estudio</h2></div>
         <hr/>
         <div>
-            <p>El &aacute;rea que define las entidades que se pueden incluir en el archivo zip o en el paquete de capas de salida. Puedes elegir entre las opciones siguientes:
+            <p>El &aacute;rea que define las entidades que se pueden incluir en el archivo zip o csv. Puedes elegir entre las opciones siguientes:
                 <ul>
                     <li>La extensi&oacute;n visible actual del mapa (
                         <b>Igual que la visualizaci&oacute;n</b>).
@@ -87,7 +85,7 @@
         <div><h2>Formato de datos de salida</h2></div>
         <hr/>
         <div>
-            <p>Formato de los datos que se extraer&aacute;n y se descargar&aacute;n. Los paquetes de capas siempre incluir&aacute;n geodatabases de archivos.
+            <p>Formato de los datos que se extraer&aacute;n. Al exportar entidades de l&iacute;nea o de &aacute;rea a archivos csv, solo se extraen atributos no espaciales. Al exportar entidades de puntos, se extraen tanto los atributos espaciales como los no espaciales.  
             </p>
         </div>
     </div>
@@ -104,7 +102,6 @@
                 <b>Guardar resultado en</b>, puedes especificar el nombre de una carpeta de
                 <b>Mi contenido</b> en la que se guardar&aacute; el resultado.
             </p>
-            
         </div>
     </div>
 </div>

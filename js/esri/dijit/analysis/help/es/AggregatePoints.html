@@ -22,14 +22,13 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Agregar puntos</h2><p/>
         <h2></h2>
         <hr/>
     <p>Esta herramienta funciona con una capa de entidades de puntos (la capa de an&aacute;lisis) y una capa de entidades de &aacute;rea. Primero, determina los puntos que se encuentran dentro de cada &aacute;rea. Despu&eacute;s de determinar esta relaci&oacute;n espacial de punto en &aacute;rea, se calculan las estad&iacute;sticas sobre los puntos del &aacute;rea y se asignan al &aacute;rea. La estad&iacute;stica m&aacute;s b&aacute;sica es el recuento del n&uacute;mero de puntos dentro del &aacute;rea, pero se pueden obtener tambi&eacute;n otras estad&iacute;sticas. 
     </p>
-    <p>
-        Por ejemplo, sup&oacute;n que tienes entidades de puntos de ubicaciones de cafeter&iacute;as y entidades de &aacute;rea de condados, y que deseas resumir las ventas de caf&eacute; por condado. Suponiendo que las cafeter&iacute;as tienen un atributo
+    <p>Por ejemplo, sup&oacute;n que tienes entidades de puntos de ubicaciones de cafeter&iacute;as y entidades de &aacute;rea de condados, y que deseas resumir las ventas de caf&eacute; por condado. Suponiendo que las cafeter&iacute;as tienen un atributo 
         <i>TOTAL_SALES</i>, puedes obtener la suma de todos los valores de
         <i>TOTAL_SALES</i> en cada condado, o los
         <i>TOTAL_SALES</i> m&iacute;nimos y m&aacute;ximos de cada condado, o la desviaci&oacute;n est&aacute;ndar de todas las ventas en cada condado.
@@ -38,10 +37,6 @@
     </p>
     <p>Si 
         <b>Utilizar la extensi&oacute;n de mapa actual al buscar ubicaciones</b> se ha activado, solo se analizar&aacute;n las entidades de la capa de an&aacute;lisis y de &aacute;rea que est&aacute;n visibles en la extensi&oacute;n de mapa actual. Si no se ha activado, se analizar&aacute;n todas las entidades de la capa de an&aacute;lisis y de la capa de &aacute;rea, aunque est&eacute;n fuera de la extensi&oacute;n de mapa actual.
-    </p>
-    <p>
-        
-        
     </p>
     </div>
     <!--Parameter divs for each param-->
@@ -52,7 +47,6 @@
             <p>
                 Selecciona una capa de &aacute;rea en el mapa web para agregar los puntos en ella. Si no hay capas de l&iacute;mite en el mapa web, puedes seleccionar una en la lista de capas de l&iacute;mite disponibles en ArcGIS Online. Todos los puntos contenidos en los l&iacute;mites de las &aacute;reas de esta capa se contar&aacute;n y se podr&aacute;n resumir usando las opciones de estad&iacute;sticas que hayas elegido.
             </p>
-            
         </div>
     </div>
     <div id="KeepBoundaryNoPoints">
@@ -61,7 +55,6 @@
         <div>
             <p>Determina si las &aacute;reas que no contienen puntos aparecen en la capa de resultados. Si est&aacute; desactivada, las &aacute;reas sin puntos no aparecer&aacute;n en el resultado. Si est&aacute; activada, las &aacute;reas sin puntos aparecer&aacute;n en el resultado.  
             </p>
-            
         </div>
     </div>
     <div id="SummaryFields">
@@ -82,11 +75,6 @@
                 <i>Crime_type</i> con cinco tipos de cr&iacute;menes distintos. Cada tipo de crimen &uacute;nico constituye un grupo y las estad&iacute;sticas que elijas se calcular&aacute;n para cada valor &uacute;nico de
                 <i>Crime_type</i>. Cuando elijas un atributo de agrupaci&oacute;n, se crean dos resultados: la capa de resultados y una tabla que contiene las estad&iacute;sticas de cada grupo &uacute;nico.
             </p>
-            <p>
-                
-                
-            </p>
-            
         </div>
     </div>
     <div id="OutputLayer">
@@ -95,14 +83,13 @@
         <div>
             <p>Este es el nombre de la capa que se crear&aacute; en 
                 <b>Mi contenido</b> y se agregar&aacute; al mapa.
- El nombre predeterminado se basa en el tipo de an&aacute;lisis y en el nombre de la capa de entrada. 
+ El nombre predeterminado se basa en el tipo de an&aacute;lisis y en el nombre de la capa de an&aacute;lisis. 
 Si la capa ya existe, se te pedir&aacute; que confirmes si deseas sobrescribirla.
             </p>
             <p>En el cuadro desplegable 
                 <b>Guardar resultado en</b>, puedes especificar el nombre de una carpeta de
                 <b>Mi contenido</b> en la que se guardar&aacute; el resultado.
             </p>
-            
             
         </div>
     </div>

@@ -22,27 +22,24 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
-        <h2>Luo puskureita</h2><p/>
+    <div id="toolDescription" class="largesize">
+        <h2>Luo puskurit</h2><p/>
         <h2></h2>
         <hr/>
     <p>Puskuri on alue, joka k&auml;sitt&auml;&auml; tietyn et&auml;isyyden pisteest&auml;, viivasta tai aluekohteesta. 
     </p>
-    <p>Puskureiden avulla luodaan yleens&auml; alueita, joita voidaan analysoida esimerkiksi tasojen p&auml;&auml;llekk&auml;in asettamisen avulla. Esimerkiksi jos kysymys kuuluu &quot;Mitk&auml; rakennukset ovat mailin s&auml;teell&auml; koulusta?&quot;, vastaus voidaan hakea luomalla mailin pituisen puskurin koulun ymp&auml;rille ja asettamalla puskurin rakennustason p&auml;&auml;lle.  Tuloksena on taso, joka koostuu enint&auml;&auml;n mailin p&auml;&auml;ss&auml; koulusta olevista rakennuksista.  
+    <p>Puskureiden avulla luodaan yleens&auml; alueita, joita voidaan analysoida edelleen esimerkiksi tasojen p&auml;&auml;llekk&auml;in asettamisen avulla. Jos kysymys kuuluu esim. &rdquo;Mitk&auml; rakennukset ovat kilometrin s&auml;teell&auml; koulusta?&rdquo;, vastaus voidaan hakea luomalla kilometrin pituinen puskuri koulun ymp&auml;rille ja asettamalla puskuri rakennusten pohjapiirrokset sis&auml;lt&auml;v&auml;n tason p&auml;&auml;lle Kerrostasot-ty&ouml;kalun avulla.  Tuloksena on taso, joka koostuu enint&auml;&auml;n mailin p&auml;&auml;ss&auml; koulusta olevista rakennuksista.  
     </p>
     <p>Jos vaihtoehto 
-        <b>K&auml;yt&auml; nykyist&auml; karttalaajuutta</b> on valittuna, toiminto puskuroi vain nykyisess&auml; karttalaajuudessa n&auml;kyviss&auml; olevat kohteet.  Jos vaihtoehto ei ole valittuna, kaikki kohteet puskuroidaan, vaikka ne eiv&auml;t kuuluisi karttalaajuuteen.
-    </p>
-    <p>
-        
+        <b>K&auml;yt&auml; nykyist&auml; karttalaajuutta</b> on valittuna, toiminto puskuroi vain nykyisess&auml; karttalaajuudessa n&auml;kyviss&auml; olevat kohteet.  Jos vaihtoehto ei ole valittuna, kaikki analyysitason kohteet puskuroidaan, vaikka ne eiv&auml;t kuuluisi karttalaajuuteen.
     </p>
     </div>
     <!--Parameter divs for each param-->
     <div id="BufferSize">
-        <div><h2>Määritä puskurikoko</h2></div>
+        <div><h2>Anna puskurikoko</h2></div>
         <hr/>
         <div>
-            <p>Voit m&auml;&auml;ritt&auml;&auml; yhden et&auml;isyysarvon tai useita arvoja erotettuina v&auml;lily&ouml;nnill&auml;.  Voit lis&auml;ksi m&auml;&auml;ritt&auml;&auml; ominaisuuden l&auml;ht&ouml;tasossa, joka sis&auml;lt&auml;&auml; et&auml;isyysarvon, valitsemalla vaihtoehdon 
+            <p>Voit m&auml;&auml;ritt&auml;&auml; yhden et&auml;isyysarvon tai useita arvoja erotettuina v&auml;lily&ouml;nnill&auml;.  Voit lis&auml;ksi m&auml;&auml;ritt&auml;&auml; ominaisuuden analyysitasossa, joka sis&auml;lt&auml;&auml; et&auml;isyysarvon, valitsemalla vaihtoehdon 
                 <b>Kentt&auml;</b>.
             </p>
             
@@ -60,10 +57,10 @@
                 Kun luot useita et&auml;isyyksi&auml;, voit valita, miten et&auml;isyys esitet&auml;&auml;n edellisest&auml; puskuriet&auml;isyydest&auml; esimerkiksi silloin, kun et&auml;isyydet ovat 10 ja 14:
                 <ul>
                     <li>Kohdan 
-                        <b>Renkaat</b> valitseminen tuottaa renkaat, jotka ulottuvat 0:sta 10:een ja 10:st&auml; 14:&auml;&auml;n.
+                        <b>Renkaat</b> valitseminen tuottaa puskurit, jotka ulottuvat 0:sta 10:een ja 10:st&auml; 14:&auml;&auml;n.
                     </li>
                     <li>Kohdan 
-                        <b>Renkaat</b> valitseminen tuottaa renkaat, jotka ulottuvat 0:sta 10:een ja 10:st&auml; 14:&auml;&auml;n.
+                        <b>Kiekot</b> valitseminen tuottaa renkaat, jotka ulottuvat 0:sta 10:een ja 0:st&auml; 14:&auml;&auml;n.
                     </li>
                 </ul>
                 
@@ -81,10 +78,10 @@
             <p>Kun luot useita et&auml;isyyksi&auml;, voit valita, miten et&auml;isyys esitet&auml;&auml;n edellisest&auml; puskuriet&auml;isyydest&auml; esimerkiksi silloin, kun et&auml;isyydet ovat 10 ja 14:
                 <ul>
                     <li>Kohdan 
-                        <b>Renkaat</b> valitseminen tuottaa renkaat, jotka ulottuvat 0:sta 10:een ja 10:st&auml; 14:&auml;&auml;n.
+                        <b>Renkaat</b> valitseminen tuottaa puskurit, jotka ulottuvat 0:sta 10:een ja 10:st&auml; 14:&auml;&auml;n.
                     </li>
                     <li>Kohdan 
-                        <b>Renkaat</b> valitseminen tuottaa renkaat, jotka ulottuvat 0:sta 10:een ja 10:st&auml; 14:&auml;&auml;n.
+                        <b>Kiekot</b> valitseminen tuottaa renkaat, jotka ulottuvat 0:sta 10:een ja 0:st&auml; 14:&auml;&auml;n.
                     </li>
                 </ul>
                 
@@ -119,13 +116,12 @@
         <hr/>
         <div>
             <p>Sen tason nimi, joka luodaan kohtaan 
-                <b>Oma sis&auml;lt&ouml;</b> ja joka lis&auml;t&auml;&auml;n karttaan.  Oletusnimi perustuu analyysityyppiin ja l&auml;ht&ouml;tason nimeen. Jos taso on jo olemassa, n&auml;ytt&ouml;&ouml;n tulee kehotus vahvistaa tason korvaus.
+                <b>Oma sis&auml;lt&ouml;</b> ja joka lis&auml;t&auml;&auml;n karttaan.  Oletusnimi perustuu analyysityyppiin ja analyysitason nimeen. Jos taso on jo olemassa, n&auml;ytt&ouml;&ouml;n tulee kehotus vahvistaa tason korvaus.
             </p>
             <p>Avattavan 
-                <b>Tallenna tulos kohteeseen</b> -valikon avulla voit m&auml;&auml;ritt&auml;&auml; sen
-                <b>Oma sis&auml;lt&ouml;</b> -kansion nimen, johon tulos tallennetaan.
+                <b>Tallenna tulos sijaintiin</b> -luetteloruudun avulla voit m&auml;&auml;ritt&auml;&auml;
+                <b>Oma sis&auml;lt&ouml;</b> -kohdassa sen kansion nimen, johon tulos tallennetaan.
             </p>
-            
         </div>
     </div>
 </div>

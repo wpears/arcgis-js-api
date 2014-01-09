@@ -22,11 +22,11 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Summer nærliggende</h2><p/>
         <h2></h2>
         <hr/>
-    <p>Dette verkt&oslash;yet finner geoobjektene som er innenfor en angitt avstand fra geoobjekter i analyselaget.  Avstander kan m&aring;les i luftlinje, oppgis som kj&oslash;retid (for eksempel innenfor 10 minutter) eller som kj&oslash;reavstand ( innenfor 5 kilometer).  Verkt&oslash;yet beregner deretter statistikk for de n&aelig;rliggende geoobjektene.  Eksempel:
+    <p>Dette verkt&oslash;yet finner geoobjektene som er innenfor en angitt avstand fra geoobjekter i analyselaget.  Avstander kan m&aring;les i luftlinje, oppgis som kj&oslash;retid (for eksempel innenfor 10 minutter) eller som kj&oslash;reavstand (innenfor 5 kilometer).  Verkt&oslash;yet beregner deretter statistikk for de n&aelig;rliggende geoobjektene.  Eksempel:
         <ul>
             <li>Du kan beregne hvor mange som bor innenfor en kj&oslash;retid p&aring; fem minutter fra en mulig ny butikkplassering.
             </li>
@@ -36,7 +36,7 @@
         
     </p>
     <p>Hvis det er merket av for 
-        <b>Use current map extent</b>, analyseres kun geoobjektene i analyselaget og laget som skal summeres, som vises i gjeldende kartutstrekning.  Hvis det ikke er merket av for dette alternativet, analyseres alle geoobjekter i b&aring;de analyselaget og laget som skal summeres, selv om de befinner seg utenfor gjeldende kartutstrekning.
+        <b>Bruk gjeldende kartutstrekning</b>, analyseres kun geoobjektene i analyselaget og laget som skal summeres, som vises i gjeldende kartutstrekning.  Hvis det ikke er merket av for dette alternativet, analyseres alle geoobjekter i b&aring;de analyselaget og laget som skal summeres, selv om de befinner seg utenfor gjeldende kartutstrekning.
     </p>
     </div>
     <!--Parameter divs for each param-->
@@ -53,7 +53,9 @@
         <div><h2>Finn nærmeste geoobjekter ved hjelp av</h2></div>
         <hr/>
         <div>
-            <p>Du kan definere hvilken avstandsm&aring;ling du vil bruke, og velge luftlinjeavstand, kj&oslash;reavstand eller kj&oslash;retid.  B&aring;de kj&oslash;reavstand og kj&oslash;retid bruker veinettet og tar hensyn til begrensninger som enveiskj&oslash;rte gater.  Kj&oslash;retider tar hensyn til gjeldende fartsgrenser.   Du kan angi flere avstander.  Geoobjekter som er innenfor (eller lik) avstandene du angir, summeres.  
+            <p>Du kan definere hvilken avstandsm&aring;ling du vil bruke, og velge luftlinjeavstand, kj&oslash;reavstand eller kj&oslash;retid.  B&aring;de kj&oslash;reavstand og kj&oslash;retid bruker veinettet og tar hensyn til begrensninger som enveiskj&oslash;rte gater.  Kj&oslash;retider tar hensyn til valgte kj&oslash;rehastigheter, basert p&aring; sanntidsinformasjon eller typiske trafikkforhold. Hastigheter i sanntid hentes fra gjeldende sensoravlesninger, og typiske hastigheter beregnes basert p&aring; historiske gjennomsnittshastigheter.   
+            </p>
+            <p>Du kan angi flere avstander.  Geoobjekter som er innenfor (eller lik) avstandene du angir, summeres.  
             </p>
         </div>
     </div>
@@ -64,7 +66,7 @@
             <p>Du kan ogs&aring; beregne statistikk for eventuelle numeriske attributter for de n&aelig;rliggende punktene. 
             </p>
             <p>Hvis det er merket av for 
-                <b>Count of points</b>, beregnes totalt antall n&aelig;rliggende punkter.  Du kan i tillegg beregne statistikk for numeriske felter for de n&aelig;rliggende punktene.
+                <b>Antall punkter</b>, beregnes totalt antall n&aelig;rliggende punkter.  Du kan i tillegg beregne statistikk for numeriske felter for de n&aelig;rliggende punktene.
             </p>
             <ul>
                 <li>
@@ -93,7 +95,7 @@
             <p>Du kan ogs&aring; beregne statistikk for eventuelle numeriske attributter for de n&aelig;rliggende linjene. 
             </p>
             <p>Hvis det er merket av for 
-                <b>Total length</b>, beregnes den totale lengden for n&aelig;rliggende linjer.  Du kan i tillegg beregne statistikk for numeriske felter for de n&aelig;rliggende linjene.
+                <b>Samlet lengde</b>, beregnes den totale lengden for n&aelig;rliggende linjer.  Du kan i tillegg beregne statistikk for numeriske felter for de n&aelig;rliggende linjene.
             </p>
             <ul>
                 <li>
@@ -122,7 +124,7 @@
             <p>Du kan ogs&aring; beregne statistikk for eventuelle numeriske attributter for de n&aelig;rliggende omr&aring;dene. 
             </p>
             <p>Hvis det er merket av for 
-                <b>Total area</b>, beregnes det totale omr&aring;det for n&aelig;rliggende geoobjekter.  Du kan i tillegg beregne statistikk for numeriske felter for de n&aelig;rliggende geoobjektene.
+                <b>Samlet omr&aring;de</b>, beregnes det totale omr&aring;det for n&aelig;rliggende geoobjekter.  Du kan i tillegg beregne statistikk for numeriske felter for de n&aelig;rliggende geoobjektene.
             </p>
             <ul>
                 <li>
@@ -166,8 +168,8 @@
                 <b>Mitt innhold</b> og legges til kartet.  Standardnavnet er basert p&aring; navnet p&aring; analyselaget. Hvis laget finnes allerede, blir du bedt om &aring; bekrefte at du vil overskrive det.
             </p>
             <p>Bruk rullegardinlisten 
-                <b>Save result in</b> til &aring; angi navnet p&aring; en mappe i
-                <b>Mitt innhold</b> som resultatet skal lagres i.
+                <b>Lagre resultat i</b> til &aring; angi navnet p&aring; en mappe i
+                <b>Mitt innhold</b> som resultatene skal lagres i.
             </p>
         </div>
     </div>

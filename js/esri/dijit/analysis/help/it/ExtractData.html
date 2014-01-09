@@ -22,12 +22,11 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Estrai dati</h2><p/>
         <h2></h2>
         <hr/>
-    <p>Questo strumento consente di selezionare e scaricare dati per un'area di interesse specifica. I layer selezionati verranno aggiunti a un file zip o a un pacchetto di layer.
-
+    <p>Questo strumento consente di selezionare e scaricare dati per un'area di interesse specifica. I layer selezionati vengono aggiunti a un file zip o csv.
     </p>
     </div>
     <!--Parameter divs for each param-->
@@ -35,10 +34,9 @@
         <div><h2>Layer da estrarre</h2></div>
         <hr/>
         <div>
-            <p>Layer del sommario da cui &egrave; possibile estrarre feature.  I layer selezionati verranno estratti e inclusi in un file zip o in un pacchetto di layer risultante.
-
+            <p>Si tratta del layer del sommario da cui &egrave; possibile estrarre feature.  I layer selezionati vengono estratti e inclusi in un file zip o csv risultante.
             </p>
-            <p>Per includere un layer nell'elenco dei layer da estrarre, &egrave; necessario essere proprietario dei dati; in alternativa, il proprietario dei dati deve abilitare l'esportazione dei dati. Per abilitare l'esportazione dei dati di cui si &egrave; proprietari:
+            <p>Per includere un layer nell'elenco dei layer da estrarre, &egrave; necessario essere proprietario dei dati; in alternativa, il proprietario dei dati deve abilitare l'esportazione dei dati.    Per abilitare l'esportazione dei dati di cui si &egrave; proprietari:
                 <ul>
                     <li>Aprire la descrizione dell'elemento dei dati.
                     </li>
@@ -60,7 +58,7 @@
         <div><h2>Area di studio</h2></div>
         <hr/>
         <div>
-            <p>Area che definisce le feature che verranno incluse nel file zip o nel pacchetto di layer di output. &Egrave; possibile scegliere una delle seguente opzioni:
+            <p>Area che definisce le feature che verranno incluse nel file zip o csv. &Egrave; possibile scegliere una delle seguente opzioni:
                 <ul>
                     <li>L'estensione visibile corrente della mappa (
                         <b>Come visualizzato</b>).
@@ -87,7 +85,7 @@
         <div><h2>Formato dati di output</h2></div>
         <hr/>
         <div>
-            <p>Formato dei dati che verranno estratti e scaricati.  I pacchetti di layer includeranno sempre i geodatabase file.
+            <p>Formato dei dati che verranno estratti. Quando si esportano feature linea o area in file CSV, vengono estratti solo gli attributi non spaziali.  Quando si esportano feature puntuali, vengono estratti sia gli attributi spaziali che quelli non spaziali.  
             </p>
         </div>
     </div>
@@ -104,7 +102,6 @@
                 <b>Salva risultato in</b> per specificare il nome di una cartella di
                 <b>I miei contenuti</b> in cui salvare il risultato.
             </p>
-            
         </div>
     </div>
 </div>

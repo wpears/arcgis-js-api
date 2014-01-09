@@ -1,16 +1,30 @@
+/* jshint worker: true */
+/* global self: true, postMessage: true */
+
+importScripts('mutableWorker.js');
+
 function sendRequest(evt) {
     var args = evt.data;
     var method = args.method;
     var url = args.url;
-    var options = args.options;
+    var options = args.options || {};
     var data = options.data;
     var async = !options.sync;
     var query = options.query;
 
+    if(!url){
+        //not a request, let another handler work with it
+        return;
+    }
+    if(args.action){
+        //we don't do action here. this is some else's
+        return;
+    }
+
     var xhr = new XMLHttpRequest();
 
     if(!data && query){
-        url += "?"+query;
+        url += '?'+query;
     }
 
     addEventListeners(xhr, args);
@@ -56,7 +70,7 @@ function sendRequest(evt) {
         }
     }
     postMessage({
-        qid: args.qid,
+        msgId: args.msgId,
         status: "progress",
         "url": url,
         headers: headers,
@@ -70,7 +84,7 @@ function addEventListeners(xhr, args) {
         var _xhr = evt.target;
         var error = new Error('Unable to load ' + args.url + ' status: ' + _xhr.status, args);
         postMessage({
-            qid: args.qid,
+            msgId: args.msgId,
             status: 'error',
             url: args.url,
             message: error.message/*,
@@ -80,7 +94,7 @@ function addEventListeners(xhr, args) {
 
     function onProgress(evt) {
         var response = {
-            qid: args.qid,
+            msgId: args.msgId,
             status: 'progress',
             url: args.url
         };
@@ -102,7 +116,7 @@ function addEventListeners(xhr, args) {
             return acc;
         }, {});
         postMessage({
-            qid: args.qid,
+            msgId: args.msgId,
             url: args.url,
             response: parsed,
             headers: headers,
@@ -119,7 +133,7 @@ function addEventListeners(xhr, args) {
 
 function parseResponse(xhr, overrideParser) {
     var resp = xhr.responseText;
-    var contentType = xhr.getResponseHeader("content-type");
+    var contentType = xhr.getResponseHeader('content-type');
     //TODO handle jsonp
     //json
     if (contentType.indexOf('json') > -1 || overrideParser == 'json') {
@@ -133,5 +147,4 @@ function parseResponse(xhr, overrideParser) {
     }
     return resp;
 }
-
-this.addEventListener('message', sendRequest);
+self.addEventListener('message', sendRequest);

@@ -22,11 +22,11 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Localizar Mais Próximo</h2><p/>
         <h2></h2>
         <hr/>
-    <p>Esta ferramenta localiza as fei&ccedil;&otilde;es mais pr&oacute;ximas e, opcionalmente, informa e classifica a dist&acirc;ncia para as fei&ccedil;&otilde;es mais pr&oacute;ximas. Para localizar o que est&aacute; mais pr&oacute;ximo, a ferramenta pode medir uma dist&acirc;ncia de linha reta, dist&acirc;ncia da estrada ou tempo do percurso. H&aacute; op&ccedil;&otilde;es para limitar o n&uacute;mero de fei&ccedil;&otilde;es mais pr&oacute;ximas para localizar ou pesquisar o intervalo no qual encontr&aacute;-las. Os resultados desta ferramenta podem ajud&aacute;-lo a responder os seguintes tipos de perguntas:
+    <p>Esta ferramenta localiza as fei&ccedil;&otilde;es mais pr&oacute;ximas, e informa e classifica a dist&acirc;ncia para as fei&ccedil;&otilde;es mais pr&oacute;ximas. Para localizar o que est&aacute; mais pr&oacute;ximo, a ferramenta pode medir uma dist&acirc;ncia de linha reta, dist&acirc;ncia da estrada ou tempo do percurso. H&aacute; op&ccedil;&otilde;es para limitar o n&uacute;mero de fei&ccedil;&otilde;es mais pr&oacute;ximas para localizar ou pesquisar o intervalo no qual encontr&aacute;-las. Os resultados desta ferramenta podem ajud&aacute;-lo a responder os seguintes tipos de perguntas:
         <ul>
             <li>Qual &eacute; o parque mais pr&oacute;ximo daqui?
             </li>
@@ -39,7 +39,7 @@
         </ul>
         
     </p>
-    <p>A ferramenta Localizar Mais Pr&oacute;ximo retorna uma camada contendo as fei&ccedil;&otilde;es mais pr&oacute;ximas e, opcionalmente, uma camada de linha com links para os locais iniciais at&eacute; seus locais mais pr&oacute;ximos. A camada de linha opcional cont&eacute;m informa&ccedil;&otilde;es sobre os locais iniciais e mais pr&oacute;ximos e as dist&acirc;ncias entre eles.
+    <p>A ferramenta Localizar Mais Pr&oacute;ximo retorna uma camada contendo as fei&ccedil;&otilde;es mais pr&oacute;ximas e uma camada de linha com links para os locais iniciais at&eacute; seus locais mais pr&oacute;ximos. A camada de linha cont&eacute;m informa&ccedil;&otilde;es sobre os locais iniciais e mais pr&oacute;ximos e as dist&acirc;ncias entre eles.
     </p>
     <p>Se 
         <b>Utilizar extens&atilde;o de mapa atual</b> estiver selecionada, somente as fei&ccedil;&otilde;es que s&atilde;o vis&iacute;veis dentro da extens&atilde;o de mapa atual ser&atilde;o consideradas como fei&ccedil;&otilde;es iniciais e potencialmente mais pr&oacute;ximas.  Se n&atilde;o selecionada, todas as fei&ccedil;&otilde;es na camada de entrada ser&atilde;o consideradas, mesmo que estiverem fora da extens&atilde;o de mapa atual.
@@ -52,7 +52,7 @@
         <div><h2>Localizar os locais mais próximos em</h2></div>
         <hr/>
         <div>
-            <p>A ferramenta Localizar Mais Pr&oacute;ximo mede de cada um dos locais na camada de entrada at&eacute; os locais nesta camada. A ferramenta suporta at&eacute; 1.000 locais em cada camada.
+            <p>A ferramenta Localizar Mais Pr&oacute;ximo mede de cada um dos locais na camada de an&aacute;lise at&eacute; os locais nesta camada. A ferramenta suporta at&eacute; 1.000 locais em cada camada.
             </p>
         </div>
     </div>
@@ -66,47 +66,7 @@
             </p>
             <p>Ao medir entre linhas ou &aacute;reas, a dist&acirc;ncia de ou para o ponto mais pr&oacute;ximo ao longo da linha ou limite da &aacute;rea &eacute; localizada. 
             </p>
-        </div>
-    </div>
-    <div id="Cutoffs">
-        <div><h2>Para cada local em</h2></div>
-        <hr/>
-        <div>
             
-            <p>Voc&ecirc; tem duas op&ccedil;&otilde;es para limitar a pesquisa por locais mais pr&oacute;ximos. Uma op&ccedil;&atilde;o &eacute; limitar o n&uacute;mero m&aacute;ximo de locais mais pr&oacute;ximos para encontrar o local inicial. Voc&ecirc; pode localizar um estacionamento mais pr&oacute;ximo, os dois mais pr&oacute;ximos, e assim por diante. A outra op&ccedil;&atilde;o &eacute; configurar uma dist&acirc;ncia de pesquisa ou tempo de percurso m&aacute;ximo.
-            </p>
-            <p>Ao desmarcar as op&ccedil;&otilde;es, o n&uacute;mero m&aacute;ximo de locais mais pr&oacute;ximos para encontrar &eacute; 100 (o limite da ferramenta) e o intervalo de pesquisa m&aacute;ximo &eacute; ilimitado.
-            </p>
-            <p>O tempo de processamento depende do n&uacute;mero de locais iniciais, o n&uacute;mero de locais mais pr&oacute;ximos e o intervalo de pesquisa m&aacute;ximo.   Leva mais tempo para processar quando h&aacute; mais locais ou intervalos de persquisa maiores.
-                
-            </p>
-            <p>Observe que quando um limite &eacute; configurado no intervalo de pesquisa, &eacute; poss&iacute;vel que a ferramenta n&atilde;o localize quaisquer locais mais pr&oacute;ximos dentro deste intervalo. Tamb&eacute;m &eacute; poss&iacute;vel localizar menos que o n&uacute;mero m&aacute;ximo de locais mais pr&oacute;ximos que voc&ecirc; especifica.
-            </p>
-            
-        </div>
-    </div>
-    <div id="UseTypicalTraffic">
-        <div><h2>Utilizar condições de tráfego típicas para</h2></div>
-        <hr/>
-        <div>
-            <p>
-                Ao medir o tempo do percurso, o que est&aacute; mais pr&oacute;ximo pode depender do tr&aacute;fego e hora do dia. Imagine encontrar a instala&ccedil;&atilde;o de pronto atendimento mais pr&oacute;xima no tr&aacute;fego do hor&aacute;rio de pico. No hor&aacute;rio de pico da manh&atilde;, os ve&iacute;culos voltando para casa viajando em dire&ccedil;&atilde;o ao centro da cidade tendem a se mover mais devagar que os ve&iacute;culos de longo curso. A instala&ccedil;&atilde;o mais pr&oacute;xima nesta hora do dia pode estar na dire&ccedil;&atilde;o de longo curso. Durante a noite, o tr&aacute;fego voltando para casa &eacute; mais r&aacute;pido, ent&atilde;o uma instala&ccedil;&atilde;o diferente na dire&ccedil;&atilde;o voltando para casa pode estar mais pr&oacute;xima.
-            </p>
-            <p>Ao selecionar 
-                <b>Utilizar condi&ccedil;&otilde;es de tr&aacute;fego t&iacute;picas para</b> e especificar um dia e hora, a ferramenta localiza as fei&ccedil;&otilde;es mais pr&oacute;ximas no hist&oacute;rico das m&eacute;dias de velocidade para cada intervalo de cinco minutos duratnte uma semana de rotina. O que estiver mais pr&oacute;ximo pode variar conforme o tr&aacute;fego e tempos do percurso, oscilando ao longo da semana.
-            </p>
-            <p>Obeserve que conforme um ve&iacute;culo se distancia de um ponto, o tempo decorre e muda as condi&ccedil;&otilde;es de tr&aacute;fego. Esta ferramenta responde por estas varia&ccedil;&otilde;es quando voc&ecirc; seleciona a op&ccedil;&atilde;o Utilizar tr&aacute;fego; por&eacute;m, nem todas as regi&otilde;es suportam o tr&aacute;fego. Clique no link 
-                <b>Visualizar disponibilidade</b> na feramenta para descobrir se a op&ccedil;&atilde;o est&aacute; dispon&iacute;vel na sua &aacute;rea de estudo.
-            </p>
-            <p>Desmarque 
-                <b>Utilizar condi&ccedil;&otilde;es de tr&aacute;fego t&iacute;picas para</b>; para encontrar as fei&ccedil;&otilde;es mais pr&oacute;ximas baseado em velocidades de percurso est&aacute;ticas, como limites de velocidade. Est&aacute; &eacute; a op&ccedil;&atilde;o para escolher se voc&ecirc; deseja saber o que geralmente est&aacute; mais pr&oacute;ximo, mas n&atilde;o necessariamente as condi&ccedil;&otilde;es de tr&aacute;fego mais pr&oacute;ximo fornecidas para uma hora e dia espec&iacute;ficos.
-            </p>
-        </div>
-    </div>
-    <div id="UseTraffic">
-        <div><h2>Utilizar tráfego</h2></div>
-        <hr/>
-        <div>
             <p>Quando voc&ecirc; escolhe 
                 <b>Tempo do percurso</b>, &eacute; possivel ter op&ccedil;&otilde;es sobre como medir o tempo do percurso.
                 <ul>
@@ -128,8 +88,7 @@
                             <b>Utilizar Tr&aacute;fego</b> e escolher
                             <b>Utilizar condi&ccedil;&otilde;es de tr&aacute;fego t&iacute;picas para</b> e especificar um dia e hora, a ferramenta localiza as fei&ccedil;&otilde;es mais pr&oacute;ximas no hist&oacute;rico das m&eacute;dias de velocidade para cada intervalo de cinco minutos durante uma semana de rotina. Os resultados incluem tr&aacute;fego, mas removem a influ&ecirc;ncia das condi&ccedil;&otilde;es de tr&aacute;fego e eventos atuais, que podem variar significativamente da norma.
                         </p>
-                        <p>
-                            Voc&ecirc; pode utilizar estas configura&ccedil;&otilde;es de hist&oacute;ricos do tr&aacute;fego para perguntar, por exemplo, &quot;Quais fei&ccedil;&otilde;es podem ser alcan&ccedil;adas o mais r&aacute;pido ao partir de fei&ccedil;&otilde;es iniciais &agrave;s 11:30 a.m em uma Quarta-Feira?&quot;
+                        <p>Voc&ecirc; pode utilizar estas configura&ccedil;&otilde;es de hist&oacute;ricos do tr&aacute;fego para perguntar, por exemplo, &quot;Quais fei&ccedil;&otilde;es podem ser alcan&ccedil;adas o mais r&aacute;pido ao partir de fei&ccedil;&otilde;es iniciais &agrave;s 11:30 a.m em uma Quarta-Feira?&quot; 
                         </p>
                         <p>O tempo que voc&ecirc; configura &eacute; referente &agrave; zona de tempo em que suas fei&ccedil;&otilde;es iniciais est&atilde;o localizadas. Ent&atilde;o se voc&ecirc; configurar o tempo para 8:00 a.m e tiver duas fei&ccedil;&otilde;es iniciais, uma na Cidade de Nova Iorque e outra em Los Angeles, os locais mais pr&oacute;ximos ser&atilde;o encontrados ao assumir um tempo de partida de 8:00 a.m Leste e 8:00 a.m Hora do Pac&iacute;fico, respectivamente.
                         </p>
@@ -139,6 +98,20 @@
                 <b>Utilizar tr&aacute;fego</b>; por&eacute;m, nem todas as regi&otilde;es suportam o tr&aacute;fego. Clique no link
                 <b>Visualizar disponibilidade</b> na feramenta para descobrir se a op&ccedil;&atilde;o est&aacute; dispon&iacute;vel na sua &aacute;rea de estudo.
                 
+            </p>
+        </div>
+    </div>
+    <div id="Cutoffs">
+        <div><h2>Para cada local em</h2></div>
+        <hr/>
+        <div>
+            <p>Voc&ecirc; tem duas op&ccedil;&otilde;es para limitar a pesquisa por locais mais pr&oacute;ximos. Uma op&ccedil;&atilde;o &eacute; limitar o n&uacute;mero m&aacute;ximo de locais mais pr&oacute;ximos para encontrar o local inicial. Voc&ecirc; pode localizar um estacionamento mais pr&oacute;ximo, os dois mais pr&oacute;ximos, e assim por diante. A outra op&ccedil;&atilde;o &eacute; configurar uma dist&acirc;ncia de pesquisa ou tempo de percurso m&aacute;ximo.
+            </p>
+            <p>Ao desmarcar as op&ccedil;&otilde;es, o n&uacute;mero m&aacute;ximo de locais mais pr&oacute;ximos para encontrar &eacute; 100 (o limite da ferramenta) e o intervalo de pesquisa m&aacute;ximo &eacute; ilimitado.
+            </p>
+            <p>O tempo de processamento depende do n&uacute;mero de locais iniciais, o n&uacute;mero de locais mais pr&oacute;ximos e o intervalo de pesquisa m&aacute;ximo.   Leva mais tempo para processar quando h&aacute; mais locais ou intervalos de persquisa maiores.
+            </p>
+            <p>Observe que quando um limite &eacute; configurado no intervalo de pesquisa, &eacute; poss&iacute;vel que a ferramenta n&atilde;o localize quaisquer locais mais pr&oacute;ximos dentro deste intervalo, ou que poucos locais sejam localizados do que o n&uacute;mero m&aacute;ximo de locais mais pr&oacute;ximos que voc&ecirc; especifica.
             </p>
         </div>
     </div>

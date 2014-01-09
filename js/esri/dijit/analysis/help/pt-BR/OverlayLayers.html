@@ -22,11 +22,11 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Sobrepor Camadas</h2><p/>
         <h2></h2>
         <hr/>
-    <p>A sobreposi&ccedil;&atilde;o combina duas ou mais camadas em uma &uacute;nica camada.  Voc&ecirc; pode pensar da sobreposi&ccedil;&atilde;o como a troca de uma pilha de mapas e cria&ccedil;&atilde;o de um &uacute;nico mapa contendo todas as informa&ccedil;&otilde;es localizadas na pilha.   De fato, antes do advento do GIS, cart&oacute;grafos literalmente iriam copiar mapas sobre folhas de acetato limpas, sobrepor estas folhas em uma mesa de luz  e desenhar &agrave; m&atilde;o um novo mapa a partir dos dados de sobreposi&ccedil;&atilde;o. A sobreposi&ccedil;&atilde;o &eacute; muito mais que uma jun&ccedil;&atilde;o de trabalho da linha; todos os atributos das fei&ccedil;&otilde;es que fazem parte da sobreposi&ccedil;&atilde;o s&atilde;o transportados para o produto final. A sobreposi&ccedil;&atilde;o &eacute; utilizada para responder uma das perguntas mais b&aacute;sicas da geografia, &quot;O que est&aacute; sobre o que?&quot; Por exemplo:
+    <p>A sobreposi&ccedil;&atilde;o combina duas ou mais camadas em uma &uacute;nica camada.  Voc&ecirc; pode pensar da sobreposi&ccedil;&atilde;o como a troca de uma pilha de mapas e cria&ccedil;&atilde;o de um &uacute;nico mapa contendo todas as informa&ccedil;&otilde;es localizadas na pilha. A sobreposi&ccedil;&atilde;o &eacute; muito mais que uma jun&ccedil;&atilde;o de trabalho da linha; todos os atributos das fei&ccedil;&otilde;es que fazem parte da sobreposi&ccedil;&atilde;o s&atilde;o transportados para o produto final. A sobreposi&ccedil;&atilde;o &eacute; utilizada para responder uma das perguntas mais b&aacute;sicas da geografia, &quot;O que est&aacute; sobre o que?&quot; Por exemplo:
         <ul>
             <li>Quais lotes est&atilde;o dentro da plan&iacute;cie alagada de 100 anos? (Dentro &eacute; somente outro modo de dizer sobre.)
                   
@@ -41,8 +41,7 @@
         </ul>
         
     </p>
-    <p>
-        Se
+    <p>Se 
         <b>Utilizar extens&atilde;o de mapa atual</b> estiver selecionada, somente as fei&ccedil;&otilde;es na camada de an&aacute;lise e camada de sobreposi&ccedil;&atilde;o que s&atilde;o vis&iacute;veis dentro da extens&atilde;o de mapa atual ser&atilde;o sobrepostas.  Se n&atilde;o estiver selecionada, todas as fei&ccedil;&otilde;es na camada de an&aacute;lise e camada de sobreposi&ccedil;&atilde;o ser&atilde;o sobrepostas, mesmo que estiverem fora da extens&atilde;o de mapa atual.
     </p>
     </div>
@@ -66,10 +65,10 @@
                         <b>Interseccionar</b>&mdash;O resultado ter&aacute; somente as fei&ccedil;&otilde;es ou por&ccedil;&otilde;es de fei&ccedil;&otilde;es na camada de sobreposi&ccedil;&atilde;o que sobrep&otilde;em com fei&ccedil;&otilde;es na camada de an&aacute;lise.  Se a camada de an&aacute;lise for fei&ccedil;&otilde;es de &aacute;rea, a camada de sobreposi&ccedil;&atilde;o poder&aacute; ser fei&ccedil;&otilde;es de &aacute;rea, ponto ou linha.  Se a camada de an&aacute;lise for fei&ccedil;&otilde;es de linha, a camada de sobreposi&ccedil;&atilde;o poder&aacute; ser somente fei&ccedil;&otilde;es de ponto ou linha.  Se a camada de an&aacute;lise for fei&ccedil;&otilde;es de ponto, a camada de sobreposi&ccedil;&atilde;o tamb&eacute;m dever&aacute; ser fei&ccedil;&otilde;es de ponto.
                     </li>
                     <li>
-                        <b>Unir</b>&mdash;O resultado ter&aacute; fei&ccedil;&otilde;es da camada de an&aacute;lise e camada de sobreposi&ccedil;&atilde;o. A op&ccedil;&atilde;o Unir ficar&aacute; dispon&iacute;vel somente se a camada de an&aacute;lise e a camada de sobreposi&ccedil;&atilde;o tiverem fei&ccedil;&otilde;es de &aacute;rea.
+                        <b>Unir</b>&mdash;O resultado conter&aacute; fei&ccedil;&otilde;es da camada de an&aacute;lise e camada de sobreposi&ccedil;&atilde;o. A op&ccedil;&atilde;o Unir fica dispon&iacute;vel somente se a camada de an&aacute;lise e camada de sobreposi&ccedil;&atilde;o tiverem fei&ccedil;&otilde;es de &aacute;rea.
                     </li>
                     <li>
-                        <b>Apagar</b>&mdash;O resultado ter&aacute; fei&ccedil;&otilde;es ou por&ccedil;&otilde;es de fei&ccedil;&otilde;es na camada de sobreposi&ccedil;&atilde;o que n&atilde;o sobrep&otilde;em com as &aacute;reas na camada de an&aacute;lise.  A camada de sobreposi&ccedil;&atilde;o pode conter fei&ccedil;&otilde;es de &aacute;rea, linha ou ponto.
+                        <b>Apagar</b>&mdash;O resultado ter&aacute; somente fei&ccedil;&otilde;es ou por&ccedil;&otilde;es de fei&ccedil;&otilde;es na camada de sobreposi&ccedil;&atilde;o que n&atilde;o sobrep&otilde;em com as &aacute;reas na camada de an&aacute;lise.  A camada de sobreposi&ccedil;&atilde;o pode conter fei&ccedil;&otilde;es de &aacute;rea, linha ou ponto.
                     </li>
                 </ul>
                 
@@ -86,7 +85,7 @@
         <div>
             <p>
                 Este &eacute; o nome da camada que ser&aacute; criada em
-                <b>Meu Conte&uacute;do</b> e adicionada no mapa.  Ter&aacute; o mesmo tipo de fei&ccedil;&atilde;o (&aacute;reas, linhas ou pontos) como a camada de sobreposi&ccedil;&atilde;o.  O nome padr&atilde;o &eacute; baseado no m&eacute;todo de sobreposi&ccedil;&atilde;o e nome da camada de entrada. Se a camada j&aacute; existir, voc&ecirc; ser&aacute; avisado para confirmar se deseja substitu&iacute;-la.
+                <b>Meu Conte&uacute;do</b>e adicionada no mapa.  Ter&aacute; o mesmo tipo de fei&ccedil;&atilde;o (&aacute;reas, linhas ou pontos) como a camada de sobreposi&ccedil;&atilde;o.  O nome padr&atilde;o &eacute; baseado no m&eacute;todo de sobreposi&ccedil;&atilde;o e nome da camada de an&aacute;lise. Se a camada j&aacute; existir, voc&ecirc; ser&aacute; avisado para confirmar se deseja substitu&iacute;-la.
             </p>
             <p>Utilizando a caixa suspensa 
                 <b>Salvar resultado em</b>, &eacute; poss&iacute;vel especificar o nome de uma pasta em

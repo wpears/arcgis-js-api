@@ -22,7 +22,7 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Summarize Nearby</h2><p/>
         <h2></h2>
         <hr/>
@@ -53,7 +53,9 @@
         <div><h2>Find nearest features using a</h2></div>
         <hr/>
         <div>
-            <p>You can define what kind of distance measurement you want to use: either straight-line distance, driving distance, or driving time.  Both driving distance and driving time use the road network and honor such restrictions as one-way streets.  Driving time honors the current posted speed limits.   You can enter multiple distances.  Features that are within (or equal to) the distances you enter will be summarized.  
+            <p>You can define what kind of distance measurement you want to use: either straight-line distance, driving distance, or driving time.  Both driving distance and driving time use the road network and honor such restrictions as one-way streets.  Driving time honors your choice of travel speeds: those based on live or typical traffic. Live speeds are gathered through current sensor readings, and typical speeds are calculated from historical averages.   
+            </p>
+            <p>You can enter multiple distances.  Features that are within (or equal to) the distances you enter will be summarized.  
             </p>
         </div>
     </div>

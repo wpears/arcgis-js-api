@@ -22,11 +22,11 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Trova più vicine</h2><p/>
         <h2></h2>
         <hr/>
-    <p>Questo strumento consente di trovare le feature pi&ugrave; vicine ed eventualmente di segnalare e classificare la distanza dalle feature nelle vicinanze. Per trovare le feature pi&ugrave; vicine, lo strumento &egrave; in grado di misurare la distanza in linea retta, la distanza stradale o il tempo di percorrenza. Queste opzioni consentono di limitare il numero di feature pi&ugrave; vicine da trovare o l'intervallo di ricerca in cui trovarle. I risultati ottenuti da questo strumento permettono di rispondere ai seguenti tipi di domande:
+    <p>Questo strumento consente di trovare le feature pi&ugrave; vicine e di segnalare e classificare la distanza dalle feature nelle vicinanze. Per trovare le feature pi&ugrave; vicine, lo strumento &egrave; in grado di misurare la distanza in linea retta, la distanza stradale o il tempo di percorrenza. Queste opzioni consentono di limitare il numero di feature pi&ugrave; vicine da trovare o l'intervallo di ricerca in cui trovarle. I risultati ottenuti da questo strumento permettono di rispondere ai seguenti tipi di domande:
         <ul>
             <li>Qual &egrave; il parco pi&ugrave; vicino da qui?
             </li>
@@ -39,7 +39,7 @@
         </ul>
         
     </p>
-    <p>La funzione Trova pi&ugrave; vicine restituisce un layer contenente le feature pi&ugrave; vicine ed eventualmente un layer linea che collega le posizioni iniziali alle relative posizioni pi&ugrave; vicine. Il layer linea opzionale contiene informazioni relative alle posizioni iniziali e pi&ugrave; vicine, nonch&eacute; alle distanze tra queste.
+    <p>La funzione Trova pi&ugrave; vicine restituisce un layer contenente le feature pi&ugrave; vicine e un layer linea che collega le posizioni iniziali alle relative posizioni pi&ugrave; vicine. Il layer linea contiene informazioni relative alle posizioni iniziali e pi&ugrave; vicine, nonch&eacute; alle distanze tra queste.
     </p>
     <p>Se si seleziona 
         <b>Usa estensione mappa corrente</b>, vengono considerate come iniziali e potenzialmente pi&ugrave; vicine solo le feature visibili all'interno dell'estensione mappa corrente.  Se questa opzione &egrave; deselezionata, vengono considerate tutte le feature presenti nel layer di input, anche se sono esterne all'estensione mappa corrente.
@@ -52,7 +52,7 @@
         <div><h2>Trova le posizioni più vicine in</h2></div>
         <hr/>
         <div>
-            <p>La funzione Trova pi&ugrave; vicine consente di misurare la distanza da ciascuna delle posizioni presenti nel layer di input alle posizioni presenti nel layer corrente. Lo strumento supporta fino a 1000 posizioni in ogni layer.
+            <p>La funzione Trova pi&ugrave; vicine consente di misurare la distanza da ciascuna delle posizioni presenti nel layer di analisi alle posizioni presenti nel layer corrente. Lo strumento supporta fino a 1000 posizioni in ogni layer.
             </p>
         </div>
     </div>
@@ -62,51 +62,11 @@
         <div>
             <p>Scegliere se trovare le posizioni pi&ugrave; vicine in base alla distanza in linea retta, alla distanza di guida o al tempo di percorrenza. In entrambi i casi legati alla guida, le misurazioni vengono effettuate lungo le strade, rispettando i sensi unici, le svolte non consentite, ecc.. 
             </p>
-            <p>La ricerca di feature pi&ugrave; vicine utilizzando la distanza in linea retta consente di impostare punti, linee o aree come input. Per misurare il tempo o la distanza di percorrenza, &egrave; necessario che entrambi i layer di input (posizione di input e posizioni nelle vicinanze) contengano punti. 
+            <p>La ricerca di feature pi&ugrave; vicine utilizzando la distanza in linea retta consente di impostare punti, linee o aree come input. Per misurare il tempo o la distanza di percorrenza, &egrave; necessario che entrambi i layer (layer di analisi e posizioni nelle vicinanze) contengano punti. 
             </p>
             <p>Durante la misurazione tra linee o aree, viene calcolata la distanza da o verso il punto pi&ugrave; vicino lungo la linea o il confine dell'area. 
             </p>
-        </div>
-    </div>
-    <div id="Cutoffs">
-        <div><h2>Per ogni posizione in</h2></div>
-        <hr/>
-        <div>
             
-            <p>Per limitare la ricerca delle posizioni pi&ugrave; vicine sono disponibili due opzioni. Un'opzione consiste nel limitare il numero massimo di posizioni pi&ugrave; vicine da trovare per ciascuna posizione iniziale. &Egrave; possibile trovare il parco pi&ugrave; vicino, i due parchi pi&ugrave; vicini, ecc.. La seconda opzione consiste nell'impostazione di una distanza di ricerca o di un tempo di percorrenza massimi.
-            </p>
-            <p>Se si deseleziona l'opzione, il numero massimo di posizioni pi&ugrave; vicine da trovare &egrave; 100 (numero limite dello strumento) e l'intervallo massimo di ricerca &egrave; illimitato.
-            </p>
-            <p>Il tempo di elaborazione varia a seconda del numero di posizioni iniziali, del numero di posizioni vicine e dell'intervallo massimo di ricerca.   L'elaborazione richiede pi&ugrave; tempo quando vi sono pi&ugrave; posizioni o intervalli di ricerca pi&ugrave; ampi.
-                
-            </p>
-            <p>Tenere presente che quando viene impostato un limite sull'intervallo di ricerca, &egrave; possibile che lo strumento non trovi alcuna posizione pi&ugrave; vicina entro tale intervallo. &Egrave; inoltre possibile trovare un numero di posizioni pi&ugrave; vicine inferiore rispetto al numero massimo specificato.
-            </p>
-            
-        </div>
-    </div>
-    <div id="UseTypicalTraffic">
-        <div><h2>Usa condizioni del traffico tipiche per</h2></div>
-        <hr/>
-        <div>
-            <p>
-                Quando si misura il tempo di percorrenza, l'elemento pi&ugrave; vicino pu&ograve; dipendere dal traffico e dall'ora del giorno. Si immagini di voler cercare il pronto soccorso pi&ugrave; vicino in un'ora di punta. Nelle ore di punta al mattino il traffico veicolare in entrata nel centro cittadino tende ad essere pi&ugrave; lento di quello in uscita. A quell'ora del giorno, quindi, il pronto soccorso pi&ugrave; vicino potrebbe trovarsi lungo la direzione in uscita. Di sera il traffico in entrata &egrave; invece pi&ugrave; veloce, pertanto il pronto soccorso pi&ugrave; vicino potrebbe trovarsi lungo la direzione in entrata.
-            </p>
-            <p>Se si seleziona 
-                <b>Usa condizioni del traffico tipiche per</b> e si specifica un giorno e un'ora, &egrave; possibile trovare le feature pi&ugrave; vicine in base alle medie storiche delle velocit&agrave; per ogni intervallo di cinque minuti in una settimana standard. L'elemento pi&ugrave; vicino pu&ograve; essere diverso in quanto il traffico e i tempi di percorrenza variano nel corso della settimana.
-            </p>
-            <p>Si noti che quando una vettura si allontana da un punto, il tempo passa e le condizioni di traffico cambiano. Lo strumento tiene conto di queste variazioni quando si utilizzano i dati del traffico; tuttavia, tale funzione non &egrave; supportata per tutte le regioni. Fare clic sul collegamento 
-                <b>Visualizza disponibilit&agrave;</b> sullo strumento per scoprire se la funzione &egrave; supportata nella propria area di studio.
-            </p>
-            <p>Deselezionare 
-                <b>Usa condizioni del traffico tipiche per</b> per trovare le feature pi&ugrave; vicine in base a velocit&agrave; di viaggio statiche, ad esempio limiti di velocit&agrave;. Si tratta dell'opzione da scegliere se si desidera conoscere gli elementi generalmente pi&ugrave; vicini, ma non necessariamente quelli pi&ugrave; vicini considerate le condizioni di traffico per un'ora e un giorno specifici.
-            </p>
-        </div>
-    </div>
-    <div id="UseTraffic">
-        <div><h2>Usa traffico</h2></div>
-        <hr/>
-        <div>
             <p>Se si seleziona 
                 <b>Tempo di percorrenza</b>, vengono visualizzate le opzioni di misurazione del tempo di guida.
                 <ul>
@@ -118,9 +78,9 @@
                     <li>
                         <p>Selezionare 
                             <b>Usa traffico</b> per trovare le feature pi&ugrave; vicine in base a un orario di partenza specifico e a condizioni di traffico variabili. Inoltre, selezionando l'opzione
-                            <b>Traffico in tempo reale</b>, l'orario di partenza dalle posizioni iniziali viene impostato sull'ora corrente e le velocit&agrave; di traffico corrente e previsto fanno riferimento a sensori e feed per determinare quali feature sono pi&ugrave; vicine. Le velocit&agrave; di traffico previsto vengono calcolate facendo riferimento a velocit&agrave; di traffico in tempo reale, velocit&agrave; storiche ed eventi correnti (ad es., condizioni meteorologiche). Le velocit&agrave; di traffico sono previste con 12 ore di anticipo, quindi &egrave; possibile spostare il cursore per impostare l'orario di partenza fino a 12 ore in avanti.
+                            <b>Traffico in tempo reale</b>, l'orario di partenza dalle posizioni iniziali viene impostato sull'ora corrente e le velocit&agrave; di traffico corrente e previsto fanno riferimento a sensori e feed per determinare quali feature sono pi&ugrave; vicine. Le velocit&agrave; di traffico previsto vengono calcolate facendo riferimento a velocit&agrave; di traffico in tempo reale, velocit&agrave; storiche ed eventi correnti (ad esempio condizioni meteorologiche). Le velocit&agrave; di traffico sono previste con 12 ore di anticipo, quindi &egrave; possibile spostare il cursore per impostare l'orario di partenza fino a 12 ore in avanti.
                         </p>
-                        <p>Utilizzare queste impostazioni del traffico in tempo reale per scoprire quali aree sono raggiungibili partendo adesso, tra un'ora, ecc...
+                        <p>Utilizzare queste impostazioni del traffico in tempo reale per scoprire quali aree sono raggiungibili partendo adesso, tra un'ora, e cos&igrave; via.
                         </p>
                     </li>
                     <li>
@@ -128,8 +88,7 @@
                             <b>Usa traffico</b> e quindi
                             <b>Traffico basato su condizioni tipiche per</b> giorno e ora, &egrave; possibile creare aree di tempo di percorrenza basate su medie storiche delle velocit&agrave;, per ogni intervallo di cinque minuti in una settimana standard. Nei risultati &egrave; incluso il traffico, ma non &egrave; inclusa l'influenza delle condizioni di traffico e degli eventi correnti che possono variare in modo significativo rispetto alla norma.
                         </p>
-                        <p>
-                            &Egrave; possibile utilizzare queste impostazioni del traffico storico per rispondere, ad esempio, alla domanda &quot;Quali feature sono raggiungibili pi&ugrave; rapidamente impostando le feature iniziali il mercoled&igrave; alle 11:30?&quot;
+                        <p>&Egrave; possibile utilizzare queste impostazioni del traffico storico per rispondere, ad esempio, alla domanda &quot;Quali feature sono raggiungibili pi&ugrave; rapidamente impostando le feature iniziali il mercoled&igrave; alle 11:30?&quot; 
                         </p>
                         <p>L'orario impostato fa riferimento al fuso orario in cui si trovano le feature iniziali. Pertanto, se si imposta l'orario alle 8:00 e si dispone di due feature iniziali, una nella citt&agrave; di New York e l'altra a Los Angeles, le posizioni pi&ugrave; vicine vengono trovate considerando rispettivamente le 8:00 come orario di partenza nel fuso orario orientale e le 8:00 nel fuso orario del Pacifico.
                         </p>
@@ -139,6 +98,20 @@
                 <b>Usa traffico</b>; tuttavia, tale funzione non &egrave; supportata per tutte le regioni. Fare clic sul collegamento
                 <b>Visualizza disponibilit&agrave;</b> sullo strumento per scoprire se la funzione &egrave; supportata nella propria area di studio.
                 
+            </p>
+        </div>
+    </div>
+    <div id="Cutoffs">
+        <div><h2>Per ogni posizione in</h2></div>
+        <hr/>
+        <div>
+            <p>Per limitare la ricerca delle posizioni pi&ugrave; vicine sono disponibili due opzioni. Un'opzione consiste nel limitare il numero massimo di posizioni pi&ugrave; vicine da trovare per ciascuna posizione iniziale. &Egrave; possibile trovare il parco pi&ugrave; vicino, i due parchi pi&ugrave; vicini, ecc.. La seconda opzione consiste nell'impostazione di una distanza di ricerca o di un tempo di percorrenza massimi.
+            </p>
+            <p>Se si deseleziona l'opzione, il numero massimo di posizioni pi&ugrave; vicine da trovare &egrave; 100 (numero limite dello strumento) e l'intervallo massimo di ricerca &egrave; illimitato.
+            </p>
+            <p>Il tempo di elaborazione varia a seconda del numero di posizioni iniziali, del numero di posizioni vicine e dell'intervallo massimo di ricerca.   L'elaborazione richiede pi&ugrave; tempo quando vi sono pi&ugrave; posizioni o intervalli di ricerca pi&ugrave; ampi.
+            </p>
+            <p>Tenere presente che quando viene impostato un limite sull'intervallo di ricerca, &egrave; possibile che lo strumento non trovi alcuna posizione pi&ugrave; vicina entro tale intervallo o che venga trovato un numero di posizioni inferiore al numero massimo specificato di posizioni nelle vicinanze.
             </p>
         </div>
     </div>

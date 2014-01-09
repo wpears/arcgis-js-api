@@ -22,19 +22,16 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Creare buffere</h2><p/>
         <h2></h2>
         <hr/>
     <p>Un buffer este o suprafaţă care acoperă o anumită distanţă faţă de un obiect spaţial punct, linie sau suprafaţă. 
     </p>
-    <p>Bufferele sunt utilizate de obicei pentru a crea suprafeţe care pot fi analizate mai departe cu ajutorul unui instrument, precum Suprapunere straturi tematice. De exemplu, dacă se pune &icirc;ntrebarea &bdquo;Ce clădiri se găsesc pe o rază de un kilometru &icirc;n jurul şcolii?&rdquo;, răspunsul poate fi găsit prin crearea unui buffer de un kilometru &icirc;n jurul şcolii şi suprapunerea bufferului cu stratul tematic ce conţine amprente de clădiri.  Rezultatul final este un strat tematic cu acele clădiri aflate pe o rază de un kilometru &icirc;n jurul şcolii.  
+    <p>Bufferele sunt utilizate de obicei pentru a crea suprafeţe care pot fi analizate mai departe cu ajutorul unui instrument, precum Suprapunere straturi tematice. De exemplu, dacă se pune &icirc;ntrebarea &bdquo;Ce clădiri se găsesc pe o rază de un kilometru &icirc;n jurul şcolii?&rdquo;, răspunsul poate fi găsit prin crearea unui buffer de un kilometru &icirc;n jurul şcolii şi utilizarea instrumentului Suprapunere straturi tematice pentru a suprapune bufferul cu stratul tematic ce conţine amprente de clădiri.  Rezultatul final este un strat tematic cu acele clădiri aflate pe o rază de un kilometru &icirc;n jurul şcolii.  
     </p>
     <p>Dacă se bifează 
-        <b>Utilizare extindere curentă a hărţii</b>, &icirc;n buffer vor fi incluse numai obiectele spaţiale vizibile &icirc;n extinderea curentă a hărţii.  Dacă nu se bifează, toate obiectele spaţiale din stratul tematic introdus vor fi cuprinse &icirc;n buffer, chiar dacă se află &icirc;n afara extinderii curente a hărţii.
-    </p>
-    <p>
-        
+        <b>Utilizare extindere curentă a hărţii</b>, &icirc;n buffer vor fi incluse numai obiectele spaţiale vizibile &icirc;n extinderea curentă a hărţii.  Dacă nu se bifează, toate obiectele spaţiale din stratul tematic de analiză vor fi introduse &icirc;n buffer, chiar dacă se află &icirc;n afara extinderii curente a hărţii.
     </p>
     </div>
     <!--Parameter divs for each param-->
@@ -42,7 +39,7 @@
         <div><h2>Introducere dimensiune buffer</h2></div>
         <hr/>
         <div>
-            <p>Pentru distanţă puteţi introduce o singură valoare sau mai multe valori, separ&acirc;ndu-le prin c&acirc;te un spaţiu.  De asemenea, puteţi specifica &icirc;n stratul tematic de intrare un atribut care să conţină valoare pentru distanţă, făc&acirc;nd clic pe 
+            <p>Pentru distanţă puteţi introduce o singură valoare sau mai multe valori, separ&acirc;ndu-le prin c&acirc;te un spaţiu.  De asemenea, puteţi specifica &icirc;n stratul tematic de analiză un atribut care să conţină valoare pentru distanţă, făc&acirc;nd clic pe 
                 <b>C&acirc;mp</b>.
             </p>
             
@@ -57,13 +54,13 @@
             
             
             <p>
-                C&acirc;nd se utilizează mai multe distanţe, puteţi alege cum să fie reprezentată diferenţa de la distanţa ultimului buffer; de exemplu, dacă distanţele sunt 10 şi 14:
+                C&acirc;nd utilizaţi mai multe distanţe, puteţi alege cum să reprezentaţi distanţa de la ultima distanţă din buffer; de exemplu, dacă distanţele sunt 10 şi 14:
                 <ul>
-                    <li>Dacă se alege opţiunea 
-                        <b>Inele</b>, rezultă buffere care merg de la 0 la 10 şi de la 10 la 14.
+                    <li>Dacă alegeţi 
+                        <b>Inele</b> rezultă buffere care se &icirc;ntind de la 0 la 10 şi de la 10 la 14.
                     </li>
-                    <li>Dacă se alege opţiunea 
-                        <b>Discuri</b>, rezultă buffere care merg de la 0 la 10 şi de la 0 la 14.
+                    <li>Dacă alegeţi 
+                        <b>Discuri</b> rezultă buffere care se &icirc;ntind de la 0 la 10 şi de la 0 la 14.
                     </li>
                 </ul>
                 
@@ -76,15 +73,15 @@
         <div>
             <p>Alegeţi modul &icirc;n care doriţi să fie tratate bufferele care se suprapun. Pentru orice buffer aflat deasupra altui buffer, suprafeţele &icirc;n comun pot fi păstrate (Suprapunere) sau combinate (Dizolvare).
             </p>
-            <p>La crearea unui singur buffer &icirc;n jurul obiectelor spaţiale suprafaţă (o singură distanţă introdusă), puteţi alege dacă obiectul spaţial căruia &icirc;i creaţi bufferul să fie inclus sau exclus din bufferul rezultat.
+            <p>La crearea unui singur buffer &icirc;n jurul obiectelor spaţiale de tip suprafaţă (o singură distanţă introdusă), puteţi alege dacă obiectele spaţiale introduse &icirc;n buffer sunt incluse sau excluse din bufferul rezultat.
             </p>
-            <p>C&acirc;nd se utilizează mai multe distanţe, puteţi alege cum să fie reprezentată diferenţa de la distanţa ultimului buffer; de exemplu, dacă distanţele sunt 10 şi 14:
+            <p>C&acirc;nd utilizaţi mai multe distanţe, puteţi alege cum să reprezentaţi distanţa de la ultima distanţă din buffer; de exemplu, dacă distanţele sunt 10 şi 14:
                 <ul>
-                    <li>Dacă se alege opţiunea 
-                        <b>Inele</b>, rezultă buffere care merg de la 0 la 10 şi de la 10 la 14.
+                    <li>Dacă alegeţi 
+                        <b>Inele</b> rezultă buffere care se &icirc;ntind de la 0 la 10 şi de la 10 la 14.
                     </li>
-                    <li>Dacă se alege opţiunea 
-                        <b>Discuri</b>, rezultă buffere care merg de la 0 la 10 şi de la 0 la 14.
+                    <li>Dacă alegeţi 
+                        <b>Discuri</b> rezultă buffere care se &icirc;ntind de la 0 la 10 şi de la 0 la 14.
                     </li>
                 </ul>
                 
@@ -100,13 +97,13 @@
             </p>
             <p>La crearea unui singur buffer &icirc;n jurul unei linii (o singură distanţă introdusă), puteţi alege pe ce parte a liniei să se creeze bufferul.  De regulă, alegeţi ambele părţi.  Părţile st&acirc;ngă şi dreaptă sunt determinate ca şi c&acirc;nd v-aţi deplasa de la prima coordonată x,y a liniei (coordonata iniţială) către ultima coordonată x,y a liniei (coordonata finală).  Alegerea părţii st&acirc;ngi sau drepte &icirc;nseamnă de regulă că ştiţi că obiectele spaţiale linie au fost create şi stocate &icirc;ntr-o anumită direcţie (de exemplu, &icirc;n amonte sau &icirc;n aval &icirc;ntr-o reţea hidrografică).   La capetele liniilor, bufferul poate fi rotunjit (Rotund) sau tăiat drept (Drept).
             </p>
-            <p>C&acirc;nd se creează mai multe buffere (mai multe distanţe), puteţi alege cum să fie reprezentată diferenţa de la distanţa ultimului buffer; de exemplu, dacă distanţele sunt 10 şi 14:
+            <p>C&acirc;nd creaţi mai multe buffere (mai multe distanţe), puteţi alege cum să reprezentaţi distanţa de la ultima distanţă din buffer; de exemplu, dacă distanţele sunt 10 şi 14:
                 <ul>
-                    <li>Dacă se alege opţiunea 
-                        <b>Inele</b>, rezultă buffere care merg de la 0 la 10 şi de la 10 la 14.
+                    <li>Dacă alegeţi 
+                        <b>Inele</b> rezultă buffere care se &icirc;ntind de la 0 la 10 şi de la 10 la 14.
                     </li>
-                    <li>Dacă se alege opţiunea 
-                        <b>Discuri</b>, rezultă buffere care merg de la 0 la 10 şi de la 0 la 14.
+                    <li>Dacă alegeţi 
+                        <b>Discuri</b> rezultă buffere care se &icirc;ntind de la 0 la 10 şi de la 0 la 14.
                     </li>
                 </ul>
                 
@@ -119,13 +116,12 @@
         <hr/>
         <div>
             <p>Acesta este numele stratului tematic care va fi creat &icirc;n 
-                <b>Resursele mele</b> şi adăugat &icirc;n hartă.  Numele implicit se bazează pe tipul de analiză şi numele stratului tematic de intrare. Dacă stratul tematic există deja, vi se va solicita să confirmaţi dacă doriţi să &icirc;l suprascrieţi.
+                <b>Resursele mele</b> şi adăugat pe hartă.  Numele implicit se bazează pe tipul de analiză şi numele stratului tematic de analiză. Dacă stratul tematic există deja, vi se va solicita să confirmaţi dacă doriţi să &icirc;l suprascrieţi.
             </p>
             <p>Utiliz&acirc;nd caseta derulantă 
                 <b>Salvare rezultat &icirc;n</b>, puteţi specifica numele unui director din
                 <b>Resursele mele</b> &icirc;n care va fi salvat rezultatul.
             </p>
-            
         </div>
     </div>
 </div>

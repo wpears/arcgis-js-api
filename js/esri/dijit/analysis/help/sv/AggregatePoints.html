@@ -22,14 +22,13 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
-        <h2>Förena punkter</h2><p/>
+    <div id="toolDescription" class="largesize">
+        <h2>Aggregera punkter</h2><p/>
         <h2></h2>
         <hr/>
-    <p>Det h&auml;r verktyget arbetar med ett lager punktgeoobjekt (analyslagret) och ett lager med omr&aring;desgeoobjekt. F&ouml;rst ber&auml;knas vilka punkter som hamnar inom respektive omr&aring;de. Efter att den geografiska analysen f&ouml;r punkter inom olika omr&aring;den &auml;r f&auml;rdig, ber&auml;knas statistik f&ouml;r alla punkter i respektive omr&aring;de. Den mest grundl&auml;ggande statistiken &auml;r r&auml;kningen av antalet punkter i omr&aring;det, men du kan &auml;ven skaffa annan statistik. 
+    <p>Det h&auml;r verktyget arbetar med ett lager punktgeoobjekt (analyslagret) och ett lager med omr&aring;desgeoobjekt. F&ouml;rst avg&ouml;rs vilka punkter som hamnar inom respektive omr&aring;de. Efter att den geografiska analysen f&ouml;r punkter inom olika omr&aring;den &auml;r f&auml;rdig, ber&auml;knas statistik f&ouml;r alla punkter i respektive omr&aring;de. Den mest grundl&auml;ggande statistiken &auml;r r&auml;kningen av antalet punkter i omr&aring;det, men du kan &auml;ven skaffa annan statistik. 
     </p>
-    <p>
-        Antag till exempel att du har punktgeoobjekt i form av platser f&ouml;r kaf&eacute;er och omr&aring;desgeoobjekt i form av l&auml;n, och nu vill summera kaffef&ouml;rs&auml;ljningen per l&auml;n.  Om vi antar att kaf&eacute;erna har attributet
+    <p>Antag till exempel att du har punktgeoobjekt i form av platser f&ouml;r kaf&eacute;er och omr&aring;desgeoobjekt i form av l&auml;n, och nu vill summera kaffef&ouml;rs&auml;ljningen per l&auml;n.  Om vi antar att kaf&eacute;erna har attributet 
         <i>TOTAL_SALES</i> kan du ber&auml;kna summan av alla
         <i>TOTAL_SALES</i> i varje l&auml;n, minsta och h&ouml;gsta
         <i>TOTAL_SALES</i> i varje l&auml;n eller standardavvikelsen f&ouml;r all f&ouml;rs&auml;ljning i respektive l&auml;n.
@@ -38,10 +37,6 @@
     </p>
     <p>Om 
         <b>Anv&auml;nd aktuell kartutbredning</b> markeras, analyseras bara de geoobjekt i analyslagret och omr&aring;deslagret som visas i den aktuella kartutbredningen.  Om alternativet inte &auml;r markerat analyseras alla geoobjekt i b&aring;de indatalagret och analyslagret, &auml;ven om de ligger utanf&ouml;r den aktuella kartutbredningen.
-    </p>
-    <p>
-        
-        
     </p>
     </div>
     <!--Parameter divs for each param-->
@@ -52,7 +47,6 @@
             <p>
                 V&auml;lj ett omr&aring;deslager i webbkartan d&auml;r punkterna ska f&ouml;renas. Om det inte finns n&aring;gra gr&auml;nslager i webbkartan kan du v&auml;lja ett i listan med gr&auml;nslager som finns tillg&auml;nglig via ArcGIS Online. Alla punkter som hamnar inom gr&auml;nserna f&ouml;r omr&aring;den i lagret r&auml;knas, och du kan v&auml;lja att summera dem med valfri statistik.
             </p>
-            
         </div>
     </div>
     <div id="KeepBoundaryNoPoints">
@@ -61,7 +55,6 @@
         <div>
             <p>Fastst&auml;ller om omr&aring;den som inte inneh&aring;ller n&aring;gra punkter ska visas i resultatlagret.  Om alternativet inte markeras visas omr&aring;den utan punkter inte i resultatet.  Om alternativet markeras visas omr&aring;den utan punkter i resultatet.  
             </p>
-            
         </div>
     </div>
     <div id="SummaryFields">
@@ -80,11 +73,6 @@
                 <i>Crime_type</i> med fem olika brottstyper.  Varje unik brottstyp utg&ouml;r en grupp, och den statistik du v&auml;ljer ber&auml;knas f&ouml;r varje unikt v&auml;rde f&ouml;r attributet
                 <i>Crime_type</i>.  N&auml;r du v&auml;ljer ett grupperingsattribut skapas tv&aring; resultat: resultatlagret och en tabell som inneh&aring;ller statistik f&ouml;r varje unik grupp.
             </p>
-            <p>
-                
-                
-            </p>
-            
         </div>
     </div>
     <div id="OutputLayer">
@@ -92,13 +80,12 @@
         <hr/>
         <div>
             <p>Det h&auml;r &auml;r namnet p&aring; lagret som skapas i 
-                <b>Mitt inneh&aring;ll</b> och l&auml;ggs till i kartan.  Standardnamnet bygger p&aring; analystypen och indatalagrets namn. Om lagret redan finns uppmanas du bekr&auml;fta att du vill skriva &ouml;ver det.
+                <b>Mitt inneh&aring;ll</b> och l&auml;ggs till i kartan.  Standardnamnet bygger p&aring; analystypen och analyslagrets namn. Om lagret redan finns uppmanas du att bekr&auml;fta att du vill skriva &ouml;ver det.
             </p>
             <p>Om du anv&auml;nder listrutan 
                 <b>Spara resultat i</b> kan du ange namnet p&aring; en mapp i
                 <b>Mitt inneh&aring;ll</b> d&auml;r resultatet ska sparas.
             </p>
-            
             
         </div>
     </div>

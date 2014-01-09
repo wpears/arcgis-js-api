@@ -22,23 +22,23 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Udtræk data</h2><p/>
         <h2></h2>
         <hr/>
-    <p>Med dette v&aelig;rkt&oslash;j kan du v&aelig;lge og overf&oslash;re data for et bestemt interesseomr&aring;de. De lag, du v&aelig;lger, vil blive f&oslash;jet til en zipfil eller en lagpakke.
+    <p>Med dette v&aelig;rkt&oslash;j kan du v&aelig;lge og downloade data for et bestemt interesseomr&aring;de. De lag, du v&aelig;lger, vil blive f&oslash;jet til en zip- eller csv-fil.
     </p>
     </div>
     <!--Parameter divs for each param-->
     <div id="InputLayers">
-        <div><h2>Lag, der skal ekstraheres</h2></div>
+        <div><h2>Lag, der skal trækkes ud</h2></div>
         <hr/>
         <div>
-            <p>Lagene placeres i din indholdsfortegnelse, hvorfra du kan udtr&aelig;kke objekter.  De lag, der er markeret, udtr&aelig;kkes og medtages i en resulterende zipfil eller lagpakke.
+            <p>Fra disse lag i din indholdsfortegnelse, kan du udtr&aelig;kke objekter.  De lag, der er markeret, udtr&aelig;kkes og inkluderes i den resulterende zip- eller csv-fil.
             </p>
-            <p>Hvis et lag skal vises p&aring; listen over lag, der skal ekstraheres, skal du enten eje dataene, eller ejeren af dataene skal aktivere eksport af dataene.    For at aktivere eksport af data p&aring; dine data:
+            <p>Hvis et lag skal vises p&aring; listen over lag, der kan tr&aelig;kkes ud , skal du enten eje dataene, eller ejeren af dataene skal aktivere muligheden for eksport af dataene.    For at aktivere eksport af data du ejer:
                 <ul>
-                    <li>&Aring;bn elementoplysningerne om dataene.
+                    <li>&Aring;bn elementoplysningerne for dataene.
                     </li>
                     <li>Klik p&aring; REDIG&Eacute;R for at &aelig;ndre elementoplysningerne.
                     </li>
@@ -58,9 +58,9 @@
         <div><h2>Undersøgelsesområde</h2></div>
         <hr/>
         <div>
-            <p>Det omr&aring;de, der definerer, hvilke objekter der skal medtages i outputzipfilen eller -lagpakken. Du kan v&aelig;lge mellem f&oslash;lgende:
+            <p>Det omr&aring;de, der definerer, hvilke objekter der skal inkluderes i output-zipfilen eller csv-filen. Du kan v&aelig;lge mellem f&oslash;lgende:
                 <ul>
-                    <li>Den aktuelle synlige kortudstr&aelig;kning  (
+                    <li>Den aktuelle synlige kortudstr&aelig;kning (
                         <b>Samme som Visning</b>).
                     </li>
                     <li>&Eacute;t af lagene i din indholdsfortegnelse.
@@ -68,10 +68,10 @@
                     <li>Tegn et omr&aring;de for at definere unders&oslash;gelsesomr&aring;det.
                     </li>
                 </ul>
-                 Alle de objekter, der befinder sig helt inden for kortets udstr&aelig;kning, vil blive udtrukket.  For de objekter, der g&aring;r p&aring; tv&aelig;rs af eller gennemsk&aelig;rer kortets udstr&aelig;kningsgr&aelig;nse, men ikke ligger helt inden for udstr&aelig;kningen, har du to muligheder:
+                 Alle de objekter, der befinder sig helt inden for kortets udstr&aelig;kning, vil blive udtrukket.  For de objekter, der krydser eller gennemsk&aelig;rer kortets udstr&aelig;kningsgr&aelig;nse, men ikke ligger helt inden for udstr&aelig;kningen, har du to muligheder:
                 <ul>
                     <li>
-                        <b>V&aelig;lg objekter</b> &ndash; Hele objekter, der g&aring;r p&aring; tv&aelig;rs af unders&oslash;gelsesomr&aring;dets gr&aelig;nse, vil blive udtrukket.
+                        <b>V&aelig;lg objekter</b> &ndash; Hele objekter, der krydser unders&oslash;gelsesomr&aring;dets gr&aelig;nse, vil blive udtrukket.
                     </li>
                     <li>
                         <b>Klip-features</b> &ndash; Kun de dele af objekterne, der ligger inden for unders&oslash;gelsesomr&aring;det, vil blive udtrukket.
@@ -82,27 +82,26 @@
         </div>
     </div>
     <div id="OutputFormat">
-        <div><h2>Outputdataformat</h2></div>
+        <div><h2>Output dataformat</h2></div>
         <hr/>
         <div>
-            <p>Formatet af de data, der vil blive udtrukket og overf&oslash;rt.  Lagpakker vil altid indeholde filgeodatabaser.
+            <p>Formatet af de data, der vil blive udtrukket. N&aring;r linje- eller omr&aring;deobjekter eksporteres til csv-filer, udtr&aelig;kkes kun ikke-rumlige attributter.  N&aring;r punktobjekter eksporteres, udtr&aelig;kkes b&aring;de rumlige og ikke-rumlige attributter.  
             </p>
         </div>
     </div>
     <div id="OutputName">
-        <div><h2>Outputfilnavn</h2></div>
+        <div><h2>Output filnavn</h2></div>
         <hr/>
         <div>
             <p>
                 Dette er navnet p&aring; det element, som tilf&oslash;jes til
                 <b>Mit indhold</b>.  Navnet p&aring; elementet baseres p&aring; det valgte
-                <b>Outputdataformat</b>.     Hvis elementet findes allerede, vil du blive bedt om at bekr&aelig;fte, om du vil overskrive det.
+                <b>Output dataformat</b>.     Hvis elementet allerede findes, vil du blive bedt om at bekr&aelig;fte, om du vil overskrive det.
             </p>
             <p>Ved hj&aelig;lp af rullelisten 
                 <b>Gem resultat i</b> kan du angive navnet p&aring; en mappe i
                 <b>Mit indhold</b>, hvor resultatet skal gemmes.
             </p>
-            
         </div>
     </div>
 </div>

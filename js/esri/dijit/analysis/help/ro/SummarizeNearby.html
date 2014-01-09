@@ -22,7 +22,7 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Sumarizare în apropiere</h2><p/>
         <h2></h2>
         <hr/>
@@ -53,7 +53,9 @@
         <div><h2>Găsire cele mai apropiate obiecte spaţiale utilizând un</h2></div>
         <hr/>
         <div>
-            <p>Puteţi defini ce tip de măsurare a distanţei doriţi să utilizaţi: fie distanţa &icirc;n linie dreaptă, fie distanţa rutieră, fie timpul de conducere.  At&acirc;t distanţa rutieră, c&acirc;t şi timpul de conducere utilizează reţeaua de drumuri şi respectă restricţii precum străzile cu sens unic.  Timpul de conducere ţine cont de limitele de viteză aplicate &icirc;n mod curent.   Puteţi introduce mai multe distanţe.  Vor fi sumarizate obiectele spaţiale care se &icirc;ncadrează &icirc;n distanţele pe care le introduceţi.  
+            <p>Puteţi defini ce tip de măsurare a distanţei doriţi să utilizaţi: fie distanţa &icirc;n linie dreaptă, fie distanţa rutieră, fie timpul de conducere.  At&acirc;t distanţa rutieră, c&acirc;t şi timpul de conducere utilizează reţeaua de drumuri şi respectă restricţii precum străzile cu sens unic.  Timpul de deplasare cu maşina ţine cont de opţiunile dvs. pentru vitezele de deplasare: cele bazate pe traficul &icirc;n timp real sau tipic. Vitezele &icirc;n timp real sunt colectate prin citiri ale senzorilor actuali, iar vitezele tipice sunt calculate din medii istorice.   
+            </p>
+            <p>Puteţi introduce mai multe distanţe.  Vor fi sumarizate obiectele spaţiale care se &icirc;ncadrează &icirc;n distanţele pe care le introduceţi.  
             </p>
         </div>
     </div>
@@ -106,7 +108,7 @@
                     <b>Minim</b>&mdash;Cea mai mică valoare pentru c&acirc;mpul specificat
                 </li>
                 <li>
-                    <b>Maxim</b>&mdash;Cea mai mare valoare pentru c&acirc;mpul specificat
+                    <b>Maxim</b>&mdash;Cea mai mare valoare din c&acirc;mpul specificat
                 </li>
                 <li>
                     <b>Abatere standard</b>&mdash;Abaterea standard a valorilor din c&acirc;mpul specificat
@@ -132,7 +134,7 @@
                     <b>Medie</b>&mdash;Media pentru c&acirc;mpul specificat
                 </li>
                 <li>
-                    <b>Minim</b>&mdash;Cea mai mică valoare pentru c&acirc;mpul specificat
+                    <b>Minim</b>&mdash;Cea mai mică valoare din c&acirc;mpul specificat
                 </li>
                 <li>
                     <b>Maxim</b>&mdash;Cea mai mare valoare pentru c&acirc;mpul specificat
@@ -149,7 +151,7 @@
         <hr/>
         <div>
             <p>Acesta este un atribut al obiectelor spaţiale din apropiere, pe care &icirc;l puteţi utiliza pentru a calcula statistici separate pentru fiecare valoare de atribut unică. De exemplu, să presupunem că stratul tematic de analiză conţine parcele de teren libere de v&acirc;nzare şi obiectele dvs. spaţiale din apropiere sunt amprente de clădiri.  Unul din atributele amprentelor de clădiri este 
-                <i>UseType</i> care conţine valori precum RETAIL (Comerţ), RESIDENTIAL (Rezidenţial), MANUFACTURING (Producţie), PUBLIC (Interes public) şi aşa mai departe.  Pentru a caracteriza amestecul de utilizări ale clădirilor din apropierea fiecărei parcele libere, puteţi calcula suprafaţa totală pentru fiecare tip unic de utilizare a clădirilor de pe o rază de doi kilometri faţă de parcelele libere, utiliz&acirc;nd
+                <i>UseType</i>, care conţine valori precum RETAIL (Comerţ), RESIDENTIAL (Rezidenţial), MANUFACTURING (Producţie), PUBLIC (Interes public) şi aşa mai departe.  Pentru a caracteriza amestecul de utilizări ale clădirilor din apropierea fiecărei parcele libere, puteţi calcula suprafaţa totală pentru fiecare tip unic de utilizare a clădirilor de pe o rază de doi kilometri faţă de parcelele libere, utiliz&acirc;nd
                 <i>UseType</i> drept atribut de grupare.
             </p>
             

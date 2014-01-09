@@ -22,12 +22,11 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Extraire les données</h2><p/>
         <h2></h2>
         <hr/>
-    <p>Cet outil vous permet de s&eacute;lectionner et de t&eacute;l&eacute;charger les donn&eacute;es d'une zone d'int&eacute;r&ecirc;t en particulier. Les couches que vous s&eacute;lectionnez sont ajout&eacute;es dans un fichier zip ou un paquetage de couches.
-
+    <p>Cet outil vous permet de s&eacute;lectionner et de t&eacute;l&eacute;charger les donn&eacute;es d'une zone d'int&eacute;r&ecirc;t en particulier. Les couches que vous s&eacute;lectionnez sont ajout&eacute;es dans un fichier zip ou csv.
     </p>
     </div>
     <!--Parameter divs for each param-->
@@ -35,8 +34,7 @@
         <div><h2>Couches à extraire</h2></div>
         <hr/>
         <div>
-            <p>Les couches de la table des mati&egrave;res &agrave; partir de laquelle vous pouvez extraire les entit&eacute;s. Les couches qui sont s&eacute;lectionn&eacute;es sont extraites et comprises dans un fichier zip ou un paquetage de couches.
-
+            <p>Il s'agit des couches de la table des mati&egrave;res &agrave; partir de laquelle vous pouvez extraire les entit&eacute;s. Les couches qui sont s&eacute;lectionn&eacute;es sont extraites et comprises dans le fichier zip ou csv obtenu.
             </p>
             <p>Pour qu'une couche fasse partie de la liste des couches &agrave; extraire, les donn&eacute;es doivent vous appartenir ou le propri&eacute;taire des donn&eacute;es doit permettre leur exportation. Pour permettre l'exportation des donn&eacute;es qui vous appartiennent&nbsp;:
                 <ul>
@@ -60,7 +58,7 @@
         <div><h2>Zone d´étude</h2></div>
         <hr/>
         <div>
-            <p>La zone qui d&eacute;finit les entit&eacute;s &agrave; inclure dans le fichier zip ou le paquetage de couches en sortie. Vous pouvez s&eacute;lectionner l'un des &eacute;l&eacute;ments suivants&nbsp;:
+            <p>La zone qui d&eacute;finit les entit&eacute;s &agrave; inclure dans le fichier zip ou csv en sortie. Vous pouvez s&eacute;lectionner l'un des &eacute;l&eacute;ments suivants&nbsp;:
                 <ul>
                     <li>L'&eacute;tendue courante visible de votre carte (
                         <b>Identique &agrave; l&acute;affichage</b>).
@@ -87,7 +85,7 @@
         <div><h2>Format de données de sortie</h2></div>
         <hr/>
         <div>
-            <p>Format des donn&eacute;es qui sont extraites et t&eacute;l&eacute;charg&eacute;es. Les paquetages de couches comprennent toujours des g&eacute;odatabases fichier.
+            <p>Format des donn&eacute;es qui sont extraites. Lorsque vous exportez des entit&eacute;s lin&eacute;aires ou surfaciques au format csv, seuls les attributs non spatiaux sont extraits. Lorsque vous exportez des entit&eacute;s ponctuelles, les attributs spatiaux et non spatiaux sont extraits.  
             </p>
         </div>
     </div>
@@ -104,7 +102,6 @@
                 <b>Enregistrer le r&eacute;sultat dans</b> vous permet de sp&eacute;cifier le nom d'un dossier dans
                 <b>Mes contenus</b> o&ugrave; le r&eacute;sultat sera enregistr&eacute;.
             </p>
-            
         </div>
     </div>
 </div>

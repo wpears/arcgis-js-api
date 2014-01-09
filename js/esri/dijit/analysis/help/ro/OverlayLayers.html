@@ -22,11 +22,11 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Straturi tematice suprapuse</h2><p/>
         <h2></h2>
         <hr/>
-    <p>Suprapunerea combină două sau mai multe straturi tematice &icirc;ntr-un singur strat tematic.  Puteţi considera suprapunerea ca o asociere &icirc;ntre o serie de hărţi şi creare unei singure hărţi care să conţină toate informaţiile din set.   De fapt, &icirc;nainte de apariţia SIG, cartografii copiau efectiv hărţi pe foi de acetat de celuloză, le suprapuneau pe acestea pe o masă luminoasă şi trasau manual o nouă hartă din datele suprapuse. Suprapunerea este mai mult dec&acirc;t o combinare de linii; toate atributele obiectelor spaţiale care sunt incluse &icirc;n suprapunere sunt transmise produsului final. Suprapunerea este utilizată pentru a răspunde la una din cele mai simple &icirc;ntrebări din geografie, &bdquo;Ce este deasupra a ce?&rdquo; De exemplu:
+    <p>Suprapunerea combină două sau mai multe straturi tematice &icirc;ntr-un singur strat tematic.  Puteţi considera suprapunerea ca o asociere &icirc;ntre o serie de hărţi şi creare unei singure hărţi care să conţină toate informaţiile din set. Suprapunerea este mai mult dec&acirc;t o combinare de linii; toate atributele obiectelor spaţiale care sunt incluse &icirc;n suprapunere sunt transmise produsului final. Suprapunerea este utilizată pentru a răspunde la una din cele mai simple &icirc;ntrebări din geografie, &bdquo;Ce este deasupra a ce?&rdquo; De exemplu:
         <ul>
             <li>Ce parcele se află &icirc;n lunca de 100 de ani? (&Icirc;n este doar un alt mod de a spune pe.)
                   
@@ -41,8 +41,7 @@
         </ul>
         
     </p>
-    <p>
-        Dacă se bifează
+    <p>Dacă se bifează 
         <b>Utilizare extindere curentă hartă</b>, vor fi suprapuse numai obiectele spaţiale din stratul tematic de analiză şi suprapunere care sunt vizibile din extinderea curentă a hărţii.  Dacă nu se bifează, vor fi suprapuse toate obiectele spaţiale at&acirc;t din stratul tematic de suprapunere, c&acirc;t şi din stratul tematic suprafaţă, chiar dacă se află &icirc;n afara extinderii curente a hărţii.
     </p>
     </div>
@@ -63,13 +62,13 @@
             <p>Metoda de suprapunere defineşte modul &icirc;n care sunt combinate stratul tematic de analiză şi stratul tematic de suprapunere.  
                 <ul>
                     <li>
-                        <b>Intersecţie</b>&mdash;Rezultatul va conţine numai acele obiecte spaţiale sau porţiuni de obiecte spaţiale din stratul tematic de suprapunere care se suprapun pentru obiecte spaţiale din stratul tematic de analiză.  Dacă stratul tematic de analiză este compus din obiecte spaţiale suprafaţă, stratul tematic de suprapunere poate fi compus din obiecte spaţiale suprafaţă, punct sau linie.  Dacă stratul tematic de analiză este compus din obiecte spaţiale linie, stratul tematic de suprapunere poate fi compus numai din obiecte spaţiale linie sau punct.  Dacă stratul tematic de analiză este compus din obiecte spaţiale punct, stratul tematic de suprapunere trebuie să fie compus numai din obiecte spaţiale punct.
+                        <b>Intersecţie</b>&mdash;Rezultatul va conţine numai acele obiecte spaţiale sau porţiuni de obiecte spaţiale din stratul tematic de suprapunere care se suprapun pentru obiecte spaţiale din stratul tematic de analiză.  Dacă stratul tematic de analiză este compus din obiecte spaţiale suprafaţă, stratul tematic de suprapunere poate fi compus din obiecte spaţiale suprafaţă, punct sau linie.  Dacă stratul tematic de analiză este compus din obiecte spaţiale linie, stratul tematic de suprapunere poate fi compus numai din obiecte spaţiale linie sau punct.  Dacă stratul tematic de analiză conţine obiecte spaţiale punct, stratul tematic suprapus trebuie să conţină tot obiecte spaţiale punct.
                     </li>
                     <li>
-                        <b>Reuniune</b>&mdash;Rezultatul va conţine obiecte spaţiale at&acirc;t din stratul tematic de analiză, c&acirc;t şi din stratul tematic de suprapunere. Opţiunea Reuniune este disponibilă numai dacă at&acirc;t stratul tematic de analiză, c&acirc;t şi stratul tematic de suprapunere conţin obiecte spaţiale suprafaţă.
+                        <b>Reuniune</b>&mdash;Rezultatul va conţine obiecte spaţiale din ambele straturi tematice, de analiză şi suprapus. Opţiunea Reuniune este disponibilă numai dacă at&acirc;t stratul tematic de analiză, c&acirc;t şi stratul tematic suprapus conţin obiecte spaţiale de tip suprafaţă.
                     </li>
                     <li>
-                        <b>Ştergere</b>&mdash;Rezultatul va conţine obiecte spaţiale sau porţiuni de obiecte spaţiale din stratul tematic de suprapunere care nu se suprapun cu suprafeţe din stratul tematic de analiză  Stratul tematic de suprapunere poate conţine obiecte spaţiale suprafaţă, linie sau punct.
+                        <b>Ştergere</b>&mdash;Rezultatul va conţine acele obiecte spaţiale sau porţiuni de obiecte spaţiale din stratul tematic de suprapunere care nu se suprapun cu obiecte spaţiale din stratul tematic de analiză.  Stratul tematic de suprapunere poate conţine obiecte spaţiale suprafaţă, linie sau punct.
                     </li>
                 </ul>
                 
@@ -86,7 +85,7 @@
         <div>
             <p>
                 Acesta este numele stratului tematic care va fi creat &icirc;n
-                <b>Resursele mele</b> şi adăugat &icirc;n hartă.  El va avea acelaşi tip de obiecte spaţiale (suprafeţe, linii sau puncte) ca şi stratul tematic de suprapunere.  Numele implicit se bazează pe metoda de suprapunere şi numele stratului tematic de intrare. Dacă stratul tematic există deja, vi se va solicita să confirmaţi dacă doriţi să &icirc;l suprascrieţi.
+                <b>Resursele mele</b> şi adăugat pe hartă.  El va avea acelaşi tip de obiecte spaţiale (suprafeţe, linii sau puncte) ca şi stratul tematic de suprapunere.  Numele implicit se bazează pe metoda de suprapunere şi numele stratului tematic de analiză. Dacă stratul tematic există deja, vi se va solicita să confirmaţi dacă doriţi să &icirc;l suprascrieţi.
             </p>
             <p>Utiliz&acirc;nd caseta derulantă 
                 <b>Salvare rezultat &icirc;n</b>, puteţi specifica numele unui director din

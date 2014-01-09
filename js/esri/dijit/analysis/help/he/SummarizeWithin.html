@@ -22,7 +22,7 @@
 </head>
 <body onload="init()">
 <div id="topics">
-    <div id="toolDescription", class="largesize">
+    <div id="toolDescription" class="largesize">
         <h2>Summarize Within</h2><p/>
         <h2></h2>
         <hr/>
@@ -44,7 +44,7 @@
         <div><h2>Choose layer to summarize</h2></div>
         <hr/>
         <div>
-            <p>Features in this layer that fall within the boundaries of features in the  input layer will be summarized. 
+            <p>Features in this layer that fall within the boundaries of features in the  analysis layer will be summarized. 
             </p>
         </div>
     </div>
@@ -154,8 +154,7 @@ values in the specified field.
             <p>This is an attribute of the 
                 <b>Summarize</b> features that you can use to calculate statistics separately for each unique attribute value. For example, suppose the analysis layer contains city boundaries and the
                 <b>Summarize</b>  features are parcels.  One of the attributes of the parcels is
-                <i>Status</i> which contains two values: VACANT and OCCUPIED. To calculate the total area (or any other attribute, such as
-                <i>Value</i>) of vacant and occupied parcels within the boundaries of cities,  use
+                <i>Status</i> which contains two values: VACANT and OCCUPIED. To calculate the total area of vacant and occupied parcels within the boundaries of cities,  use
                 <i>Status</i> as the group by attribute.
             </p>
         </div>
